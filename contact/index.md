@@ -37,6 +37,12 @@ Our lab is part of the Department of Integrative Structural and Computational Bi
   link="https://maps.app.goo.gl/ezXbwnAmZ3QSPHW3A"
 %}
 
+{%
+  include button.html
+  type="directions"
+  tooltip="Directions for visitors"
+  link="/contact/directions"
+%}
 {% include section.html %}
 
 {% capture col1 %}

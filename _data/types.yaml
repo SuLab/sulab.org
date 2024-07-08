@@ -81,6 +81,11 @@ address:
   text: Address
   tooltip: Address
 
+directions:
+  icon: fa-solid fa-map
+  text: Directions
+  tooltip: Directions for visitors
+
 search:
   icon: fa-solid fa-magnifying-glass
   text: Search
