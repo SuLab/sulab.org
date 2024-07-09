@@ -5,8 +5,8 @@ role: programmer
 group: cwu-lab
 aliases:
 links:
-   linkedin: 
-   github:
+   linkedin: jason-lin-121a9517a
+   github: jal347
    orcid: 
    google-scholar:
    twitter:
@@ -15,12 +15,10 @@ links:
    youtube:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+I am a research programmer starting in Winter 2021. I previously graduated from UCSD in 2020. I have a background in data science and an interest in backend web development.
+
+### Education
+B.S. Cognitive Science w/ Machine Learning and Minor in Computer Science, University of California, San Diego
+
 
 {% include list.html data="citations" component="citation" filters="jason-lin-list: true" %}

@@ -5,8 +5,8 @@ role: programmer
 group: cwu-lab
 aliases:
 links:
-   linkedin: 
-   github:
+   linkedin: dylan-welzel-107140221
+   github: DylanWelzel
    orcid: 
    google-scholar:
    twitter:
@@ -16,12 +16,7 @@ links:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+Hello, I am a Full Stack Developer with a focus on backend to develop and manage core systems in the BioThings API. I joined the team in April 2022, originally from San Diego and now embracing the heat of Phoenix.
+Currently working on the BioThings API and NIAID Data Ecosystem.
 
 {% include list.html data="citations" component="citation" filters="dylan-welzel-list: true" %}

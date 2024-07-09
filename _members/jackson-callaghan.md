@@ -5,8 +5,8 @@ role: programmer
 group: active
 aliases:
 links:
-   linkedin: 
-   github:
+   linkedin: jackson-callaghan
+   github: tokebe
    orcid: 
    google-scholar:
    twitter:
@@ -15,13 +15,11 @@ links:
    youtube:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+I’m a back-end developer at Scripps Research. My interests include data science and data infrastructure.
+
+### Education
+B.S. Informatics with a minor in Computer Science, UMass Amherst
+
 
 {% include section.html %}
 ## Publications

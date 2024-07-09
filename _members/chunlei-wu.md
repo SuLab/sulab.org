@@ -6,23 +6,23 @@ group: cwu-lab
 aliases:
 links:
    orcid: 0000-0002-2629-6124
-   linkedin: 
-   github:
-   google-scholar:
-   twitter:
+   linkedin: chunleiwu
+   github: newgene
+   google-scholar: EmD8988AAAAJ
+   twitter: chunleiwu
    facebook:
    instagram: 
    youtube:
+   email: cwu@scripps.edu
+   home-page: https://wulab.io
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+Chunlei is a Professor at the Scripps Research Institute in the Department of Integrative, Structural and Computational Biology. His research is currently focusing on applying data science methodology and cloud computing technologies to facilitate biomedical discovery, through the large-scale biological data integration.
+
+### Education
+Ph.D., Biomathmetics and biostatistics, The University of Texas Health Science Center at Houston
+
 
 {% include section.html %}
 ## Publications

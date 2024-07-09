@@ -5,7 +5,7 @@ role: staff
 group: cwu-lab
 aliases:
 links:
-   linkedin: 
+   linkedin: emily-haag-2a0b5311b
    github:
    orcid: 
    google-scholar:
@@ -16,12 +16,10 @@ links:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+I grew up in the northwoods of Minnesota, but moved to Australia for college where I studied science communication, science education, and physics. I've spent the last few years in Los Angeles, working in healthcare communication industry. In my free time, I enjoy running marathons & ultras, swimming, diving, skiing, and coaching for Students Run LA.
+
+### Education
+The Australian National University and The University of Canberra
+
 
 {% include list.html data="citations" component="citation" filters="emily-haag-list: true" %}

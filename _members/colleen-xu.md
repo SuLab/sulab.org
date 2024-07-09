@@ -5,24 +5,24 @@ role: programmer
 group: active
 aliases:
 links:
-   linkedin: 
-   github:
+   linkedin: colleenxu
+   github: colleenXu
    orcid: 
    google-scholar:
-   twitter:
+   twitter: BioBabblingHere
    facebook:
    instagram: 
    youtube:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+I joined as a Research Programmer in Summer 2020. My interests include data science, biochemistry, immunology, and bioinformatics infrastructure (KGs / data integration, interoperability, and storage / ontologies / reasoning). On off-hours, I tutor, knit, and do yoga.
+
+### Education
+MS, Bioinformatics and Computational Biomedicine, OHSU
+
+BA, Biology and Chemistry, Northwestern University
+
 
 {% include section.html %}
 ## Publications

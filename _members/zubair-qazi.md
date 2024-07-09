@@ -5,8 +5,8 @@ role: programmer
 group: cwu-lab
 aliases:
 links:
-   linkedin: 
-   github:
+   linkedin: zubair-qazi
+   github: zubairqazi
    orcid: 
    google-scholar:
    twitter:
@@ -16,12 +16,11 @@ links:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+I'm a research programmer at Scripps Research, working on projects with a focus on data mining and ML. I'm passionate about working on diverse projects that apply across various fields.
+
+### Education
+B.S. Computer Science UCR
+M.S. Computer Science UCR
+
 
 {% include list.html data="citations" component="citation" filters="zubair-qazi-list: true" %}
