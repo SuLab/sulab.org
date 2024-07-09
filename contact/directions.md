@@ -4,7 +4,7 @@ title: Directions
 
 {% include breadcrumbs.html %}
 
-# {% include icon.html icon="fa-solid fa-map" %}Directions
+# {% include icon.html icon="fa-solid fa-diamond-turn-right" %}Directions
 
 We are located at 10650 North Torrey Pines Road, La Jolla, CA 92037. Free parking is available for Scripps Research guests in Lot 4, upper lot.
 From the stop light on North Torrey Pines Road, turn left onto Scripps Clinic S. Driveway. Then, DO NOT turn
