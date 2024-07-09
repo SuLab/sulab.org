@@ -82,7 +82,7 @@ address:
   tooltip: Address
 
 directions:
-  icon: fa-solid fa-map
+  icon: fa-solid fa-diamond-turn-right
   text: Directions
   tooltip: Directions for visitors
 
