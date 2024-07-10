@@ -16,6 +16,7 @@ This section is openly readable, but it is geared toward current and future lab 
 * [Conferences and Training](/handbook/conferences)
 * Poster printing
 * Ordering supplies
+* [Onboarding new members](/handbook/onboarding)
 
 {% include section.html %}
 
