@@ -23,4 +23,4 @@ Scripps Research has an onboarding process led by HR that will orient you on ins
 Sadly, there sometimes comes a time when people leave the lab.  Again, Scripps HR will handle many of the official separation details. Here are a few lab-specific notes.
 
 * **Return equipment**: Any equipment purchased by the lab should be returned to the lab (unless alternate arrangements have been made).
-* **Adjust your user profile**: In your member page, change the `group` value to `alum`. But before you go, please add a line or two on what exciting things are next for you.
+* **Adjust your user profile**: In your [member page](https://github.com/SuLab/sulab.org/tree/main/_members), change the `group` value to `alum`. But before you go, please add a line or two on what exciting things are next for you.
