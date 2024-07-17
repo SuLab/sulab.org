@@ -4,7 +4,7 @@ title: Lunch options
 
 {% include breadcrumbs.html %}
 
-# {% include icon.html icon="fa-brands fa-pizza-slice" %}Lunch options
+# {% include icon.html icon="fa-solid fa-pizza-slice" %}Lunch options
 
 Current lunch options within walking distance include:
 
