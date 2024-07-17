@@ -14,7 +14,7 @@ This section is openly readable, but it is geared toward current and future lab 
 * [Holiday and vacation policy](/handbook/holiday-and-vacation)
 * Travel and reimbursements policy
 * [Conferences and Training](/handbook/conferences)
-* Poster printing
+* [Poster printing](/handbook/poster-printing)
 * Ordering supplies
 * [Onboarding and offboarding](/handbook/onboarding)
 
