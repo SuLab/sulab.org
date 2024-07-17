@@ -22,7 +22,7 @@ This section is openly readable, but it is geared toward current and future lab 
 
 ## Local San Diego
 * Preparing for your move to San Diego
-* Lunch options
+* [Lunch options](/handbook/lunch-options)
 * [How to work the lights](https://docs.google.com/presentation/d/1vSX05AUbuNsRd-o7zye5GS9lwIm53WDJZODOFoBt4H4/edit)
 * Safety and Security
 
