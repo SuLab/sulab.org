@@ -10,7 +10,23 @@ We have been lucky to have a fantastic group of individuals come through the lab
 
 (Alumni, please feel free to [update your profile information](https://github.com/SuLab/sulab.org/tree/main/_members)!)
 
-{% include section.html %}
 
+<!--
 {% include list.html data="members" component="portrait" filters="group: alum" style="small" %}
+-->
+{% include section.html %}
+### Principal Investigators and Staff Scientists
 
+{% include list.html data="members" component="portrait" filters="group: alum, role: (pi|staff)" style="small" %}
+
+### Postdoctoral Associates
+
+{% include list.html data="members" component="portrait" filters="group: alum, role: postdoc" style="small" %}
+
+### Graduate Students
+
+{% include list.html data="members" component="portrait" filters="group: alum, role: phd" style="small" %}
+
+### Interns
+
+{% include list.html data="members" component="portrait" filters="group: alum, role: intern" style="small" %}
