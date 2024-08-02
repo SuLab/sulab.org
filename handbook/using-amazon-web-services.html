@@ -490,71 +490,80 @@
 
 </div>
 
-<p>Some guidelines for using Amazon Web Services (AWS):</p>
+<h1 id="using-amazon-web-services">
+<i class="icon fa-brands fa-aws"></i>Using Amazon Web Services</h1>
 
-<p>Should I use AWS?</p>
+<h3 id="should-i-use-aws">Should I use AWS?</h3>
 
-<p>We typically use AWS for production servers (need to be accessible anytime by others from outside). If you just need a development server, consider using our existing internal servers within the intranet (ping others on slack if you need more assistance).
-If you do have a non-production servers up-running on AWS, and typically used by you only, please stop the instance when you are not using it. You can do that in either AWS management console or using a script.</p>
+<p>We typically use AWS for production servers (need to be accessible anytime by others from outside). If you just need a development server, consider using our existing internal servers within the intranet (ping others on slack if you need more assistance).</p>
 
-<p>How to request a new instance</p>
+<p>If you do have a non-production servers up-running on AWS, and typically used by you only, please stop the instance when you are not using it. You can do that in either AWS management console or using a script.</p>
+
+<h3 id="how-to-request-a-new-instance">How to request a new instance</h3>
 
 <p>Send Andrew and/or Chunlei the following information</p>
 
-<p>your public SSH key</p>
+<ul>
+  <li>
+    <p>your public SSH key (If you don’t have your ssh key yet, follow <a href="https://www.siteground.com/kb/generate_ssh_key_in_linux/">this guide</a> to create one first. This guide applies to terminals under Linux, Mac OS and Window Linux subsystem (WSL). Keep your private key, but send your public key only.)</p>
+  </li>
+  <li>
+    <p>your desired OS (need to justify if it’s something other than the latest Ubuntu Server LTS release)</p>
+  </li>
+</ul>
 
-<p>If you don’t have your ssh key yet, follow this guide to create one first. This guide applies to terminals under Linux, Mac OS and Window Linux subsystem (WSL). Keep your private key, but send your public key only.</p>
+<h3 id="notes-for-andrew-and-chunlei">Notes for Andrew and Chunlei</h3>
 
-<p>your desired OS (need to justify if it’s something other than the latest Ubuntu Server LTS release)</p>
-
-<p>Notes for Andrew and Chunlei</p>
-
-<p>Which region I should start a new instance?</p>
-
+<h4 id="which-region-i-should-start-a-new-instance">Which region I should start a new instance?</h4>
 <p>Here is a general project distribution for several commonly used AWS EC2 regions:</p>
+<ul>
+  <li>us-west-1/N. California
+    <ul>
+      <li>BioGPS only (do not create new instances there)</li>
+    </ul>
+  </li>
+  <li>us-west-2/Oregon
+    <ul>
+      <li>BioThings, SmartAPI</li>
+      <li>Mark2cure</li>
+    </ul>
+  </li>
+  <li>us-east-2/Ohio
+    <ul>
+      <li>GeneWiki</li>
+      <li>ChlamBase</li>
+    </ul>
+  </li>
+  <li>us-east-1/N. Virginia (default region for new projects)
+    <ul>
+      <li>Drug repurposing</li>
+      <li>CVISB</li>
+      <li>Scientific Games</li>
+      <li>other projects</li>
+    </ul>
+  </li>
+</ul>
 
-<p>us-west-1/N. California</p>
-
-<p>BioGPS only (do not create new instances there)</p>
-
-<p>us-west-2/Oregon</p>
-
-<p>BioThings, SmartAPI
-Mark2cure</p>
-
-<p>us-east-2/Ohio</p>
-
-<p>GeneWiki
-ChlamBase</p>
-
-<p>us-east-1/N. Virginia (default region for new projects)</p>
-
-<p>Drug repurposing
-CVISB
-Scientific Games
-other projects</p>
-
-<p>Default OS:</p>
-
+<h4 id="default-os">Default OS</h4>
 <p>Unless specifically needed, we default to use the latest 64bit Ubuntu server LTS AMI image (currently “Ubuntu Server 18.04 LTS (HVM)”)</p>
 
-<p>Tagging:</p>
+<h4 id="tagging">Tagging</h4>
 
 <p>“Name” (required) – in a pattern like “<name>_<project>*” (e.g. “asu_cvisb”, “asu_cvisb_web”, “asu_cvisb_data” etc)
 “Description” (recommended) – add more descriptive text for what is this instance used for</project></name></p>
 
-<p>Security Group:</p>
+<h4 id="security-group">Security Group:</h4>
 
 <p>Recommend to create a specific or project-wide security group policy (naming is as “<project>_sg”)
 Can combine multiple security groups (e.g. both “<project>_sg” and generic ones like (“open_22_port”, “scripps_ssh_access_sg” etc)</project></project></p>
 
-<p>VPC:</p>
+<h4 id="vpc">VPC</h4>
 
 <p>Always recommend launching instances within a VPC
 A large project (requires &gt;3 instances, often with between instance communications) should create its own VPC
 The other projects can launch in an existing general-purpose VPC</p>
 
-<p>Key:</p>
+<h4 id="key">Key</h4>
 
 <p>Recommend to create project-specific key files (“smartapi.pem” or “smartapi_prod.pem”-“smartapi_dev.pem” pairs)
 The generated key file (the private key) should be stored in LastPass shared between Andrew and Chunlei</p>
