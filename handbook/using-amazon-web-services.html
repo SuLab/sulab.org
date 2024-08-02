@@ -44,47 +44,39 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Example post 2 | The Su Lab</title>
+<title>Using Amazon web services | The Su Lab</title>
 
 <link rel="icon" href="/images/icon.png">
 
-<meta name="title" content="Example post 2">
+<meta name="title" content="Using Amazon web services">
 <meta name="description" content="at Scripps Research. The lab website for Andrew Su's lab at Scripps Research">
 
-<meta property="og:title" content="Example post 2">
+<meta property="og:title" content="Using Amazon web services">
 <meta property="og:site_title" content="The Su Lab">
 <meta property="og:description" content="at Scripps Research. The lab website for Andrew Su's lab at Scripps Research">
 <meta property="og:url" content="https://sulab.org">
 <meta property="og:image" content="/images/share.png">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="Example post 2">
+<meta property="twitter:title" content="Using Amazon web services">
 <meta property="twitter:description" content="at Scripps Research. The lab website for Andrew Su's lab at Scripps Research">
 <meta property="twitter:url" content="https://sulab.org">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.png">
 
 
-  <meta name="author" content="jane-smith">
-  <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2024-08-02T20:48:10+00:00">
-  <meta property="article:published_time" content="2021-09-30T00:00:00+00:00">
-  <meta property="article:modified_time" content="2024-08-02T20:48:10+00:00">
-  <meta name="revised" content="2024-08-02T20:48:10+00:00">
+  <meta property="og:type" content="website">
 
 
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     
-      "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "Example post 2" },
-      "datePublished": "2021-09-30T00:00:00+00:00",
-      "dateModified": "2024-08-02T20:48:10+00:00",
+      "@type": "WebSite",
     
-    "name": "Example post 2",
+    "name": "Using Amazon web services",
     "description": "at Scripps Research. The lab website for Andrew Su's lab at Scripps Research",
-    "headline": "Example post 2",
+    "headline": "Using Amazon web services",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -291,6 +283,92 @@
     <link href="/_styles/util.css" rel="stylesheet">
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -397,91 +475,89 @@
   
   
 
-  <section class="background" data-size="1">
-    <!--
-  background: ;
-  dark: ;
-  size: 1;
--->
-
-
-<h1 class="center">Example post 2</h1>
-
-<div class="post-info">
-  
-    
-    
-      <span data-tooltip="Author">
-        <i class="icon fa-solid fa-feather-pointed"></i>
-        <span>jane-smith</span>
-      </span>
-    
-  
-
-  
-  
-
-  
-    <span data-tooltip="Originally published on">
-      <i class="icon fa-regular fa-calendar"></i>
-      <span>September 30, 2021</span>
-    </span>
-  
-
-  
-    <span data-tooltip="Last updated on">
-      <i class="icon fa-solid fa-clock-rotate-left"></i>
-      <span>August 02, 2024</span>
-    </span>
-  
-</div>
-  </section>
-
-  
-  
-  
-
   <section class="background" data-size="page">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
--->
+    <div id="breadcrumbs" style="text-align: left;">
 
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  </section>
+<a href="/">Home</a>
 
   
+    / <a href="/handbook/">Handbook</a>
   
+
+  
+    / Using Amazon web services
   
 
-  <section class="background" data-size="page">
-    <!--
-  background: ;
-  dark: ;
-  size: ;
--->
-
-
-<div class="post-nav">
-  <span>
-    
-      <i class="icon fa-solid fa-angle-left"></i> Previous post<br>
-      <a href="/2019/01/07/example-post-1.html">
-        Example post 1
-      </a>
-    
-  </span>
-  <span>
-    
-      Next post <i class="icon fa-solid fa-angle-right"></i><br>
-      <a href="/2023/02/23/example-post-3.html">
-        Example post 3
-      </a>
-    
-  </span>
 </div>
+
+<p>Some guidelines for using Amazon Web Services (AWS):</p>
+
+<p>Should I use AWS?</p>
+
+<p>We typically use AWS for production servers (need to be accessible anytime by others from outside). If you just need a development server, consider using our existing internal servers within the intranet (ping others on slack if you need more assistance).
+If you do have a non-production servers up-running on AWS, and typically used by you only, please stop the instance when you are not using it. You can do that in either AWS management console or using a script.</p>
+
+<p>How to request a new instance</p>
+
+<p>Send Andrew and/or Chunlei the following information</p>
+
+<p>your public SSH key</p>
+
+<p>If you don’t have your ssh key yet, follow this guide to create one first. This guide applies to terminals under Linux, Mac OS and Window Linux subsystem (WSL). Keep your private key, but send your public key only.</p>
+
+<p>your desired OS (need to justify if it’s something other than the latest Ubuntu Server LTS release)</p>
+
+<p>Notes for Andrew and Chunlei</p>
+
+<p>Which region I should start a new instance?</p>
+
+<p>Here is a general project distribution for several commonly used AWS EC2 regions:</p>
+
+<p>us-west-1/N. California</p>
+
+<p>BioGPS only (do not create new instances there)</p>
+
+<p>us-west-2/Oregon</p>
+
+<p>BioThings, SmartAPI
+Mark2cure</p>
+
+<p>us-east-2/Ohio</p>
+
+<p>GeneWiki
+ChlamBase</p>
+
+<p>us-east-1/N. Virginia (default region for new projects)</p>
+
+<p>Drug repurposing
+CVISB
+Scientific Games
+other projects</p>
+
+<p>Default OS:</p>
+
+<p>Unless specifically needed, we default to use the latest 64bit Ubuntu server LTS AMI image (currently “Ubuntu Server 18.04 LTS (HVM)”)</p>
+
+<p>Tagging:</p>
+
+<p>“Name” (required) – in a pattern like “<name>_<project>*” (e.g. “asu_cvisb”, “asu_cvisb_web”, “asu_cvisb_data” etc)
+“Description” (recommended) – add more descriptive text for what is this instance used for</project></name></p>
+
+<p>Security Group:</p>
+
+<p>Recommend to create a specific or project-wide security group policy (naming is as “<project>_sg”)
+Can combine multiple security groups (e.g. both “<project>_sg” and generic ones like (“open_22_port”, “scripps_ssh_access_sg” etc)</project></project></p>
+
+<p>VPC:</p>
+
+<p>Always recommend launching instances within a VPC
+A large project (requires &gt;3 instances, often with between instance communications) should create its own VPC
+The other projects can launch in an existing general-purpose VPC</p>
+
+<p>Key:</p>
+
+<p>Recommend to create project-specific key files (“smartapi.pem” or “smartapi_prod.pem”-“smartapi_dev.pem” pairs)
+The generated key file (the private key) should be stored in LastPass shared between Andrew and Chunlei</p>
   </section>
 
 
