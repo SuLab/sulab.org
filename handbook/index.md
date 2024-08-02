@@ -12,7 +12,7 @@ This section is openly readable, but it is geared toward current and future lab 
 * [Group meetings](/handbook/groupmeetings)
 * [Slack](/handbook/slack)
 * [Holiday and vacation policy](/handbook/holiday-and-vacation)
-* Travel and reimbursements policy
+* [Travel and reimbursements policy](/handbook/scripps-research-travel-reimbursement-policies)
 * [Conferences and Training](/handbook/conferences)
 * [Poster printing](/handbook/poster-printing)
 * Ordering supplies
@@ -21,10 +21,10 @@ This section is openly readable, but it is geared toward current and future lab 
 {% include section.html %}
 
 ## Local San Diego
-* Preparing for your move to San Diego
+* [Preparing for your move to San Diego](/handbook/preparing-for-your-move-to-san-diego)
 * [Lunch options](/handbook/lunch-options)
 * [How to work the lights](https://docs.google.com/presentation/d/1vSX05AUbuNsRd-o7zye5GS9lwIm53WDJZODOFoBt4H4/edit)
-* Safety and Security
+* [Safety and Security](/handbook/safety-and-security)
 
 {% include section.html %}
 
@@ -36,8 +36,8 @@ This section is openly readable, but it is geared toward current and future lab 
 
 ## Lab culture
 * [Code of Conduct](/conduct)
-* Group committees
-* Titles and Honorifics
+* [Group committees](/handbook/group-committees)
+* [Titles and Honorifics](/handbook/titles-and-honorifics)
 * [Names and pronouns](/handbook/names-and-pronouns)
 * [Interviewing notes](/handbook/interviewing)
 

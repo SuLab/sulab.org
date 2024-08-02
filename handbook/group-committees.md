@@ -4,15 +4,15 @@ title: Group committees
 {% include breadcrumbs.html %}
 
 
- 
+Â 
 General info
 
-Committee terms will generally last 6 months — Sep 1 – Feb 28, Mar 1 – Aug 31
+Committee terms will generally last 6 months â€” Sep 1 â€“ Feb 28, Mar 1 â€“ Aug 31
 Assignments are strictly voluntary
 
- 
+Â 
 Committee list
- 
+Â 
 Team building committee (3 people)
 
 Duties: Organize lab social events (annual budget provided)

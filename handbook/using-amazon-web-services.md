@@ -22,9 +22,9 @@ Send Andrew and/or Chunlei the following information
 
 your public SSH key
 
-If you don’t have your ssh key yet, follow this guide to create one first. This guide applies to terminals under Linux, Mac OS and Window Linux subsystem (WSL). Keep your private key, but send your public key only.
+If you donâ€™t have yourÂ ssh key yet, followÂ this guide to create one first. This guide applies to terminals under Linux, Mac OS and Window Linux subsystem (WSL). Keep your private key, but send your public key only.
 
-your desired OS (need to justify if it’s something other than the latest Ubuntu Server LTS release)
+your desired OS (need to justify if itâ€™s something other than the latest Ubuntu Server LTS release)
 
 
 
@@ -67,19 +67,19 @@ other projects
 
 Default OS:
 
-Unless specifically needed, we default to use the latest 64bit Ubuntu server LTS AMI image (currently “Ubuntu Server 18.04 LTS (HVM)”)
+Unless specifically needed, we default to use the latest 64bit Ubuntu server LTS AMI image (currently â€œUbuntu Server 18.04 LTS (HVM)â€)
 
 
 Tagging:
 
-“Name” (required) – in a pattern like “<name>_<project>*” (e.g. “asu_cvisb”, “asu_cvisb_web”, “asu_cvisb_data” etc)
-“Description” (recommended) – add more descriptive text for what is this instance used for
+â€œNameâ€ (required) â€“ in a pattern like â€œ<name>_<project>*â€ (e.g. â€œasu_cvisbâ€, â€œasu_cvisb_webâ€, â€œasu_cvisb_dataâ€ etc)
+â€œDescriptionâ€ (recommended) â€“ add more descriptive text for what is this instance used for
 
 
 Security Group:
 
-Recommend to create a specific or project-wide security group policy (naming is as “<project>_sg”)
-Can combine multiple security groups (e.g. both “<project>_sg” and generic ones like (“open_22_port”, “scripps_ssh_access_sg” etc)
+Recommend to create a specific or project-wide security group policy (naming is as â€œ<project>_sgâ€)
+Can combine multiple security groups (e.g. both â€œ<project>_sgâ€ and generic ones like (â€œopen_22_portâ€, â€œscripps_ssh_access_sgâ€ etc)
 
 
 VPC:
@@ -91,7 +91,7 @@ The other projects can launch in an existing general-purpose VPC
 
 Key:
 
-Recommend to create project-specific key files (“smartapi.pem” or “smartapi_prod.pem”-“smartapi_dev.pem” pairs)
+Recommend to create project-specific key files (â€œsmartapi.pemâ€ or â€œsmartapi_prod.pemâ€-â€œsmartapi_dev.pemâ€ pairs)
 The generated key file (the private key) should be stored in LastPass shared between Andrew and Chunlei
 
 

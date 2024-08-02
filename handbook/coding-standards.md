@@ -10,10 +10,10 @@ Python
 New projects should be started in Python 3 (unless there are noncompatible dependencies)
 Use Flake 8 for good coding style
 
-We typically allow for relaxed ìmax-line-lengthî restriction (default is 79). You can
-use this in your ìflake8î settings:
+We typically allow for relaxed ‚Äúmax-line-length‚Äù restriction (default is 79). You can
+use this in your ‚Äúflake8‚Äù settings:
 [flake8]
 max-line-length = 160
-You can find the information here about where to put this ìflake8î config file.
+You can find the information here about where to put this ‚Äúflake8‚Äù config file.
 
 
