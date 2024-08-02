@@ -12,7 +12,7 @@ This section is openly readable, but it is geared toward current and future lab 
 * [Group meetings](/handbook/groupmeetings)
 * [Slack](/handbook/slack)
 * [Holiday and vacation policy](/handbook/holiday-and-vacation)
-* [Travel and reimbursements policy](/handbook/scripps-research-travel-reimbursement-policies)
+* Travel and reimbursements policy -- to be updated soon!
 * [Conferences and Training](/handbook/conferences)
 * [Poster printing](/handbook/poster-printing)
 * Ordering supplies
