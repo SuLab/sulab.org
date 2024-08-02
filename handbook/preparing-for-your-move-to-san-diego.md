@@ -3,7 +3,7 @@ title: Preparing for your move to San Diego
 ---
 {% include breadcrumbs.html %}
 
-# {% include icon.html icon="fa-solid fa-person-chalkboard" %}Preparing for your move to San Diego
+# {% include icon.html icon="fa-solid fa-plane" %}Preparing for your move to San Diego
 
 For those who will be relocating to San Diego, here are Some notes that may help in planning your move:
 
