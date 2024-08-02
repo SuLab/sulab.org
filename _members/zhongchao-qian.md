@@ -4,6 +4,7 @@ image: images/Zhongchao-Qian.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2020-2022
 links:
    linkedin: zhongchao-qian-04069730
    github:

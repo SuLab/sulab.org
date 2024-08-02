@@ -4,6 +4,7 @@ image: images/adam.png
 role: programmer
 group: alum
 aliases:
+years_worked: 2014-2015
 links:
    linkedin: adam-mark-9b8b5520
    github:

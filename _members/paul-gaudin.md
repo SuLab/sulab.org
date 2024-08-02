@@ -4,6 +4,7 @@ image: images/paul_gaudin-261x300.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2020
 links:
    linkedin: paulgaudin
    github:

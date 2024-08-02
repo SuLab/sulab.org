@@ -4,6 +4,7 @@ image: images/sachiko-matsumoto.jfif
 role: intern
 group: alum
 aliases:
+years_worked: 2015
 links:
    linkedin: matsumotosachiko
    github:

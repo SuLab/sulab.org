@@ -4,6 +4,7 @@ image: images/runjie-guan.jfif
 role: intern
 group: alum
 aliases:
+years_worked: 2016-2017
 links:
    linkedin: runjieguan
    github:

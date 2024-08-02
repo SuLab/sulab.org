@@ -4,6 +4,7 @@ image: images/Julia-Mullen-225x300.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2020-2023
 links:
    linkedin: juliamul
    github:

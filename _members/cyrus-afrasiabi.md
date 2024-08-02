@@ -4,6 +4,7 @@ image: images/cyrus2.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2015-2019
 links:
    linkedin: cyrus-afrasiabi-b623604a
    github:

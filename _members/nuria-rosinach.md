@@ -4,6 +4,7 @@ image: images/nuria.jpg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2016-2019
 links:
    orcid: 0000-0003-0169-8159
    google-scholar: bS4a_T8AAAAJ&hl=ca

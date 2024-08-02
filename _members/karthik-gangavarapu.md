@@ -4,6 +4,7 @@ image: images/karthik.jpg
 role: phd
 group: alum
 aliases:
+years_worked: 2012-2021
 links:
    orcid: 0000-0002-5027-3440
    linkedin: 

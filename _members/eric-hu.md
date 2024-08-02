@@ -4,6 +4,7 @@ image: images/Eric-Hu-205x300.jpg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2020-2022
 links:
    linkedin: eric-hu-70082718
    github:

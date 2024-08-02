@@ -4,6 +4,7 @@ image: images/sander-su.jpeg
 role: programmer
 group: alum
 aliases:
+years_worked: 2021-2022
 links:
    linkedin: sanders2011
    github:

@@ -4,6 +4,7 @@ image: images/UlHasan-Sabah-Sabah-Ul-Hasan.jpg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2019-2022
 links:
    orcid: 0000-0001-6334-452X
    linkedin: sabahulhasan

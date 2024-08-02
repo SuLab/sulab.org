@@ -4,6 +4,7 @@ image: images/Erick-shrunk-278x300.jpg
 role: phd
 group: alum
 aliases:
+years_worked: 2014-2015
 links:
    linkedin: erick-r-scott
    github:

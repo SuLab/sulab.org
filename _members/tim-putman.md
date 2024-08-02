@@ -4,6 +4,7 @@ image: images/tim_putman_self-e1438965128933-225x300.jpeg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2015-2017
 links:
    linkedin: timothyputman
    github:

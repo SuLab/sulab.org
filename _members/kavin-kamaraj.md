@@ -4,6 +4,7 @@ image: images/kavin-kamaraj.jfif
 role: intern
 group: alum
 aliases:
+years_worked: 2016-2017
 links:
    linkedin: kavin-kamaraj-408526100
    github:

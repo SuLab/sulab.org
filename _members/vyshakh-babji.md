@@ -4,6 +4,7 @@ image: images/vyshakh-babji.jfif
 role: intern
 group: alum
 aliases:
+years_worked: 2014
 links:
    linkedin: vyshakhbabji
    github:

@@ -4,6 +4,7 @@ image: images/sal.jpg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2012-2015
 links:
    linkedin: sloguercio
    github:
@@ -15,4 +16,4 @@ links:
    youtube:
 ---
 
-Sal was a postdoctoral researcher in the lab from January 2012 to December 1899.
+Sal was a postdoctoral researcher in the lab from January 2012 to December 2015.

@@ -4,6 +4,7 @@ image: images/nanis_headshot.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2012-2018
 links:
    linkedin: termsofservice
    github:

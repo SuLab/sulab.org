@@ -4,6 +4,7 @@ image: images/person.png
 role: visitor
 group: alum
 aliases:
+years_worked: 2017-2019
 links:
    linkedin: 
    github:

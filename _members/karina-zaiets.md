@@ -4,6 +4,7 @@ image: images/karina_zaiets-300x185.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2021-2022
 links:
    linkedin: 
    github:

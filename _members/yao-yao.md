@@ -4,6 +4,7 @@ image: images/yaoyao_cropped-300x300.jpg
 role: staff
 group: alum
 aliases:
+years_worked: 2020-2023
 links:
    linkedin: yyao
    github:

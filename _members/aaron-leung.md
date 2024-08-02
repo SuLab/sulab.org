@@ -3,6 +3,7 @@ name: Aaron Leung
 image: images/aaron-leung.jfif
 role: intern
 group: alum
+years_worked: 2016
 links:
    linkedin: a3leong
    github:

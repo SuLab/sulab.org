@@ -4,6 +4,7 @@ image: images/greg_stupp.jpg
 role: staff
 group: alum
 aliases:
+years_worked: 2014-2019
 links:
    linkedin: gregory-stupp-4295b411a
    github:

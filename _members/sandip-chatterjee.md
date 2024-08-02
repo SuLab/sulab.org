@@ -4,6 +4,7 @@ image: images/sandip.jpg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2015-2016
 links:
    linkedin: sandipchatterjee
    github:

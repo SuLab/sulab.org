@@ -4,6 +4,7 @@ image: images/mayers-768x768.jpg
 role: phd
 group: alum
 aliases:
+years_worked: 2016-2021
 links:
    orcid: 0000-0002-7792-0150
    linkedin: m-mayers

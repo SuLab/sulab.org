@@ -3,6 +3,7 @@ name: Amitesh Sharma
 image: images/amitesh-sharma.jfif
 role: intern
 group: alum
+years_worked: 2021
 links:
    linkedin: amiteshksharma
    github:

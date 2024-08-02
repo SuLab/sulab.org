@@ -4,6 +4,7 @@ image: images/sebastien.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2016-2020
 links:
    linkedin: slelong
    github:

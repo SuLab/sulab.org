@@ -4,6 +4,7 @@ image: images/ramya.jpg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2014-2017
 links:
    linkedin: ramya-gamini
    github:

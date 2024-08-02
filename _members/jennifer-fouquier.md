@@ -4,6 +4,7 @@ image: images/jennifer.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2015-2016
 links:
    linkedin: jennifer-fouquier-45856b7
    github:

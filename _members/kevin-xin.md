@@ -1,9 +1,10 @@
 ---
 name: Kevin Xin
 image: images/kevin_xin.jpg
-role: phd
+role: staff
 group: alum
 aliases:
+years_worked: 2013-2021
 links:
    linkedin: jiwenxin
    github:
@@ -15,4 +16,4 @@ links:
    youtube:
 ---
 
-Kevin was a graduate student and staff scientist in the lab from December 2014 to May 2021.
+Kevin was a graduate student from August 2013 through November 2018, and then a staff scientist until May 2021.

@@ -4,6 +4,7 @@ image: images/Fisch_Picture-Copy-Copy.jpg
 role: postdoc
 group: alum
 aliases:
+years_worked: 2013-2016
 links:
    linkedin: kfisch
    github:

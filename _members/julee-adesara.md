@@ -4,6 +4,7 @@ image: images/julee-adesara.jfif
 role: master's student
 group: alum
 aliases:
+years_worked: 2015-2017
 links:
    linkedin: julee-adesara
    github:

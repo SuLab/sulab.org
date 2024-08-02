@@ -4,6 +4,7 @@ image: images/ben.jpg
 role: pi
 group: alum
 aliases:
+years_worked: 2011-2017
 links:
    orcid: 0000-0002-7334-7852
    linkedin: bgood

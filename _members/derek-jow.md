@@ -4,6 +4,7 @@ image: images/person.png
 role: intern
 group: alum
 aliases:
+years_worked: 2018
 links:
    linkedin: 
    github:

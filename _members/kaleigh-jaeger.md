@@ -4,6 +4,7 @@ image: images/kaleigh-jaeger.jfif
 role: intern
 group: alum
 aliases:
+years_worked: 2021
 links:
    linkedin: kaleigh-jaeger-79870b120
    github:

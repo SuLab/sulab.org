@@ -4,6 +4,7 @@ image: images/ian.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2011-2012
 links:
    linkedin: iancmacleod
    github:

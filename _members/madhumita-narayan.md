@@ -4,6 +4,7 @@ image: images/madhumita-narayan.jfif
 role: intern
 group: alum
 aliases:
+years_worked: 2022-2023
 links:
    linkedin: madhumita-narayan-1864b4288
    github:

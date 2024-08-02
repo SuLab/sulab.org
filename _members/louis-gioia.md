@@ -4,6 +4,7 @@ image: images/louis_profile.jpg
 role: phd
 group: alum
 aliases:
+years_worked: 2014-2019
 links:
    linkedin: 
    github:
