@@ -44,15 +44,17 @@
               <span>{{ member.description | default: type.description }}</span>
             </span>
           {% endif %}
-          {% if member.pronouns %}
-            <span class="portrait-pronouns">
-              {{ member.pronouns }}
-            </span>
-          {% endif %}
-          {% if member.years_worked %}
-            <span class="portrait-years_worked">
-              {{ member.years_worked }}
-            </span>
+          {% if page.slug == member.slug %}
+            {% if member.pronouns %}
+              <span class="portrait-pronouns" aria-label="Pronouns">
+                {{ member.pronouns }}
+              </span>
+            {% endif %}
+            {% if member.years_worked %}
+              <span class="portrait-years_worked">
+                {{ member.years_worked }}
+              </span>
+            {% endif %}
           {% endif %}
         {% endif %}
       </span>
