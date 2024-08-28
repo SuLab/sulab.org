@@ -4,6 +4,7 @@ image: images/Andrew_Su_smll.jpg
 role: pi
 group: active
 aliases:
+pronouns: he/him
 links:
   home-page: https://sulab.org
   orcid: 0000-0002-9859-4104
