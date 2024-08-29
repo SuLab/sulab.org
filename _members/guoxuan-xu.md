@@ -1,6 +1,6 @@
 ---
 name: Guoxuan Xu
-image: 
+image: images/person.png
 role: intern
 group: alum
 aliases:

@@ -1,6 +1,6 @@
 ---
 name: Melody Yin
-image: 
+image: images/person.png
 role: intern
 group: active
 aliases:

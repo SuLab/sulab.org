@@ -1,6 +1,6 @@
 ---
 name: Esha Verma
-image: 
+image: images/person.png
 role: intern
 group: cwu-lab
 aliases:
