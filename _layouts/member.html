@@ -4,6 +4,13 @@ layout: default
 
 {% capture floatcontent %}
 
+{% assign member = site.members 
+  | where_exp: "member", "member.slug == page.slug"
+  | first
+%}
+{% include breadcrumbs.html member=member %}
+{% include section.html %}
+
 {% include portrait.html lookup=page.slug %}
 
 <div>
