@@ -17,7 +17,7 @@ links:
 
 ---
 
-Melody Yin was a rising high school senior who joined the lab as an intern for the summer of 2024, working on genomic studies of aging. Her poster describing her research is below.
+Melody Yin is a rising high school senior who joined the lab as an intern for the summer of 2024, working on genomic studies of aging. Her poster describing her research is below.
 
 {%
   include figure.html
