@@ -5,6 +5,7 @@ role: pi
 group: alum
 aliases:
 years_worked: 2017-2023
+pronouns: she/her
 links:
    orcid: 0000-0003-1718-6676
    linkedin: lauradhughes

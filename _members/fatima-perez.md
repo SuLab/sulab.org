@@ -17,4 +17,11 @@ links:
 
 ---
 
-Fatima Perez was a summer intern selected by the Life Sciences Summer Institute during the summer of 2018.
+Fatima Perez was a summer intern selected by the Life Sciences Summer Institute during the summer of 2018. Her poster describing her research is below.
+
+{%
+  include figure.html
+  image="files/perez_poster.png"
+  link="files/perez_poster.pdf"
+  width="400px"
+%}

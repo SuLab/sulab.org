@@ -17,4 +17,11 @@ links:
 
 ---
 
-Michelle Fox was a summer intern selected by the Life Sciences Summer Institute during the summer of 2018.
+Michelle Fox was a summer intern selected by the Life Sciences Summer Institute during the summer of 2018. Her poster describing her research is below.
+
+{%
+  include figure.html
+  image="files/fox_poster.png"
+  link="files/fox_poster.pdf"
+  width="400px"
+%}
