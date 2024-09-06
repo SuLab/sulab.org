@@ -12,11 +12,13 @@ This section is openly readable, but it is geared toward current and future lab 
 * [Group meetings](/handbook/groupmeetings)
 * [Slack](/handbook/slack)
 * [Holiday and vacation policy](/handbook/holiday-and-vacation)
-* Travel and reimbursements policy -- to be updated soon!
+* [Travel and reimbursements policy](/handbook/travel-and-reimbursements)
 * [Conferences and Training](/handbook/conferences)
 * [Poster printing](/handbook/poster-printing)
-* Ordering supplies
+* [Ordering supplies](/handbook/supplies)
 * [Onboarding and offboarding](/handbook/onboarding)
+
+For more on general Scripps information and policies (including campus maps, security info, parking, IT services, email lists, etc), please search the [Scripps intranet](https://scrippsresearch.sharepoint.com/sites/intranet).
 
 {% include section.html %}
 
@@ -25,6 +27,7 @@ This section is openly readable, but it is geared toward current and future lab 
 * [Lunch options](/handbook/lunch-options)
 * [How to work the lights](https://docs.google.com/presentation/d/1vSX05AUbuNsRd-o7zye5GS9lwIm53WDJZODOFoBt4H4/edit)
 * [Safety and Security](/handbook/safety-and-security)
+* [Printer](/handbook/printer)
 
 {% include section.html %}
 

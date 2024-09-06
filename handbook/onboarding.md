@@ -10,9 +10,10 @@ Scripps Research has an onboarding process led by HR that will orient you on ins
 
 * **Order a computer**: We have people using Mac, Windows and Linux. For those getting laptops (typical), most commonly we get them from Apple or Lenovo. It should be suitable for use as your primary development machine for ~2-3 years, and we usually find $3k to be a reasonable budget for that (but let us know if you find otherwise).  If you need an external monitor or peripherals, also include that. It's usually easiest if you configure a system and send us the specs to be ordered by Scripps.
 * **Join slack**: email Andrew or Chunlei
+* **Get added to the [Su Lab github org](https://github.com/orgs/SuLab/)**: ask Andrew
 * **Create a profile page on sulab.org**: See instructions [here](https://github.com/SuLab/sulab.org/blob/main/README.md#lab-members-actions)
-* **Get added to group meeting series**: Ask Andrew
-
+* **Get added to relevant group meeting series**: See more info [here](/handbook/groupmeetings).
+* **For BioThings team members**: see also the [BioThings onboarding guide](https://github.com/biothings/biothings-internal/wiki/New-to-the-BioThings-team)
 
 <!-- See also https://www.dropbox.com/scl/fi/gki32uyvb0f5zx2akhibb/Onboarding-Checklist.docx?rlkey=p9u4517zjkd2zdrhs23exe6oq&dl=0 and https://github.com/biothings/biothings-internal/wiki/New-to-the-BioThings-team --> 
 
