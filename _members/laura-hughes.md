@@ -4,6 +4,9 @@ image: images/hughes.jpg
 role: pi
 group: alum
 aliases:
+  - Laura Hughes
+  - Laura D Hughes
+  - Laura D. Hughes
 years_worked: 2017-2023
 pronouns: she/her
 links:
@@ -17,7 +20,7 @@ links:
    youtube:
 ---
 
-Laura was a Institute Investigator in the lab from December 2017 to August 2023.
+Laura was a Institute Investigator in the lab from December 2017 to August 2023. She is currently a Senior Principal Scientist at Genentech.
 
 {% include section.html %}
 ## Publications

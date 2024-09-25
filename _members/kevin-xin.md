@@ -4,6 +4,7 @@ image: images/kevin_xin.jpg
 role: staff
 group: alum
 aliases:
+  - Jiwen Xin
 years_worked: 2013-2021
 links:
    linkedin: jiwenxin

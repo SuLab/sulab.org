@@ -4,6 +4,8 @@ image: images/Andrew_Su_smll.jpg
 role: pi
 group: active
 aliases:
+  - Andrew I Su
+  - Andrew I. Su
 pronouns: he/him
 links:
   home-page: https://sulab.org

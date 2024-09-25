@@ -4,6 +4,9 @@ image: images/greg_stupp.jpg
 role: staff
 group: alum
 aliases:
+  - Gregory Stupp
+  - Gregory S Stupp
+  - Gregory S. Stupp
 years_worked: 2014-2019
 links:
    linkedin: gregory-stupp-4295b411a
