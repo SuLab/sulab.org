@@ -27,6 +27,10 @@ We have been lucky to have a fantastic group of individuals come through the lab
 
 {% include list.html data="members" component="portrait" filters="group: alum, role: phd" style="small" %}
 
+### Software Engineers
+
+{% include list.html data="members" component="portrait" filters="group: alum, role: programmer" style="small" %}
+
 ### Interns
 
 {% include list.html data="members" component="portrait" filters="group: alum, role: intern" style="small" %}
