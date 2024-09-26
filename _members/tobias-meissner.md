@@ -4,6 +4,8 @@ image: images/tobias.jpg
 role: postdoc
 group: alum
 aliases:
+  - Tobias Meissner
+  - Tobias Meißner
 years_worked: 2013-2016
 links:
    linkedin: tobias-mei%C3%9Fner-07a91036

@@ -4,6 +4,7 @@ image: images/jerry_zhou.jpg
 role: programmer
 group: alum
 aliases:
+  - Xinghua Zhou
 years_worked: 2018-2021
 links:
    linkedin: jerry-zhou-b48b04b1

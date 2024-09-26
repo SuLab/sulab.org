@@ -6,6 +6,9 @@ group: active
 aliases:
   - Andrew I Su
   - Andrew I. Su
+  = A. I. Su
+  - A I Su
+  - Andrew Su
 pronouns: he/him
 links:
   home-page: https://sulab.org

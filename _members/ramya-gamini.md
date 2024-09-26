@@ -4,6 +4,8 @@ image: images/ramya.jpg
 role: postdoc
 group: alum
 aliases:
+  - Ramya Gamini
+  - R. Gamini
 years_worked: 2014-2017
 links:
    linkedin: ramya-gamini

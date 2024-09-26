@@ -4,6 +4,7 @@ image: images/Toby.jpg
 role: phd
 group: alum
 aliases:
+  - Tong Shu Li
 years_worked: 2015-2020
 links:
    linkedin: tong-shu-toby-li

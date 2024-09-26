@@ -4,6 +4,9 @@ image: images/Carolina-Gonzalez-Cavazos-480x501.jpg
 role: phd
 group: active
 aliases:
+  - Carolina González-Cavazos
+  - Carolina González
+  - Adriana Carolina Gonzalez-Cavazos
 links:
    linkedin: https://www.linkedin.com/in/carolina-gonz%C3%A1lez-cavazos/ 
    github: https://github.com/Carolina1396

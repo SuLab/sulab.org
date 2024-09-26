@@ -4,6 +4,7 @@ image: images/jake.png
 role: phd
 group: alum
 aliases:
+  - Jacob Bruggemann
 years_worked: 2015-2020
 links:
    linkedin: jacob-bruggemann-a4388193

@@ -4,6 +4,8 @@ image: images/sebastian_cropped-246x300.jpg
 role: postdoc
 group: alum
 aliases:
+  - Sebastian Burgstaller-Muehlbacher
+  - Sebastian Burgstaller
 years_worked: 2015-2018
 links:
    linkedin: sebastian-burgstaller-muehlbacher-680208120

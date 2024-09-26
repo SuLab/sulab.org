@@ -4,6 +4,7 @@ image: images/bailinzhang.jpg
 role: phd
 group: cwu-lab
 aliases:
+  - Bailin Zhang
 links:
    linkedin: bailin-zhang-1aa624179
    github: lucyzhang95

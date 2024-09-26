@@ -4,6 +4,8 @@ image: images/sal.jpg
 role: postdoc
 group: alum
 aliases:
+  - Salvatore Loguercio
+  - S. Loguercio
 years_worked: 2012-2015
 links:
    linkedin: sloguercio

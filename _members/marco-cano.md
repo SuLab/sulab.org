@@ -4,6 +4,10 @@ image: images/marcomain.jpg
 role: programmer
 group: cwu-lab
 aliases:
+  - Marco Alvarado Cano
+  - Marco A. Cano
+  - Marco Cano
+  - Marco A Cano
 links:
    orcid: 0000-0001-6992-8390
    linkedin: marco-alvarado-cano

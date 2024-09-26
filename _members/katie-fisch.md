@@ -4,6 +4,9 @@ image: images/Fisch_Picture-Copy-Copy.jpg
 role: postdoc
 group: alum
 aliases:
+  - Kathleen M. Fisch
+  - Kathleen M Fisch
+  - K.M. Fisch
 years_worked: 2013-2016
 links:
    linkedin: kfisch

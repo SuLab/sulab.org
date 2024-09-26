@@ -4,6 +4,8 @@ image: images/colleen-xu-resized-480x462.jpg
 role: programmer
 group: active
 aliases:
+  - Colleen H Xu
+  - Colleen H. Xu
 links:
    linkedin: colleenxu
    github: colleenXu

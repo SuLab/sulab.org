@@ -4,6 +4,8 @@ image: images/nuria.jpg
 role: postdoc
 group: alum
 aliases:
+  - Nuria Queralt-Rosinach
+  - Núria Queralt-Rosinach
 years_worked: 2016-2019
 links:
    orcid: 0000-0003-0169-8159

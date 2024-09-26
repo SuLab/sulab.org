@@ -4,6 +4,10 @@ image: images/nanis_headshot.jpg
 role: programmer
 group: alum
 aliases:
+  - Max Nanis
+  - Steven Max Nanis
+  - Steven M. Nanis
+  - Steven M Nanis
 years_worked: 2012-2018
 links:
    linkedin: termsofservice
