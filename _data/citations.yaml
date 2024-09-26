@@ -1429,6 +1429,229 @@
   buttons:
   - type: pdf
     link: pdf/Cano_2021.pdf
+- id: doi:10.1101/2022.05.15.490691
+  title: Open Access Repository-Scale Propagated Nearest Neighbor Suspect Spectral
+    Library for Untargeted Metabolomics
+  authors:
+  - Wout Bittremieux
+  - Nicole E. Avalon
+  - Sydney P. Thomas
+  - Sarvar A. Kakhkhorov
+  - Alexander A. Aksenov
+  - Paulo Wender P. Gomes
+  - Christine M. Aceves
+  - "Andr\xE9s Mauricio Caraballo-Rodr\xEDguez"
+  - Julia M. Gauglitz
+  - William H. Gerwick
+  - Tao Huan
+  - Alan K. Jarmusch
+  - Rima F. Kaddurah-Daouk
+  - Kyo Bin Kang
+  - Hyun Woo Kim
+  - "Todor Kondi\u0107"
+  - Helena Mannochio-Russo
+  - Michael J. Meehan
+  - Alexey V. Melnik
+  - Louis-Felix Nothias
+  - "Claire O\u2019Donovan"
+  - Morgan Panitchpakdi
+  - Daniel Petras
+  - Robin Schmid
+  - Emma L. Schymanski
+  - Justin J. J. van der Hooft
+  - Kelly C. Weldon
+  - Heejung Yang
+  - Shipei Xing
+  - Jasmine Zemlin
+  - Mingxun Wang
+  - Pieter C. Dorrestein
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-05-15'
+  link: https://doi.org/gsvrkh
+  orcid: 0000-0002-2543-8936
+  chrissy-aceves-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2020.07.08.194159
+  title: Reference data based insights expand understanding of human metabolomes
+  authors:
+  - Julia M. Gauglitz
+  - Wout Bittremieux
+  - Candace L. Williams
+  - Kelly C. Weldon
+  - Morgan Panitchpakdi
+  - Francesca Di Ottavio
+  - Christine M. Aceves
+  - Elizabeth Brown
+  - Nicole C. Sikora
+  - Alan K. Jarmusch
+  - Cameron Martino
+  - Anupriya Tripathi
+  - Erfan Sayyari
+  - Justin P. Shaffer
+  - Roxana Coras
+  - Fernando Vargas
+  - Lindsay DeRight Goldasich
+  - Tara Schwartz
+  - MacKenzie Bryant
+  - Gregory Humphrey
+  - Abigail J. Johnson
+  - Katharina Spengler
+  - Pedro Belda-Ferre
+  - Edgar Diaz
+  - Daniel McDonald
+  - Qiyun Zhu
+  - Dominic S. Nguyen
+  - Emmanuel O. Elijah
+  - Mingxun Wang
+  - Clarisse Marotz
+  - Kate E. Sprecher
+  - Daniela Vargas Robles
+  - Dana Withrow
+  - Gail Ackermann
+  - Lourdes Herrera
+  - Barry J. Bradford
+  - Lucas Maciel Mauriz Marques
+  - Juliano Geraldo Amaral
+  - Rodrigo Moreira Silva
+  - "Fl\xE1vio Protaso Veras"
+  - Thiago Mattar Cunha
+  - Rene Donizeti Ribeiro Oliveira
+  - Paulo Louzada-Junior
+  - Robert H. Mills
+  - Douglas Galasko
+  - Parambir S. Dulai
+  - Curt Wittenberg
+  - David J. Gonzalez
+  - Robert Terkeltaub
+  - Megan M. Doty
+  - Jae H. Kim
+  - Kyung E. Rhee
+  - Julia Beauchamp-Walters
+  - Kenneth P. Wright
+  - Maria Gloria Dominguez-Bello
+  - Mark Manary
+  - Michelli F. Oliveira
+  - Brigid S. Boland
+  - Norberto Peporine Lopes
+  - Monica Guma
+  - Austin D. Swafford
+  - Rachel J. Dutton
+  - Rob Knight
+  - Pieter C. Dorrestein
+  publisher: Cold Spring Harbor Laboratory
+  date: '2020-07-11'
+  link: https://doi.org/gg6rzb
+  orcid: 0000-0002-2543-8936
+  chrissy-aceves-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/750471
+  title: Repository-scale Co- and Re-analysis of Tandem Mass Spectrometry Data
+  authors:
+  - Alan K. Jarmusch
+  - Mingxun Wang
+  - Christine M. Aceves
+  - Rohit S. Advani
+  - Shaden Aguire
+  - Alexander A. Aksenov
+  - Gajender Aleti
+  - Allegra T. Aron
+  - Anelize Bauermeister
+  - Sanjana Bolleddu
+  - Amina Bouslimani
+  - Andres Mauricio Caraballo Rodriguez
+  - Rama Chaar
+  - Roxana Coras
+  - Emmanuel O. Elijah
+  - Madeleine Ernst
+  - Julia M. Gauglitz
+  - Emily C. Gentry
+  - Makhai Husband
+  - Scott A. Jarmusch
+  - Kenneth L. Jones
+  - Zdenek Kamenik
+  - Audrey Le Gouellec
+  - Aileen Lu
+  - Laura-Isobel McCall
+  - Kerry L. McPhail
+  - Michael J. Meehan
+  - Alexey V. Melnik
+  - Riya C. Menezes
+  - Yessica Alejandra Montoya Giraldo
+  - Ngoc Hung Nguyen
+  - Louis Felix Nothias
+  - "M\xE9lissa Nothias-Esposito"
+  - Morgan Panitchpakdi
+  - Daniel Petras
+  - Robert Quinn
+  - Nicole Sikora
+  - Justin J.J. van der Hooft
+  - Fernando Vargas
+  - Alison Vrbanac
+  - Kelly Weldon
+  - Rob Knight
+  - Nuno Bandeira
+  - Pieter C. Dorrestein
+  publisher: Cold Spring Harbor Laboratory
+  date: '2019-08-29'
+  link: https://doi.org/gkw7h8
+  orcid: 0000-0002-2543-8936
+  chrissy-aceves-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2024.03.22.582209
+  title: DNA damage drives antigen diversification through mosaic Variant Surface
+    Glycoprotein (VSG) formation in<i>Trypanosoma brucei</i>
+  authors:
+  - Jaclyn E. Smith
+  - Kevin J. Wang
+  - Erin M. Kennedy
+  - Jill M.C. Hakim
+  - Jaime So
+  - Alexander K. Beaver
+  - Aishwarya Magesh
+  - Shane D. Gilligan-Steinberg
+  - Jessica Zheng
+  - Bailin Zhang
+  - Dharani Narayan Moorthy
+  - Elgin Henry Akin
+  - Lusajo Mwakibete
+  - Monica R. Mugnier
+  publisher: Cold Spring Harbor Laboratory
+  pmid: '39253459'
+  pmcid: PMC11383311
+  date: '2024-03-22'
+  link: https://doi.org/gt9dfp
+  orcid: 0000-0002-7606-4014
+  lucy-zhang-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1093/jac/dkz567
+  title: Methionyl-tRNA synthetase inhibitor has potent <i>in vivo</i> activity in
+    a novel <i>Giardia lamblia</i> luciferase murine infection model
+  authors:
+  - Samantha A Michaels
+  - Han-Wei Shih
+  - Bailin Zhang
+  - Edelmar D Navaluna
+  - Zhongsheng Zhang
+  - Ranae M Ranade
+  - J Robert Gillespie
+  - Ethan A Merritt
+  - Erkang Fan
+  - Frederick S Buckner
+  - Alexander R Paredez
+  - Kayode K Ojo
+  publisher: Journal of Antimicrobial Chemotherapy
+  pmid: '32011682'
+  pmcid: PMC7869794
+  date: '2020-02-03'
+  link: https://doi.org/g5ktds
+  orcid: 0000-0002-7606-4014
+  lucy-zhang-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1093/nargab/lqac017
   title: Generation and network analysis of an RNA-seq transcriptional atlas for the
     rat
