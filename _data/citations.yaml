@@ -1776,6 +1776,127 @@
   buttons:
   - type: pdf
     link: pdf/Gopal_2017.pdf
+- id: doi:10.1093/bioadv/vbae057
+  title: Perspectives on tracking data reuse across biodata resources
+  authors:
+  - Karen E Ross
+  - Frederic B Bastian
+  - Matt Buys
+  - Charles E Cook
+  - "Peter D\u2019Eustachio"
+  - Melissa Harrison
+  - Henning Hermjakob
+  - Donghui Li
+  - Phillip Lord
+  - Darren A Natale
+  - Bjoern Peters
+  - Paul W Sternberg
+  - Andrew I Su
+  - Matthew Thakur
+  - Paul D Thomas
+  - Alex Bateman
+  - Alex Bateman
+  - Maria-Jesus Martin
+  - Sandra Orchard
+  - Michele Magrane
+  - Shadab Ahmad
+  - Emily H Bowler-Barnett
+  - Hema Bye-A-Jee
+  - Paul Denny
+  - Tunca Dogan
+  - ThankGod Ebenezer
+  - Jun Fan
+  - Leonardo Jose da Costa Gonzales
+  - Abdulrahman Hussein
+  - Alexandr Ignatchenko
+  - Giuseppe Insana
+  - Rizwan Ishtiaq
+  - Vishal Joshi
+  - Dushyanth Jyothi
+  - Swaathi Kandasaamy
+  - Antonia Lock
+  - Aurelien Luciani
+  - Jie Luo
+  - Yvonne Lussi
+  - Pedro Raposo
+  - Daniel L Rice
+  - Rabie Saidi
+  - Rafael Santos
+  - Elena Speretta
+  - James Stephenson
+  - Prabhat Totoo
+  - Nidhi Tyagi
+  - Preethi Vasudev
+  - Kate Warner
+  - Rossana Zaru
+  - Supun Wijerathne
+  - Khawaja Talal Ibrahim
+  - Minjoon Kim
+  - Juan Marin
+  - Alan J Bridge
+  - Lucila Aimo
+  - Ghislaine Argoud-Puy
+  - Andrea H Auchincloss
+  - Kristian B Axelsen
+  - Parit Bansal
+  - Delphine Baratin
+  - Teresa M Batista Neto
+  - Jerven T Bolleman
+  - Emmanuel Boutet
+  - Lionel Breuza
+  - Blanca Cabrera Gil
+  - Cristina Casals-Casas
+  - Elisabeth Coudert
+  - Beatrice Cuche
+  - Edouard de Castro
+  - Anne Estreicher
+  - Maria L Famiglietti
+  - Marc Feuermann
+  - Elisabeth Gasteiger
+  - Sebastien Gehant
+  - Arnaud Gos
+  - Nadine Gruaz
+  - Chantal Hulo
+  - Nevila Hyka-Nouspikel
+  - Florence Jungo
+  - Arnaud Kerhornou
+  - Philippe Le Mercier
+  - Damien Lieberherr
+  - Patrick Masson
+  - Anne Morgat
+  - Ivo Pedruzzi
+  - Sandrine Pilbout
+  - Lucille Pourcel
+  - Sylvain Poux
+  - Monica Pozzato
+  - Manuela Pruess
+  - Nicole Redaschi
+  - Catherine Rivoire
+  - Christian J A Sigrist
+  - Shyamala Sundaram
+  - Anastasia Sveshnikova
+  - Cathy H Wu
+  - Cecilia N Arighi
+  - Chuming Chen
+  - Yongxing Chen
+  - Hongzhan Huang
+  - Kati Laiho
+  - Minna Lehvaslaiho
+  - Peter McGarvey
+  - Darren A Natale
+  - Karen Ross
+  - C R Vinayaka
+  - Yuqi Wang
+  - Jian Zhang
+  publisher: Bioinformatics Advances
+  pmid: '38721398'
+  pmcid: PMC11076920
+  date: '2024-01-01'
+  link: https://doi.org/g587fp
+  orcid: 0000-0002-9859-4104
+  andrew-su-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.4049/jimmunol.2300769
   title: Repositioning the Early Pathology of Type 1 Diabetes to the Extraislet Vasculature
   authors:
