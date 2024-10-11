@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Zhongchao was a programmer in the lab from June 2020 to January 2022.
+Zhongchao was a programmer in the lab from June 2020 to January 2022. He is currently a Software Engineer at Databento.

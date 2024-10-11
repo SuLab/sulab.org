@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Ricardo was a programmer in the lab from July 2020 to November 2022.
+Ricardo was a programmer in the lab from July 2020 to November 2022. He is currently a Bioinformatics Engineer at Empirico Inc.

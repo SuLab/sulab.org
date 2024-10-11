@@ -4,9 +4,10 @@ image: images/Eric-Zhou-300x300.jpg
 role: programmer
 group: alum
 aliases:
+years_worked: 2021-2023
 links:
-   linkedin: 
-   github:
+   linkedin: eric-zhou-2b882b205
+   github: ericz1803
    orcid: 
    google-scholar:
    twitter:
@@ -16,11 +17,4 @@ links:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
-
+Eric was an intern and software engineer in the lab from 2021-2023. He is currently an undergraduate student at UC Los Angeles studying computer science.

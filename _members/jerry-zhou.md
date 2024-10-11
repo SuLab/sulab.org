@@ -17,4 +17,4 @@ links:
    youtube:
 ---
 
-Jerry was a programmer in the lab from October 2018 to October 2021.
+Jerry was a programmer in the lab from October 2018 to October 2021. He is currently a Software Development Engineer at Amazon.

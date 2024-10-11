@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Ian was a programmer in the lab from July 2011 to December 2012.
+Ian was a programmer in the lab from July 2011 to December 2012. He is currently a Software Engineer at MCG Health.

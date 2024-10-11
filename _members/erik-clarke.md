@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Erik was a programmer in the lab from July 2011 to July 2012.
+Erik was a programmer in the lab from July 2011 to July 2012. He went on to get his PhD from the University of Pennsylvania in 2017. He is currently an Associate Director at Janssen Research & Development.

@@ -17,4 +17,4 @@ links:
 
 ---
 
-Cyrus was a programmer in the lab from March 2015 to June 2019.
+Cyrus was a programmer in the lab from March 2015 to June 2019. He is currently a Senior Software Engineer at the National Institute of Allergy and Infectious Diseases (NIAID).

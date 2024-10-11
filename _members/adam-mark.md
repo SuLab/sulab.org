@@ -17,4 +17,4 @@ links:
 
 ---
 
-Adam was a programmer in the lab from May 2014 to April 2015.
+Adam was a programmer in the lab from May 2014 to April 2015. He is currently a Senior Bioinformatics Data Scientist at [Rosalind](https://www.rosalind.bio/).

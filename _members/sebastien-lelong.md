@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Sebastien was a programmer in the lab from April 2016 to May 2020.
+Sebastien was a programmer in the lab from April 2016 to May 2020. He is currently a Senior Research Software Engineer at Genentech.
