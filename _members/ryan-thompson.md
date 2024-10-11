@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Ryan was a graduate student jointly in the lab until 2020.
+Ryan was a graduate student jointly in the lab until 2020. He is currently an Assistant Professor of Medicine in the Department of Data Driven and Digital Medicine at Icahn School of Medicine at Mount Sinai.
