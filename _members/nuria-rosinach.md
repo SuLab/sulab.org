@@ -20,4 +20,4 @@ links:
 
 ---
 
-Nuria was a postdoctoral researcher in the lab from June 2016 to November 2019.
+Nuria was a postdoctoral researcher in the lab from June 2016 to November 2019. She is currently a researcher at Leiden University Medical Center.

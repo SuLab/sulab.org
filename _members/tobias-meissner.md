@@ -18,4 +18,4 @@ links:
    youtube:
 ---
 
-Tobias was a postdoctoral researcher in the lab from June 2013 to December 2016.
+Tobias was a postdoctoral researcher in the lab from June 2013 to December 2016. He is currently leads a team in Cancer Genomics at Avera McKennan Hospital & University Health Center.

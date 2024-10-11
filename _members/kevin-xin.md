@@ -17,4 +17,4 @@ links:
    youtube:
 ---
 
-Kevin was a graduate student from August 2013 through November 2018, and then a staff scientist until May 2021.
+Kevin was a graduate student from August 2013 through November 2018, and then a staff scientist until May 2021. Kevin is currently a software engineer at Amazon.

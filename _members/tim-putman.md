@@ -19,4 +19,4 @@ links:
    youtube:
 ---
 
-Tim was a postdoctoral researcher in the lab from August 2015 to August 2017.
+Tim was a postdoctoral researcher in the lab from August 2015 to August 2017. He is currently a Principal Architect at Amgen.

@@ -18,4 +18,4 @@ links:
    youtube:
 ---
 
-Sebastian was a postdoctoral researcher in the lab from March 2015 to January 2018.
+Sebastian was a postdoctoral researcher in the lab from March 2015 to January 2018. He is currently a Senior Scientist with Boehringer Ingelheim.

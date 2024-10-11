@@ -16,7 +16,7 @@ links:
    youtube:
 ---
 
-Sabah was a postdoctoral researcher in the lab from September 2019 to September 2022.
+Sabah was a postdoctoral researcher in the lab from September 2019 to September 2022. They are currently a Senior Scientist at Hologic Inc.
 
 {% include section.html %}
 ## Publications

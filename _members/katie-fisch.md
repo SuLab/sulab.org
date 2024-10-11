@@ -9,6 +9,7 @@ aliases:
   - K.M. Fisch
 years_worked: 2013-2016
 links:
+   home-page: https://fischlab.ucsd.edu
    linkedin: kfisch
    github:
    orcid: 
@@ -19,4 +20,4 @@ links:
    youtube:
 ---
 
-Katie was a postdoctoral researcher in the lab from January 2013 to September 2016.
+Katie was a postdoctoral researcher in the lab from January 2013 to September 2016. She is currently Assistant Professor in the Department of Obstetrics, Gynecology and Reproductive Sciences, in the Division of Maternal-Fetal Medicine at UC San Diego. Her lab focuses on computational genomics, bioinformatics support and infrastructure at UCSD Health Sciences. 

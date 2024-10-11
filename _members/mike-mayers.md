@@ -19,7 +19,7 @@ links:
    youtube:
 ---
 
-Mike was a graduate student and staff scientist in the lab from May 2016 to May 2021.
+Mike was a graduate student and staff scientist in the lab from May 2016 to May 2021. He is currently a Scientific Data Architect at TetraScience.
 
 {% include section.html %}
 ## Publications

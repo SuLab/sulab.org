@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Sandip was a postdoctoral researcher in the lab from November 2015 to July 2016.
+Sandip was a postdoctoral researcher in the lab from November 2015 to July 2016. He is currently Associate Director of Data Engineering at Calico Life Sciences.

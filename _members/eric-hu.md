@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Eric was a postdoctoral researcher in the lab from July 2020 to December 2022.
+Eric was a postdoctoral researcher in the lab from July 2020 to December 2022. He is currently a biostatistician at Scripps Health.

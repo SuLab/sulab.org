@@ -18,4 +18,4 @@ links:
    youtube:
 ---
 
-Ramya was a postdoctoral researcher in the lab from October 2014 to July 2017.
+Ramya was a postdoctoral researcher in the lab from October 2014 to July 2017. She is currently a Principal Scientist in Computational Biology at Pfizer.

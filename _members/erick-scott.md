@@ -16,4 +16,4 @@ links:
    youtube:
 ---
 
-Erick was a gradudate student in the lab between August 2014 and August 2015.
+Erick was a gradudate student in the lab between August 2014 and August 2015. He is currently the Founder of cStructure.io.

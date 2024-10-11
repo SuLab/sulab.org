@@ -4,10 +4,10 @@ image: images/karthik.jpg
 role: phd
 group: alum
 aliases:
-years_worked: 2012-2021
+years_worked: 2013-2021
 links:
    orcid: 0000-0002-5027-3440
-   linkedin: 
+   linkedin: gkarthik101
    github:
    google-scholar:
    twitter:
@@ -16,13 +16,7 @@ links:
    youtube:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+Karthik was an intern and undergraduate researcher in the lab 2013 - 2015. He was a joint Ph.D. student with Kristian Andersen 2015 - 2021.  He currently is an Institute Investigator at Scripps Research.
 
 {% include section.html %}
 ## Publications

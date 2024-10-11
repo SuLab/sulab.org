@@ -18,4 +18,4 @@ links:
    youtube:
 ---
 
-Sal was a postdoctoral researcher in the lab from January 2012 to December 2015.
+Sal was a postdoctoral researcher in the lab from January 2012 to December 2015. He is currently a Biomedical Data Scientist at The Scripps Research Translational Institute.
