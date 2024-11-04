@@ -1310,7 +1310,7 @@
   - type: pdf
     link: pdf/Gonzalez-Cavazos_2023b.pdf
 - id: doi:10.1101/2023.05.12.540594
-  title: Drug Repositioning using Consilience of Knowledge Graph Completion Methods
+  title: Drug Repurposing using consilience of Knowledge Graph Completion methods
   authors:
   - Roger Tu
   - Meghamala Sinha
@@ -1320,6 +1320,8 @@
   - Andrew McCallum
   - Andrew I. Su
   publisher: Cold Spring Harbor Laboratory
+  pmid: '39149283'
+  pmcid: PMC11326126
   date: '2023-05-14'
   link: https://doi.org/gtrg2d
   orcid: 0000-0002-9859-4104
@@ -3705,7 +3707,7 @@
   publisher: Genome Biology
   pmid: '25222080'
   pmcid: PMC4281950
-  date: '2014-08-01'
+  date: '2014-08-27'
   link: https://doi.org/gnp849
   orcid: 0000-0002-9859-4104
   andrew-su-list: true
@@ -4439,7 +4441,7 @@
   publisher: Genome Biology
   pmid: '19919682'
   pmcid: PMC3091323
-  date: '2009-11-01'
+  date: '2009-11-17'
   link: https://doi.org/dth
   orcid: 0000-0002-9859-4104
   andrew-su-list: true
