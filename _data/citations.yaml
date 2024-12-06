@@ -433,6 +433,60 @@
   buttons:
   - type: pdf
     link: pdf/Callaghan_2023.pdf
+- id: doi:10.1101/2024.11.14.623648
+  title: Generating Biomedical Knowledge Graphs from Knowledge Bases, Registries,
+    and Multiomic Data
+  authors:
+  - Guangrong Qin
+  - Kamileh Narsinh
+  - Qi Wei
+  - Jared C. Roach
+  - Arpita Joshi
+  - Skye L. Goetz
+  - Sierra T. Moxon
+  - Matthew H. Brush
+  - Colleen Xu
+  - Yao Yao
+  - Amy K. Glen
+  - Evan D. Morris
+  - Alexandra Ralevski
+  - Ryan Roper
+  - Basazin Belhu
+  - Yue Zhang
+  - Ilya Shmulevich
+  - Jennifer Hadlock
+  - "Gw\xEAnlyn Glusman"
+  publisher: Cold Spring Harbor Laboratory
+  pmid: '39605475'
+  pmcid: PMC11601480
+  date: '2024-11-15'
+  link: https://doi.org/g8twhg
+  orcid: 0000-0003-2975-882X
+  colleen-xu-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7490/F1000RESEARCH.1119975.1
+  title: 'BioThings Explorer: a tool for retrieving custom biomedical knowledge graphs
+    using a federated network of biomedical APIs'
+  authors:
+  - Colleen H Xu
+  - Jackson Callaghan
+  - Marco Alvarado Cano
+  - Anders Riutta
+  - Eric Zhou
+  - Rohan Juneja
+  - Yao Yao
+  - Madhumita Narayan
+  - Kristina Hanspers
+  - Alexander R Pico
+  - Andrew I Su
+  publisher: F1000 Research Limited
+  date: '2024-01-01'
+  link: https://doi.org/g8twhh
+  orcid: 0000-0003-2975-882X
+  colleen-xu-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1017/cts.2023.619
   title: 'An approach for collaborative development of a federated biomedical knowledge
     graph-based question-answering system: Question-of-the-Month challenges'
