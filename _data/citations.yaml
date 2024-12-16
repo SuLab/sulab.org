@@ -1708,6 +1708,27 @@
   lucy-zhang-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.37044/osf.io/b4j7y
+  title: 'BioHack24 report: Using discovered RDF schemes: a compilation of potential
+    use cases for shapes reusage'
+  authors:
+  - "Daniel Fern\xE1ndez \xC1lvarez"
+  - Jerven Bolleman
+  - Jose Emilio Labra-Gayo
+  - Yasunori Yamamoto
+  - Andra Waagmeester
+  - Kozo Nishida
+  - Hikaru Nagazumi
+  - "N\xFAria Queralt-Rosinach"
+  - Gos Micklem
+  - Chunlei Wu
+  publisher: Center for Open Science
+  date: '2024-12-11'
+  link: https://doi.org/g8vpth
+  orcid: 0000-0002-2629-6124
+  chunlei-wu-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1093/nargab/lqac017
   title: Generation and network analysis of an RNA-seq transcriptional atlas for the
     rat
