@@ -1656,6 +1656,35 @@
   chrissy-aceves-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1038/s41586-024-08151-z
+  title: Tissue spaces are reservoirs of antigenic diversity for Trypanosoma brucei
+  authors:
+  - Alexander K. Beaver
+  - Zhibek Keneskhanova
+  - "Ra\xFAl O. Cosentino"
+  - Brian L. Weiss
+  - Erick O. Awuoche
+  - Gretchen M. Smallenberger
+  - Gracyn Y. Buenconsejo
+  - Nathan P. Crilly
+  - Jaclyn E. Smith
+  - Jill M. C. Hakim
+  - Bailin Zhang
+  - Bryce Bobb
+  - Filipa Rijo-Ferreira
+  - Luisa M. Figueiredo
+  - Serap Aksoy
+  - T. Nicolai Siegel
+  - Monica R. Mugnier
+  publisher: Nature
+  pmid: '39478231'
+  pmcid: PMC11634766
+  date: '2024-10-30'
+  link: https://doi.org/g855cm
+  orcid: 0000-0002-7606-4014
+  lucy-zhang-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/2024.03.22.582209
   title: DNA damage drives antigen diversification through mosaic Variant Surface
     Glycoprotein (VSG) formation in<i>Trypanosoma brucei</i>
