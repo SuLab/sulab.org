@@ -2,9 +2,9 @@
 name: Esha Verma
 image: images/person.png
 role: intern
-group: cwu-lab
+group: alum
 aliases:
-years_worked: 2024 - 
+years_worked: 2024
 links:
    linkedin: 
    github:

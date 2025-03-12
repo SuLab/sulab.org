@@ -2,9 +2,9 @@
 name: Melody Yin
 image: images/Melody.jpg
 role: intern
-group: active
+group: alum
 aliases:
-years_worked: 2024 -
+years_worked: 2024
 links:
    linkedin: 
    github:
