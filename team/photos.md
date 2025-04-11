@@ -13,8 +13,15 @@ MORE COMING SOON! Until then, check out some older photos on [our pinterest page
 
 {%
   include figure.html
-  image="images/reunion_2023.JPG"
-  link="images/reunion_2023.JPG"
+  image="images/gallery/onsite_2025.jpg"
+  link="images/gallery/onsite_2025.jpg"
+  caption="Lab onsite, February 2025"
+  width="300px"
+%}
+{%
+  include figure.html
+  image="images/gallery/reunion_2023.JPG"
+  link="images/gallery/reunion_2023.JPG"
   caption="Lab reunion at Mission beach, April 2023"
   width="300px"
 %}
