@@ -1882,6 +1882,21 @@
   buttons:
   - type: pdf
     link: pdf/Gopal_2017.pdf
+- id: doi:10.1101/2025.04.28.651120
+  title: A Case-Based Explainable Graph Neural Network Framework for Mechanistic Drug
+    Repositioning
+  authors:
+  - Adriana Carolina Gonzalez Cavazos
+  - Roger Tu
+  - Meghamala Sinha
+  - Andrew I Su
+  publisher: Cold Spring Harbor Laboratory
+  date: '2025-05-02'
+  link: https://doi.org/g9hcm2
+  orcid: 0000-0002-9859-4104
+  andrew-su-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1093/bioadv/vbae057
   title: Perspectives on tracking data reuse across biodata resources
   authors:
