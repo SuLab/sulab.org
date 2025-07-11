@@ -433,6 +433,59 @@
   buttons:
   - type: pdf
     link: pdf/Callaghan_2023.pdf
+- id: doi:10.1111/cts.70284
+  title: 'Announcing the Biomedical Data Translator: Initial Public Release'
+  authors:
+  - Karamarie Fecho
+  - "Gw\xEAnlyn Glusman"
+  - Sergio E. Baranzini
+  - Chris Bizon
+  - Matthew Brush
+  - William Byrd
+  - Lawrence Chung
+  - Andrew Crouse
+  - Eric Deutsch
+  - Michel Dumontier
+  - Aleksandra Foksinska
+  - Jennifer Hadlock
+  - Kaiwen He
+  - Sui Huang
+  - Robert Hubal
+  - Gregory M. Hyde
+  - Sharat Israni
+  - Kelyne Kenmogne
+  - David Koslicki
+  - Jana Dorfman Marcette
+  - Ewy A. Mathe
+  - Abrar Mesbah
+  - Sierra A. T. Moxon
+  - Christopher J. Mungall
+  - John Osborne
+  - Carrie Pasfield
+  - Guangrong Qin
+  - Stephen A. Ramsey
+  - Justin Reese
+  - Jared C. Roach
+  - Reese Rose
+  - Karthik Soman
+  - Andrew I. Su
+  - Casey Ta
+  - Gaurav Vaidya
+  - Rosina Weber
+  - Qi Wei
+  - Mark Williams
+  - Chunlei Wu
+  - Colleen Xu
+  - Chase Yakaboski
+  publisher: Clinical and Translational Science
+  pmid: '40635371'
+  pmcid: PMC12241707
+  date: '2025-07-01'
+  link: https://doi.org/g9sx96
+  orcid: 0000-0003-2975-882X
+  colleen-xu-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1101/2024.11.14.623648
   title: Generating Biomedical Knowledge Graphs from Knowledge Bases, Registries,
     and Multiomic Data
