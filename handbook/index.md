@@ -45,6 +45,7 @@ For more on general Scripps information and policies (including campus maps, sec
 * [Titles and Honorifics](/handbook/titles-and-honorifics)
 * [Names and pronouns](/handbook/names-and-pronouns)
 * [Interviewing notes](/handbook/interviewing)
+* [Intern guide](/handbook/intern-guide)
 
 {% include section.html %}
 
