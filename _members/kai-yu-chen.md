@@ -1,7 +1,7 @@
 ---
 name: Kai-yu Chen
 image: images/KaiyuChen_cropped.jpg
-role: Alumni
+role: alum
 group: active
 aliases:
 links:
