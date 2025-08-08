@@ -600,6 +600,70 @@
   buttons:
   - type: pdf
     link: pdf/Fecho_2023.pdf
+- id: doi:10.37044/osf.io/8km9j
+  title: Improving Bioschemas creation and community adoption through process improvements,
+    tool development, and advancing compliance to FAIR standards
+  authors:
+  - Alban Gaignard
+  - Ginger Tsueng
+  - "Ivan Mi\u010Deti\u0107"
+  - Leyla Jael Castro
+  - Nick Juty
+  publisher: Center for Open Science
+  date: '2024-02-07'
+  link: https://doi.org/g9whrz
+  orcid: 0000-0001-9536-9115
+  ginger-tsueng-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.37044/osf.io/yxunp
+  title: Bioschemas Resource Index for Chem and Plants
+  authors:
+  - Daniel Arend
+  - Alessio Del Conte
+  - Manuel Feser
+  - Yojana Gadiya
+  - Alban Gaignard
+  - Leyla Jael Castro
+  - "Ivan Mi\u010Deti\u0107"
+  - Sebastien Moretti
+  - Steffen Neumann
+  - Noura Rayya
+  - Ginger Tsueng
+  - Egon Willighagen
+  - Ulrike Wittig
+  publisher: Center for Open Science
+  date: '2024-01-30'
+  link: https://doi.org/g9whr3
+  orcid: 0000-0001-9536-9115
+  ginger-tsueng-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.37044/osf.io/q4zgx
+  title: Infrastructure for synthetic health data
+  authors:
+  - "N\xFAria Queralt-Rosinach"
+  - Basel Alshaikhdeeb
+  - Luca Bolzani
+  - Muhammad Shoaib
+  - Marcos Casado Barbero
+  - "Sergi Aguil\xF3-Castillo"
+  - Davide Cirillo
+  - Leyla Jael Castro
+  - Ginger Tsueng
+  - "Mat\xFA\u0161 Kala\u0161"
+  - Magnus Palmblad
+  - Danielle Welter
+  - Soumyabrata Ghosh
+  - Venkata Satagopam
+  - Rahuman S. Malik Sheriff
+  publisher: Center for Open Science
+  date: '2023-07-22'
+  link: https://doi.org/g9whr4
+  orcid: 0000-0001-9536-9115
+  ginger-tsueng-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1186/s12859-023-05258-4
   title: 'Schema Playground: a tool for authoring, extending, and using metadata schemas
     to improve FAIRness of biomedical data'
@@ -887,6 +951,21 @@
   buttons:
   - type: pdf
     link: pdf/Tsueng_2019c.pdf
+- id: doi:10.15346/hc.v6i1.105
+  title: 'Aligning Needs: Integrating Citizen Science Efforts into Schools Through
+    Service Requirements.'
+  authors:
+  - Ginger Tsueng
+  - Arun Kumar
+  - Steven Max Nanis
+  - Andrew I Su
+  publisher: Human Computation
+  date: '2019-06-02'
+  link: https://doi.org/gtrg2m
+  orcid: 0000-0001-9536-9115
+  ginger-tsueng-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1186/s12859-018-2041-5
   title: Cross-linking BioThings APIs through JSON-LD to facilitate knowledge exploration
   authors:
