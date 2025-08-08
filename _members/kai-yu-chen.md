@@ -1,7 +1,7 @@
 ---
 name: Kai-yu Chen
 image: images/KaiyuChen_cropped.jpg
-role: phd
+role: Alumni
 group: active
 aliases:
 links:
@@ -16,4 +16,4 @@ links:
 
 ---
 
-Kai-yu is a graduate student in the lab who successfully defended her thesis in January 2025. Her thesis research focused on developing and applying computational methods for the analysis of low-coverage whole-genome sequencing data. 
+Kai-Yu is currently working as a Data Scientist at BMS in the Immuno-Oncology group. Prior to joining BMS, she was a graduate student in the lab and successfully defended her thesis in January 2025. Her research focused on developing and applying statistical methods for analyzing low-coverage whole-genome sequencing data and its applications in human genetics.
