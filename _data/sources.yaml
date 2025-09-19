@@ -8,6 +8,10 @@
 
 # Thumbnail/pdf additions
 
+  - id: doi:10.1101/2025.08.01.668022
+    image:
+      thumbnails/joy_2025.jpg
+
   - id: doi:10.1101/2023.05.01.538993
     image: 
       https://www.biorxiv.org/content/biorxiv/early/2023/05/03/2023.05.01.538993/F1.large.jpg
