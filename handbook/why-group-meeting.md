@@ -1,0 +1,40 @@
+---
+title: Group meeting rationale and expectations
+---
+
+{% include breadcrumbs.html %}
+
+# {% include icon.html icon="fa-solid fa-users" %}Group meeting rationale and expectations
+
+
+Every week, our lab gathers for a [group meeting](/handbook/groupmeetings). On the surface, these meetings just might seem like the standing meeting for us to get together.  You might also think that group meetings are primarily about learning about others' projects and a different area of science, similar to attending a seminar or watching a Coursera lecture. Yes, those are important objectives, but they are definitely not the primary rationale.
+
+The most important value of group meeting is as a venue for **fostering creativity**. We have a very diverse lineup of projects that are in related but different spaces. Our best ideas come at the interfaces between those projects, leading to new papers and new grant proposals. So finding those interface projects is an important part of how our lab grows and evolves over time.
+
+Group meeting is critical not only for developing creativity as a research group, but it's also a huge opportunity to cultivate your individual creativity skills. Creativity thrives at interfaces, and this is the place where you have many possible interfaces in a shared context -- shared interests and resources and funding sources. So if you find a cool new project at an interface, there's a good chance we can make it happen. If you aspire to be a creative person -- someone who sees new opportunities and comes up with new ideas -- then group meeting is the best place to practice that skill.
+
+### The Role of the Presenter
+
+The presenter's role is to provide the foundation that allows others to understand and engage with your work. Imagine we are all standing on tiny islands of land in a giant sea of water. The presenter's goal is to build out their island to make it easier for others to reach them, and then create room for other people to join. A few key points:
+
+* Start by explaining why your project matters — the “significance.” The key question is: "if everything about your project succeeds, why will people care?"
+* Assume your audience has the background knowledge of an average third-year university student, and use jargon accordingly. (For example, no need to define "DNA" or "GPU", but you should generally define "histone acetylation", "principal component analysis" and "GraphQL".)
+* Don't avoid technical details that you think are relevant to more expert members of the audience, but make sure you regularly "zoom out" to convey the key points that everyone should appreciate.
+
+### The Role of the Audience
+
+The audience also has an active role to play. If the presenter is building a metaphorical island of knowledge, then the audience should be thinking about ways to build bridges from where they are to that island. Some key points here:
+
+* Ask clarifying questions if you don't understand
+* Ask questions that explore the interface between your work and the presenter's
+* You may not ask a question every time, but start each meeting with the intent of asking a question about the interface between your projects
+
+### Making Engagement Easy
+
+We are a hybrid lab, so we will always have remote attendees at our group meetings. And there are several legitimate reasons why people don't feel comfortable being on camera, so we are not going to have a strict "camera on" policy. Having said that, having your camera on is welcome and encouraged as a mechanism to stay engaged, and to provide non-verbal feedback and encouragement to the presenter.
+
+For local folks, I encourage people to attend in person. We know from our annual on-site that discussions are more dynamic when they are in person. We also know that many valuable conversations happen immediately after group meeting, sometimes directly related to the presentation and sometimes not. Even regular but occasional attendance would be valuable for fostering discussion and creativity.
+
+### Feedback welcome
+
+Creating an environment for genuine discussion and dialog is difficult. I do not want to create overly prescriptive rules that may give the veneer of dialog, but do not spur actual creativity. So I am always open to feedback on how to make group meetings as useful and dynamic as possible.  Suggestions are always welcome!

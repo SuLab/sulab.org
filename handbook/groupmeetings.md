@@ -6,7 +6,7 @@ title: Group meetings
 
 # {% include icon.html icon="fa-solid fa-users" %}Group meetings
 
-We have two standing lab meetings, both joint with the [Wu lab](https://wulab.io).
+We have two standing lab meetings, both joint with the [Wu lab](https://wulab.io).  (Please see our page on [Group meeting rationale and expectations](/handbook/why-group-meeting) for more info.)
 
 **On Friday 11AM PT, we have our all-group meeting.** In general, we start with any group announcements or general discussion, followed by a single presenter.  The presentation usually focuses on recent progress / update / challenges on whatever project the presenter is working on. On occasion, it can also be a journal club presentation of a scientific paper, a code review, or a tutorial on a topic of general interest.  In all cases, remember that the backgrounds of group members are very diverse, so focus on giving a very general background of the topic for the first 10 minutes. (On subsequent presentations, you may feel like it is redundant to repeat the same introduction, but it is totally fine since there will be new attendees and people will need a refresher.)
 
