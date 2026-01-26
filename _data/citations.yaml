@@ -12,7 +12,7 @@
   - Umasri Sankarlal
   - Lakshmanan Jagannathan
   - Andrew I. Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   pmid: '37205439'
   pmcid: PMC10187194
   date: '2023-05-02'
@@ -80,7 +80,7 @@
   - Matthew Might
   - Benjamin M. Good
   - Andrew I. Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2019-08-12'
   link: https://doi.org/gkxdqp
   orcid: 0000-0002-7792-0150
@@ -101,7 +101,7 @@
   - Michael Mayers
   - Benjamin M. Good
   - Andrew I Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2019-02-28'
   link: https://doi.org/gkv78t
   orcid: 0000-0002-7792-0150
@@ -323,7 +323,7 @@
   - Liliana Brown
   - Reed S. Shabman
   - Laura D. Hughes
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2022-10-13'
   link: https://doi.org/gtsb8f
   orcid: 0000-0001-6992-8390
@@ -356,7 +356,7 @@
   - Andrew I. Su
   - Karthik Gangavarapu
   - Laura D. Hughes
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   pmid: '35132411'
   pmcid: PMC8820656
   date: '2022-01-21'
@@ -378,7 +378,7 @@
   - Henrik Krehenwinkel
   - Jun Ying Lim
   - Phillip Staniczenko
-  - Willow Callaghan
+  - Jackson Callaghan
   - Jeremy C. Andersen
   - Daniel S. Gruner
   - Rosemary G. Gillespie
@@ -398,7 +398,7 @@
   title: 'BioThings Explorer: a query engine for a federated knowledge graph of biomedical
     APIs'
   authors:
-  - Willow Callaghan
+  - Jackson Callaghan
   - Colleen H Xu
   - Jiwen Xin
   - Marco Alvarado Cano
@@ -504,7 +504,7 @@
   - Ilya Shmulevich
   - Jennifer Hadlock
   - "Gw\xEAnlyn Glusman"
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   pmid: '39605475'
   pmcid: PMC11601480
   date: '2024-11-15'
@@ -518,18 +518,22 @@
     using a federated network of biomedical APIs'
   authors:
   - Colleen H Xu
-  - Willow Callaghan
+  - Jackson Callaghan
+  - Jiwen Xin
   - Marco Alvarado Cano
   - Anders Riutta
   - Eric Zhou
   - Rohan Juneja
   - Yao Yao
+  - Everaldo Rodolpho
   - Madhumita Narayan
   - Kristina Hanspers
+  - Ayushi Agrawal
   - Alexander R Pico
+  - Chunlei Wu
   - Andrew I Su
-  publisher: F1000 Research Limited
-  date: '2024-01-01'
+  publisher: F1000 Research Ltd
+  date: '2024-10-29'
   link: https://doi.org/g8twhh
   orcid: 0000-0003-2975-882X
   colleen-xu-list: true
@@ -595,6 +599,39 @@
   buttons:
   - type: pdf
     link: pdf/Fecho_2023.pdf
+- id: doi:10.1128/msystems.01270-25
+  title: 'The NIAID Discovery Portal: a unified search engine for infectious and immune-mediated
+    disease datasets'
+  authors:
+  - Ginger Tsueng
+  - Emily Bullen
+  - Candice Czech
+  - Dylan Welzel
+  - Leandro Collares
+  - Jason Lin
+  - Everaldo Rodolpho
+  - Zubair Qazi
+  - Nichollette Acosta
+  - Lisa M. Mayer
+  - Sudha Venkatachari
+  - "Zorana Mitrovi\u0107 Vu\u010Di\u010Devi\u0107"
+  - Poromendro N. Burman
+  - Deepti Jain
+  - Jack DiGiovanna
+  - Maria Giovanni
+  - Asiyah Lin
+  - Wilbert Van Panhuis
+  - Laura D. Hughes
+  - Andrew I. Su
+  - Chunlei Wu
+  publisher: mSystems
+  pmid: '41475378'
+  date: '2025-12-31'
+  link: https://doi.org/hbhrp8
+  orcid: 0000-0001-9536-9115
+  ginger-tsueng-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.37044/osf.io/8km9j
   title: Improving Bioschemas creation and community adoption through process improvements,
     tool development, and advancing compliance to FAIR standards
@@ -794,7 +831,7 @@
   - Andrew I. Su
   - Kristian G. Andersen
   - Laura D. Hughes
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2022-01-29'
   link: https://doi.org/gscp3r
   orcid: 0000-0001-9536-9115
@@ -847,7 +884,7 @@
   - Greg Taylor
   - Andrew I Su
   - Chunlei Wu
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2021-10-19'
   link: https://doi.org/gtsb9c
   orcid: 0000-0001-9536-9115
@@ -891,7 +928,7 @@
   - Egon Willighagen
   - Chunlei Wu
   - Andrew I. Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2019-10-21'
   link: https://doi.org/gkv79g
   orcid: 0000-0001-9536-9115
@@ -997,7 +1034,7 @@
   - Jerome Waldispuhl
   - Ginger Tsueng
   - Andrew I Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2017-07-10'
   link: https://doi.org/gkz9ch
   orcid: 0000-0002-9859-4104
@@ -1039,7 +1076,7 @@
   - Jennifer Fouquier
   - Benjamin M Good
   - Andrew I Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2016-01-27'
   link: https://doi.org/gkwsxg
   orcid: 0000-0001-9536-9115
@@ -1127,7 +1164,7 @@
   - Sean D. Mooney
   - Andrew I. Su
   - Chunlei Wu
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2015-12-30'
   link: https://doi.org/gkvj3w
   orcid: 0000-0001-9536-9115
@@ -1463,6 +1500,23 @@
   buttons:
   - type: pdf
     link: pdf/Tsueng_2007b.pdf
+- id: doi:10.1093/bioinformatics/btag008
+  title: A Case-Based Explainable Graph Neural Network Framework for Mechanistic Drug
+    Repositioning
+  authors:
+  - Adriana Carolina Gonzalez-Cavazos
+  - Roger Tu
+  - Meghamala Sinha
+  - Andrew I Su
+  publisher: Bioinformatics
+  pmid: '41533699'
+  date: '2026-01-14'
+  link: https://doi.org/hbkdc2
+  orcid: 0000-0002-9859-4104
+  carolina-gonzalez-cavazos-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  andrew-su-list: true
 - id: doi:10.1038/s41597-023-02534-z
   title: 'DrugMechDB: A Curated Database of Drug Mechanisms'
   authors:
@@ -1499,7 +1553,7 @@
   - Shehzaad Dhuliawala
   - Andrew McCallum
   - Andrew I. Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   pmid: '39149283'
   pmcid: PMC11326126
   date: '2023-05-14'
@@ -1597,7 +1651,7 @@
   - Jiwen Xin
   - Andrew I. Su
   - Chunlei Wu
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   pmid: '35677074'
   pmcid: PMC9176648
   date: '2021-09-03'
@@ -1670,7 +1724,7 @@
   - Jasmine Zemlin
   - Mingxun Wang
   - Pieter C. Dorrestein
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2022-05-15'
   link: https://doi.org/gsvrkh
   orcid: 0000-0002-2543-8936
@@ -1744,7 +1798,7 @@
   - Rachel J. Dutton
   - Rob Knight
   - Pieter C. Dorrestein
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2020-07-11'
   link: https://doi.org/gg6rzb
   orcid: 0000-0002-2543-8936
@@ -1798,7 +1852,7 @@
   - Rob Knight
   - Nuno Bandeira
   - Pieter C. Dorrestein
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2019-08-29'
   link: https://doi.org/gkw7h8
   orcid: 0000-0002-2543-8936
@@ -1835,8 +1889,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1101/2024.03.22.582209
-  title: DNA damage drives antigen diversification through mosaic Variant Surface
-    Glycoprotein (VSG) formation in<i>Trypanosoma brucei</i>
+  title: "DNA damage drives antigen diversification through mosaic Variant Surface\
+    \ Glycoprotein (VSG) formation in\n                  <i>Trypanosoma brucei</i>"
   authors:
   - Jaclyn E. Smith
   - Kevin J. Wang
@@ -1852,7 +1906,7 @@
   - Elgin Henry Akin
   - Lusajo Mwakibete
   - Monica R. Mugnier
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   pmid: '39253459'
   pmcid: PMC11383311
   date: '2024-03-22'
@@ -1862,8 +1916,9 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1093/jac/dkz567
-  title: Methionyl-tRNA synthetase inhibitor has potent <i>in vivo</i> activity in
-    a novel <i>Giardia lamblia</i> luciferase murine infection model
+  title: "Methionyl-tRNA synthetase inhibitor has potent\n                    <i>in\
+    \ vivo</i>\n                    activity in a novel\n                    <i>Giardia\
+    \ lamblia</i>\n                    luciferase murine infection model"
   authors:
   - Samantha A Michaels
   - Han-Wei Shih
@@ -2019,7 +2074,7 @@
   - Andrew Su
   - Chunlei Wu
   - Sean D. Mooney
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2017-03-29'
   link: https://doi.org/gkz3cs
   orcid: 0000-0002-9859-4104
@@ -2031,13 +2086,29 @@
   buttons:
   - type: pdf
     link: pdf/Gopal_2017.pdf
-- id: doi:10.1101/2025.08.01.668022
+- id: doi:10.1093/gigascience/giag007
   title: Federated Knowledge Retrieval Elevates Large Language Model Performance on
     Biomedical Benchmarks
   authors:
   - Janet Joy
   - Andrew I Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: GigaScience
+  pmid: '41553353'
+  date: '2026-01-19'
+  link: https://doi.org/hbkdc3
+  orcid: 0000-0002-9859-4104
+  andrew-su-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2025.08.01.668022
+  title: Federated Knowledge Retrieval Elevates Large Language Model Performance on
+    Biomedical Benchmarks
+  authors:
+  - Janet Joy
+  - Andrew I. Su
+  publisher: openRxiv
+  pmid: '40766637'
+  pmcid: PMC12324469
   date: '2025-08-02'
   link: https://doi.org/g9v236
   orcid: 0000-0002-9859-4104
@@ -2053,7 +2124,7 @@
   - Roger Tu
   - Meghamala Sinha
   - Andrew I Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2025-05-02'
   link: https://doi.org/g9hcm2
   orcid: 0000-0002-9859-4104
@@ -2338,7 +2409,6 @@
   - Laura D. Hughes
   publisher: Nature Methods
   pmid: '36823332'
-  pmcid: PMC10399614
   date: '2023-02-23'
   link: https://doi.org/gr9gvs
   orcid: 0000-0002-9859-4104
@@ -2829,7 +2899,7 @@
   - Pui-Yan Kwok
   - Daniel R. Salomon
   - Andrew I. Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2018-10-16'
   link: https://doi.org/gk253n
   orcid: 0000-0002-9859-4104
@@ -2873,7 +2943,7 @@
   - Gregory S. Stupp
   - Andrew I. Su
   - Dennis W. Wolan
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2018-07-11'
   link: https://doi.org/gkwvfq
   orcid: 0000-0002-9859-4104
@@ -3942,7 +4012,7 @@
   - Chunlei Wu
   - Adam Mark
   - Andrew I. Su
-  publisher: Cold Spring Harbor Laboratory
+  publisher: openRxiv
   date: '2014-09-18'
   link: https://doi.org/gkvs6q
   orcid: 0000-0002-9859-4104
