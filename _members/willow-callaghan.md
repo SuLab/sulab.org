@@ -1,6 +1,6 @@
 ---
 name: Willow Callaghan
-image: images/willow_callaghan.jpg
+image: images/willow-callaghan.jpg
 role: programmer
 group: active
 aliases:
