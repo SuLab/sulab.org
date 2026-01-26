@@ -378,7 +378,7 @@
   - Henrik Krehenwinkel
   - Jun Ying Lim
   - Phillip Staniczenko
-  - Jackson Callaghan
+  - Willow Callaghan
   - Jeremy C. Andersen
   - Daniel S. Gruner
   - Rosemary G. Gillespie
@@ -387,7 +387,7 @@
   date: '2023-02-15'
   link: https://doi.org/gtsb88
   orcid: 0000-0001-7627-2086
-  jackson-callaghan-list: true
+  willow-callaghan-list: true
   plugin: sources.py
   file: sources.yaml
   image: ''
@@ -398,7 +398,7 @@
   title: 'BioThings Explorer: a query engine for a federated knowledge graph of biomedical
     APIs'
   authors:
-  - Jackson Callaghan
+  - Willow Callaghan
   - Colleen H Xu
   - Jiwen Xin
   - Marco Alvarado Cano
@@ -418,7 +418,7 @@
   date: '2023-09-01'
   link: https://doi.org/gtrg2c
   orcid: 0000-0002-9859-4104
-  jackson-callaghan-list: true
+  willow-callaghan-list: true
   plugin: sources.py
   file: sources.yaml
   colleen-xu-list: true
@@ -518,7 +518,7 @@
     using a federated network of biomedical APIs'
   authors:
   - Colleen H Xu
-  - Jackson Callaghan
+  - Willow Callaghan
   - Marco Alvarado Cano
   - Anders Riutta
   - Eric Zhou
