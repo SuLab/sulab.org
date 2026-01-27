@@ -2,7 +2,7 @@
 name: Zubair Qazi
 image: images/zubair.png
 role: programmer
-group: cwu-lab
+group: alum
 aliases:
 links:
    linkedin: zubair-qazi
@@ -16,7 +16,7 @@ links:
 
 ---
 
-I'm a research programmer at Scripps Research, working on projects with a focus on data mining and ML. I'm passionate about working on diverse projects that apply across various fields.
+I was a research programmer at Scripps Research between November 2023 and August 2025, working on projects with a focus on data mining and ML. I'm passionate about working on diverse projects that apply across various fields.
 
 ### Education
 B.S. Computer Science UCR

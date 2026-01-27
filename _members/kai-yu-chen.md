@@ -2,7 +2,7 @@
 name: Kai-yu Chen
 image: images/KaiyuChen_cropped.jpg
 role: alum
-group: active
+group: alum
 aliases:
 links:
    linkedin: kai-yu-chen-20a446a9

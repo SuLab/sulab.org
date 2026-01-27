@@ -2,7 +2,7 @@
 name: Rohan Juneja
 image: images/rohan.jfif
 role: intern
-group: active
+group: alum
 aliases:
 links:
    linkedin: 
@@ -16,12 +16,6 @@ links:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+Rohan was an intern and research programmer with the lab between June 2022 and January 2026.
 
 {% include list.html data="citations" component="citation" filters="rohan-juneja-list: true" %}

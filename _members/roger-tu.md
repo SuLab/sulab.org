@@ -2,7 +2,7 @@
 name: Roger Tu
 image: images/Roger-Tu.jpg
 role: phd
-group: active
+group: alum
 aliases:
 links:
   orcid: 0000-0002-7899-1604

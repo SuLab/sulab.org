@@ -2,7 +2,7 @@
 name: Mahir Morshed
 image: images/mahir.jfif
 role: programmer
-group: active
+group: alum
 aliases:
 links:
    linkedin: 
@@ -16,12 +16,6 @@ links:
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+Mahir was a Research Programmer in the lab between April 2024 and November 2025.
 
 {% include list.html data="citations" component="citation" filters="mahir-morshed-list: true" %}
