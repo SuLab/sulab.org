@@ -477,10 +477,11 @@
   pmcid: PMC12241707
   date: '2025-07-01'
   link: https://doi.org/g9sx96
-  orcid: 0000-0003-2975-882X
+  orcid: 0000-0002-9859-4104
   colleen-xu-list: true
   plugin: orcid.py
   file: orcid.yaml
+  andrew-su-list: true
 - id: doi:10.1101/2024.11.14.623648
   title: Generating Biomedical Knowledge Graphs from Knowledge Bases, Registries,
     and Multiomic Data
@@ -628,10 +629,11 @@
   pmid: '41475378'
   date: '2025-12-31'
   link: https://doi.org/hbhrp8
-  orcid: 0000-0001-9536-9115
+  orcid: 0000-0002-9859-4104
   ginger-tsueng-list: true
   plugin: orcid.py
   file: orcid.yaml
+  andrew-su-list: true
 - id: doi:10.37044/osf.io/8km9j
   title: Improving Bioschemas creation and community adoption through process improvements,
     tool development, and advancing compliance to FAIR standards
@@ -2100,33 +2102,19 @@
   andrew-su-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2025.08.01.668022
-  title: Federated Knowledge Retrieval Elevates Large Language Model Performance on
-    Biomedical Benchmarks
+- id: doi:10.1021/acs.jproteome.5c00436
+  title: 'Lessons Learned from a Bioinformatics Class: What Is <i>Really</i> Required
+    to Reproduce Omics Data?'
   authors:
-  - Janet Joy
+  - Natalie P. Turner
+  - Ben C. Calverley
+  - Charles Min
   - Andrew I. Su
-  publisher: openRxiv
-  pmid: '40766637'
-  pmcid: PMC12324469
-  date: '2025-08-02'
-  link: https://doi.org/g9v236
-  orcid: 0000-0002-9859-4104
-  andrew-su-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: thumbnail/Joy_2025.jpg
-- id: doi:10.1101/2025.04.28.651120
-  title: A Case-Based Explainable Graph Neural Network Framework for Mechanistic Drug
-    Repositioning
-  authors:
-  - Adriana Carolina Gonzalez-Cavazos
-  - Roger Tu
-  - Meghamala Sinha
-  - Andrew I Su
-  publisher: openRxiv
-  date: '2025-05-02'
-  link: https://doi.org/g9hcm2
+  - John R. Yates
+  publisher: Journal of Proteome Research
+  pmid: '40474697'
+  date: '2025-06-06'
+  link: https://doi.org/hbmjdq
   orcid: 0000-0002-9859-4104
   andrew-su-list: true
   plugin: orcid.py
@@ -5713,3 +5701,17 @@
   buttons:
   - type: pdf
     link: pdf/Chang_2001.pdf
+- id: doi:10.1101/2025.08.01.668022
+  title: Federated Knowledge Retrieval Elevates Large Language Model Performance on
+    Biomedical Benchmarks
+  authors:
+  - Janet Joy
+  - Andrew I. Su
+  publisher: openRxiv
+  pmid: '40766637'
+  pmcid: PMC12324469
+  date: '2025-08-02'
+  link: https://doi.org/g9v236
+  image: thumbnail/Joy_2025.jpg
+  plugin: sources.py
+  file: sources.yaml
