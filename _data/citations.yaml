@@ -387,7 +387,7 @@
   date: '2023-02-15'
   link: https://doi.org/gtsb88
   orcid: 0000-0001-7627-2086
-  jackson-callaghan-list: true
+  willow-callaghan-list: true
   plugin: sources.py
   file: sources.yaml
   image: ''
@@ -418,7 +418,7 @@
   date: '2023-09-01'
   link: https://doi.org/gtrg2c
   orcid: 0000-0002-9859-4104
-  jackson-callaghan-list: true
+  willow-callaghan-list: true
   plugin: sources.py
   file: sources.yaml
   colleen-xu-list: true
@@ -2409,7 +2409,6 @@
   - Laura D. Hughes
   publisher: Nature Methods
   pmid: '36823332'
-  pmcid: PMC10399614
   date: '2023-02-23'
   link: https://doi.org/gr9gvs
   orcid: 0000-0002-9859-4104

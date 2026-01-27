@@ -1,22 +1,21 @@
 ---
-name: Jackson Callaghan
-image: images/jackson_callaghan-480x480.jpg
+name: Willow Callaghan
+image: images/willow-callaghan.jpg
 role: programmer
 group: active
 aliases:
 links:
-   linkedin: jackson-callaghan
+   linkedin: willow-callaghan
    github: tokebe
-   orcid: 
+   orcid: 0000-0001-7627-2086
    google-scholar:
    twitter:
    facebook:
-   instagram: 
+   instagram:
    youtube:
 ---
 
-I’m a back-end developer at Scripps Research. My interests include data science and data infrastructure.
-
+I’m a backend developer in the Su Lab at Scripps Research. My interests include data infrastructure, web API performance optimization, and open-source terminal apps.
 ### Education
 B.S. Informatics with a minor in Computer Science, UMass Amherst
 
