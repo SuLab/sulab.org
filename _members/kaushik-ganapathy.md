@@ -2,7 +2,7 @@
 name: Kaushik Ganapathy
 image: images/kaushik.jfif
 role: phd
-group: cwu-lab
+group: alum
 links:
    linkedin: kaushik-ram-ganapathy
    github: Krganapa

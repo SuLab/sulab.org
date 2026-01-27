@@ -4,6 +4,7 @@ image: images/meghamala_sinha-480x480.jpg
 role: staff
 group: alum
 aliases:
+years_worked: 2021-2026
 links:
    linkedin: 
    github:

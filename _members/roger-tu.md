@@ -4,6 +4,7 @@ image: images/Roger-Tu.jpg
 role: phd
 group: alum
 aliases:
+years_worked: 2019-2024
 links:
   orcid: 0000-0002-7899-1604
   google-scholar: FnrcskQAAAAJ&hl

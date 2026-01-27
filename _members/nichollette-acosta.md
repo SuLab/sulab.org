@@ -5,8 +5,8 @@ role: programmer
 group: cwu-lab
 aliases:
 links:
-   linkedin: https://www.linkedin.com/in/nichollette-acosta/  
-   github: https://github.com/NikkiBytes
+   linkedin: nichollette-acosta
+   github: NikkiBytes
    orcid: 
    google-scholar:
    twitter:

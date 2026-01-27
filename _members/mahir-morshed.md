@@ -3,6 +3,7 @@ name: Mahir Morshed
 image: images/mahir.jfif
 role: programmer
 group: alum
+years_worked: 2024-2025
 aliases:
 links:
    linkedin: 

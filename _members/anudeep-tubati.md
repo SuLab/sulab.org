@@ -3,6 +3,7 @@ name: Anudeep Tubati
 image: images/anudeep-tubati.jpeg
 role: programmer
 group: alum
+years_worked: 2024-2025
 aliases:
 links:
    linkedin: anudeep-tubati

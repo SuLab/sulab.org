@@ -3,6 +3,7 @@ name: Zubair Qazi
 image: images/zubair.png
 role: programmer
 group: alum
+years_worked: 2023-2025
 aliases:
 links:
    linkedin: zubair-qazi

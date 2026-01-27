@@ -23,4 +23,4 @@ B.S. Informatics with a minor in Computer Science, UMass Amherst
 {% include section.html %}
 ## Publications
 
-{% include list.html data="citations" component="citation" filters="jackson-callaghan-list: true" %}
+{% include list.html data="citations" component="citation" filters="willow-callaghan-list: true" %}
