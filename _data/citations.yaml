@@ -1943,6 +1943,17 @@
   lucy-zhang-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1093/bioadv/vbag036
+  title: pendingpublications
+  authors: []
+  publisher: ''
+  date: ''
+  link: https://doi.org/hbnck2
+  orcid: 0000-0002-9859-4104
+  chunlei-wu-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  andrew-su-list: true
 - id: doi:10.37044/osf.io/b4j7y
   title: 'BioHack24 report: Using discovered RDF schemes: a compilation of potential
     use cases for shapes reusage'
