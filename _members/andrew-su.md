@@ -24,7 +24,7 @@ Andrew Su, Ph.D., is the Elden and Verna Strahm Professor at the Scripps Researc
 
 The Su lab focuses on building and applying bioinformatics infrastructure for biomedical discovery. A core strength of the lab is the development of federated knowledge graphs that integrate data across disparate biomedical resources—exemplified by BioThings Explorer, which queries over 60 biomedical APIs to support drug repurposing and mechanistic discovery. The lab applies graph neural network approaches to knowledge graph reasoning, enabling link prediction and knowledge graph completion with applications to drug repurposing and disease mechanism inference. These computational tools have been applied across a diverse range of disease areas, including rare diseases, osteoarthritis, Alzheimer's disease, and type 1 diabetes. Most recently, the lab has extended this work into AI-assisted biomedical reasoning, including retrieval-augmented generation frameworks that combine federated knowledge retrieval with large language models. In all this work, the Su lab has embraced the principles of open science, open data, and open source software.
 
-Andrew received his Ph.D. in Chemistry from The Scripps Research Institute, and BA degrees in Chemistry, Computing and Information Systems, and Integrated Science from Northwestern University.
+Andrew received his BA degrees in Chemistry, Computing and Information Systems, and Integrated Science from Northwestern University.
 
 {% include section.html %}
 ## Publications
