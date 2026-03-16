@@ -29,6 +29,7 @@
     onLayerToggle: handleLayerToggle,
     onExportPng: handleExportPng,
     onAnnotationLayerChange: handleAnnotationLayerChange,
+    onCysteineTableSelect: handleResidueSelected,
   });
 
   const viewer = new CysVisViewer({
@@ -49,6 +50,7 @@
     ui.renderDomainControls(state.protein, state.renderState.visibleDomains);
     ui.renderAnnotationLayerControl(state.renderState.annotationLayer);
     ui.renderLegend(state.renderState.encodingScheme, state.renderState.annotationLayer);
+    ui.renderCysteineTable(state.protein, state.variantsData, state.hotspotData, state.renderState.annotationLayer);
     ui.showDefaultDetail(state.protein, state.variantsData, state.hotspotData);
   }
 
