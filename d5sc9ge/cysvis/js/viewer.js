@@ -11,6 +11,7 @@ class CysVisViewer {
     this.currentProtein = null;
     this.currentVariantGroups = [];
     this.markerShapes = [];
+    this.selectionShapes = [];
     this.renderState = null;
     this.pdbText = null;
     this.resizeHandler = () => {
@@ -102,6 +103,13 @@ class CysVisViewer {
       selectedCysteineResi: nextSelection.selectedCysteineResi,
       selectedVariantResidue: nextSelection.selectedVariantResidue,
     };
+
+    if (!this.viewer || !this.pdbText) {
+      return;
+    }
+
+    this.syncSelectionOverlay();
+    this.viewer.render();
   }
 
   exportPngDataUri() {
@@ -126,6 +134,7 @@ class CysVisViewer {
     // surface handle becomes invalid and must not be removed afterward.
     this.surfaceHandle = null;
     this.markerShapes = [];
+    this.selectionShapes = [];
     this.viewer.clear();
     this.model = this.viewer.addModel(this.pdbText, "pdb");
     this.applyScene();
@@ -223,6 +232,7 @@ class CysVisViewer {
     }
 
     this.syncSurface();
+    this.syncSelectionOverlay();
   }
 
   renderVariantMarker(group, scheme, geometryKey) {
@@ -274,6 +284,34 @@ class CysVisViewer {
       });
       this.markerShapes.push(shape);
     });
+  }
+
+  syncSelectionOverlay() {
+    this.selectionShapes.forEach((shape) => {
+      this.viewer.removeShape(shape);
+    });
+    this.selectionShapes = [];
+
+    const selectedCysteineResi = this.renderState?.selectedCysteineResi;
+    if (selectedCysteineResi == null) {
+      return;
+    }
+
+    const atom =
+      this.model?.selectedAtoms({ chain: "A", resi: selectedCysteineResi, atom: "SG" })?.[0] ||
+      this.model?.selectedAtoms({ chain: "A", resi: selectedCysteineResi, atom: "CA" })?.[0];
+    if (!atom) {
+      return;
+    }
+
+    this.selectionShapes.push(
+      this.viewer.addSphere({
+        center: { x: atom.x, y: atom.y, z: atom.z },
+        radius: 1.28,
+        color: "#ffffff",
+        opacity: 0.78,
+      })
+    );
   }
 
   syncSurface() {

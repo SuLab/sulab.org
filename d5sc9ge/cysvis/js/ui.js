@@ -1,10 +1,11 @@
 class CysVisUI {
-  constructor({ onProteinSubmit, onDomainToggle, onLayerToggle, onExportPng, onAnnotationLayerChange }) {
+  constructor({ onProteinSubmit, onDomainToggle, onLayerToggle, onExportPng, onAnnotationLayerChange, onCysteineTableSelect }) {
     this.onProteinSubmit = onProteinSubmit;
     this.onDomainToggle = onDomainToggle;
     this.onLayerToggle = onLayerToggle;
     this.onExportPng = onExportPng;
     this.onAnnotationLayerChange = onAnnotationLayerChange;
+    this.onCysteineTableSelect = onCysteineTableSelect;
     this.domainControlsElement = document.getElementById("domain-controls");
     this.summaryElement = document.getElementById("protein-summary");
     this.proteinNoteElement = document.getElementById("protein-note");
@@ -18,6 +19,7 @@ class CysVisUI {
     this.cysteineToggle = document.getElementById("toggle-cysteines");
     this.variantToggle = document.getElementById("toggle-variants");
     this.surfaceToggle = document.getElementById("toggle-surface");
+    this.cysteineTableElement = document.getElementById("cysteine-table");
   }
 
   init() {
@@ -119,6 +121,82 @@ class CysVisUI {
       label.appendChild(checkbox);
       label.appendChild(text);
       this.domainControlsElement.appendChild(label);
+    });
+  }
+
+  renderCysteineTable(protein, variantsData, hotspotData, annotationLayer) {
+    if (!protein.cysteines.length) {
+      this.cysteineTableElement.innerHTML = "<p class=\"table-empty\">No cysteine residues are available for this protein yet.</p>";
+      return;
+    }
+
+    const rows = protein.cysteines
+      .map((cysteine) => {
+        const exactGroup = variantsData.groupsByResidue[cysteine.resi];
+        const hotspot = hotspotData.byResidue[cysteine.resi];
+        const annotationSummary = cysteine.annotations.length
+          ? cysteine.annotations.map((annotation) => CYSVIS_ANNOTATION_LAYERS[annotation]?.label || annotation).join(", ")
+          : "None";
+        const hasGenericAutoNote =
+          typeof cysteine.notes === "string" &&
+          cysteine.notes.startsWith("Auto-detected cysteine from the UniProt canonical sequence.");
+        const hotspotPValue = hotspotData.loading
+          ? "..."
+          : hotspotData.error
+            ? "n/a"
+            : hotspotData.summary.pathogenicResidueCount === 0
+              ? "n/a"
+              : hotspot?.empiricalPValue != null
+                ? hotspot.empiricalPValue.toFixed(3)
+                : "n/a";
+        const hotspotPercentile =
+          hotspot?.percentile != null ? `${hotspot.percentile.toFixed(1)}` : hotspotData.loading ? "..." : "n/a";
+        const directClinVar = exactGroup ? `${exactGroup.count} (${exactGroup.significanceLabel})` : "0";
+        const note = hasGenericAutoNote ? "" : cysteine.notes ? cysteine.notes.replace(/^KEAP1-specific note:\s*/i, "") : "";
+
+        return `
+          <tr class="cysteine-row" data-resi="${cysteine.resi}">
+            <td>C${cysteine.resi}</td>
+            <td>${cysteine.domain}</td>
+            <td>${annotationSummary}</td>
+            <td>${directClinVar}</td>
+            <td>${hotspotPValue}</td>
+            <td>${hotspotPercentile}</td>
+            <td title="${escapeHtml(note)}">${note ? escapeHtml(truncateText(note, 120)) : "-"}</td>
+          </tr>
+        `;
+      })
+      .join("");
+
+    this.cysteineTableElement.innerHTML = `
+      <div class="table-caption">
+        Showing ${protein.cysteines.length} cysteine residues for ${protein.displayName}.
+        Active annotation layer: ${CYSVIS_ANNOTATION_LAYERS[annotationLayer].label}.
+      </div>
+      <table class="cysteine-table">
+        <thead>
+          <tr>
+            <th>Residue</th>
+            <th>Domain</th>
+            <th>Annotations</th>
+            <th>ClinVar at residue</th>
+            <th>Hotspot p</th>
+            <th>Hotspot pct</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
+
+    this.cysteineTableElement.querySelectorAll(".cysteine-row").forEach((row) => {
+      row.addEventListener("click", () => {
+        const residue = Number.parseInt(row.dataset.resi, 10);
+        const cysteine = protein.cysteines.find((entry) => entry.resi === residue);
+        if (cysteine) {
+          this.onCysteineTableSelect(cysteine);
+        }
+      });
     });
   }
 
@@ -318,4 +396,17 @@ class CysVisUI {
       <p>${message}</p>
     `;
   }
+}
+
+function truncateText(text, maxLength) {
+  return text.length > maxLength ? `${text.slice(0, maxLength - 1)}...` : text;
+}
+
+function escapeHtml(text) {
+  return text
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
