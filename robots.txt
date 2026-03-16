@@ -1,1 +1,2 @@
-Sitemap: https://sulab.org/sitemap.xml
+User-agent: *
+Disallow: /d5sc9ge/cysvis/
