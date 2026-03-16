@@ -286,24 +286,30 @@ class CysVisUI {
       ? cysteine.annotations.map((annotation) => CYSVIS_ANNOTATION_LAYERS[annotation]?.label || annotation).join(", ")
       : "None";
     const hotspot = hotspotData.byResidue[cysteine.resi];
+    const hotspotHeader = renderSectionHeader("3D pathogenic hotspot", HOTSPOT_METHOD_TOOLTIP);
+    const hotspotIntro = `<p class="detail-explainer">${HOTSPOT_METHOD_EXPLAINER}</p>`;
     const hotspotSection = hotspotData.loading
       ? `
-        <p class="detail-section-title">3D pathogenic hotspot</p>
+        ${hotspotHeader}
+        ${hotspotIntro}
         <p>Analyzing pathogenic variant proximity in 3D space...</p>
       `
       : hotspotData.error
         ? `
-          <p class="detail-section-title">3D pathogenic hotspot</p>
+          ${hotspotHeader}
+          ${hotspotIntro}
           <p>${hotspotData.error}</p>
         `
         : hotspotData.summary.pathogenicResidueCount === 0
           ? `
-            <p class="detail-section-title">3D pathogenic hotspot</p>
+            ${hotspotHeader}
+            ${hotspotIntro}
             <p>No pathogenic or likely pathogenic ClinVar residue positions are available for the currently loaded protein, so a hotspot score cannot be computed yet.</p>
           `
         : hotspot
           ? `
-            <p class="detail-section-title">3D pathogenic hotspot</p>
+            ${hotspotHeader}
+            ${hotspotIntro}
             <ul class="detail-list">
               <li><strong>Nearest pathogenic residue:</strong> ${hotspot.nearestPathogenicDistance === null ? "None detected" : `${hotspot.nearestPathogenicDistance} A`}</li>
               <li><strong>Pathogenic residues within ${CYSVIS_HOTSPOT_CONFIG.nearDistanceAngstrom} A:</strong> ${hotspot.pathogenicWithinNearDistance}</li>
@@ -332,7 +338,8 @@ class CysVisUI {
             }
           `
           : `
-            <p class="detail-section-title">3D pathogenic hotspot</p>
+            ${hotspotHeader}
+            ${hotspotIntro}
             <p>This residue could not be scored because a matching structural coordinate was not found.</p>
           `;
 
@@ -398,6 +405,12 @@ class CysVisUI {
   }
 }
 
+const HOTSPOT_METHOD_TOOLTIP =
+  "Computed from nearby pathogenic or likely pathogenic ClinVar residues in 3D space using CA distances, a distance-weighted local burden score, and a domain-preserving permutation null model.";
+
+const HOTSPOT_METHOD_EXPLAINER =
+  "This section asks whether the selected cysteine sits unusually close to pathogenic or likely pathogenic ClinVar mutation sites in the folded 3D structure. We first measure distances from the cysteine to nearby pathogenic residues using CA atom positions, then summarize that neighborhood with a distance-weighted local burden score in which closer mutations contribute more strongly than farther ones. To judge whether that burden is unusually high, we compare it against a null distribution built by repeatedly redistributing the same number of pathogenic residue positions within the same domain and recalculating the score. The empirical p-value therefore reflects how often a randomized configuration would produce a burden at least this large, while the percentile shows where this cysteine falls relative to that null distribution.";
+
 function truncateText(text, maxLength) {
   return text.length > maxLength ? `${text.slice(0, maxLength - 1)}...` : text;
 }
@@ -409,4 +422,13 @@ function escapeHtml(text) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function renderSectionHeader(label, tooltipText) {
+  return `
+    <div class="detail-section-header">
+      <p class="detail-section-title">${label}</p>
+      <span class="info-icon" title="${escapeHtml(tooltipText)}" aria-label="${escapeHtml(tooltipText)}">i</span>
+    </div>
+  `;
 }

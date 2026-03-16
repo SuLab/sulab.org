@@ -277,6 +277,10 @@ input {
   color: var(--muted);
 }
 
+.detail-explainer {
+  color: var(--muted);
+}
+
 .detail-chip {
   display: inline-flex;
   margin-bottom: 12px;
@@ -312,6 +316,32 @@ input {
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+.detail-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-section-header .detail-section-title {
+  margin-bottom: 8px;
+}
+
+.info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid #bfc9cf;
+  background: #ffffff;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: help;
+  user-select: none;
 }
 
 .detail-list {
