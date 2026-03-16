@@ -232,29 +232,10 @@ function groupVariantsByResidue(protein, parsedVariants) {
 }
 
 function chooseDisplayedVariantGroups(protein, groups) {
-  if (protein.isCurated || groups.length <= 200) {
-    return {
-      displayedGroups: groups,
-      displayPolicy: "all",
-      displayPolicyNote: "",
-    };
-  }
-
-  const pathogenicGroups = groups.filter((group) => group.significanceBucket === "pathogenic");
-  if (pathogenicGroups.length) {
-    return {
-      displayedGroups: pathogenicGroups,
-      displayPolicy: "pathogenic_only",
-      displayPolicyNote:
-        "Showing pathogenic / likely pathogenic variant residues only in the 3D viewer to keep large proteins responsive.",
-    };
-  }
-
   return {
-    displayedGroups: groups.slice(0, 200),
-    displayPolicy: "capped",
-    displayPolicyNote:
-      "Showing a capped subset of variant residues in the 3D viewer to keep large proteins responsive.",
+    displayedGroups: groups,
+    displayPolicy: "all",
+    displayPolicyNote: "",
   };
 }
 
