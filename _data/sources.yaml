@@ -12,55 +12,55 @@
   image: thumbnail/Joy_2025.jpg
 
 - id: doi:10.1093/bioinformatics/btac205
-  image: ''
+  image: thumbnail/Mayers_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Mayers_2022.pdf
 
 - id: doi:10.1186/s12859-019-3297-0
-  image: ''
+  image: thumbnail/Mayers_2019.jpg
   buttons:
   - type: pdf
     link: pdf/Mayers_2019.pdf
 
 - id: doi:10.1101/729475
-  image: ''
+  image: thumbnail/Queralt-Rosinach_2019.gif
   buttons:
   - type: pdf
     link: pdf/Queralt-Rosinach_2019.pdf
 
 - id: doi:10.1101/564187
-  image: ''
+  image: thumbnail/Tsueng_2019.gif
   buttons:
   - type: pdf
     link: pdf/Tsueng_2019.pdf
 
 - id: doi:10.1021/acs.jproteome.6b00938
-  image: ''
+  image: thumbnail/Mayers_2017.jpg
   buttons:
   - type: pdf
     link: pdf/Mayers_2017.pdf
 
 - id: doi:10.7554/elife.52614
-  image: ''
+  image: thumbnail/Waagmeester_2020.jpg
   buttons:
   - type: pdf
     link: pdf/Waagmeester_2020.pdf
 
 - id: doi:10.1371/journal.pone.0173375
-  image: ''
+  image: thumbnail/Chen_2017.jpg
   buttons:
   - type: pdf
     link: pdf/Chen_2017.pdf
 
 - id: doi:10.3390/ma9030196
-  image: ''
+  image: thumbnail/Nokes_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Nokes_2016.pdf
 
 - id: doi:10.1016/j.biomaterials.2013.10.007
-  image: ''
+  image: thumbnail/Chen_2014.jpg
   buttons:
   - type: pdf
     link: pdf/Chen_2014.pdf
@@ -72,19 +72,19 @@
     link: pdf/Mendoza_2014.pdf
 
 - id: doi:10.1093/nar/gkad289
-  image: ''
+  image: thumbnail/Avila_2023.jpg
   buttons:
   - type: pdf
     link: pdf/Avila_2023.pdf
 
 - id: doi:10.1101/2022.10.10.511492
-  image: ''
+  image: thumbnail/Tsueng_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2022.pdf
 
 - id: doi:10.1101/2022.01.20.477133
-  image: ''
+  image: thumbnail/Tsueng_2022b.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2022b.pdf
@@ -96,7 +96,7 @@
     link: pdf/Graham_2023.pdf
 
 - id: doi:10.1093/bioinformatics/btad570
-  image: ''
+  image: thumbnail/Callaghan_2023.jpg
   buttons:
   - type: pdf
     link: pdf/Callaghan_2023.pdf
@@ -138,19 +138,19 @@
     link: pdf/Wijnen_2022.pdf
 
 - id: doi:10.1101/2021.10.18.464256
-  image: ''
+  image: thumbnail/Lelong_2021.gif
   buttons:
   - type: pdf
     link: pdf/Lelong_2021.pdf
 
 - id: doi:10.1101/799684
-  image: ''
+  image: thumbnail/Waagmeester_2019.gif
   buttons:
   - type: pdf
     link: pdf/Waagmeester_2019.pdf
 
 - id: doi:10.1093/bioinformatics/btz678
-  image: ''
+  image: thumbnail/Tsueng_2019b.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2019b.pdf
@@ -162,67 +162,67 @@
     link: pdf/Tsueng_2019c.pdf
 
 - id: doi:10.1186/s12859-018-2041-5
-  image: ''
+  image: thumbnail/Xin_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Xin_2018.pdf
 
 - id: doi:10.1101/156141
-  image: ''
+  image: thumbnail/Good_2017.gif
   buttons:
   - type: pdf
     link: pdf/Good_2017.pdf
 
 - id: doi:10.1093/nar/gkv1104
-  image: ''
+  image: thumbnail/Wu_2015.jpg
   buttons:
   - type: pdf
     link: pdf/Wu_2015.pdf
 
 - id: doi:10.1101/038083
-  image: ''
+  image: thumbnail/Tsueng_2016.gif
   buttons:
   - type: pdf
     link: pdf/Tsueng_2016.pdf
 
 - id: doi:10.1016/j.gene.2016.04.053
-  image: ''
+  image: thumbnail/Tsueng_2016b.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2016b.pdf
 
 - id: doi:10.1186/s13059-016-0953-9
-  image: ''
+  image: thumbnail/Xin_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Xin_2016.pdf
 
 - id: doi:10.1101/035667
-  image: ''
+  image: thumbnail/Xin_2015.gif
   buttons:
   - type: pdf
     link: pdf/Xin_2015.pdf
 
 - id: doi:10.1371/journal.ppat.1004045
-  image: ''
+  image: thumbnail/Robinson_2014.jpg
   buttons:
   - type: pdf
     link: pdf/Robinson_2014.pdf
 
 - id: doi:10.4161/auto.19781
-  image: ''
+  image: thumbnail/Tabor-Godwin_2012.jpg
   buttons:
   - type: pdf
     link: pdf/Tabor-Godwin_2012.pdf
 
 - id: doi:10.1128/JVI.02261-10
-  image: ''
+  image: thumbnail/Tsueng_2011.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2011.pdf
 
 - id: doi:10.1016/j.virol.2010.12.014
-  image: ''
+  image: thumbnail/Rhoades_2011.jpg
   buttons:
   - type: pdf
     link: pdf/Rhoades_2011.pdf
@@ -300,7 +300,7 @@
     link: pdf/Gonzalez-Cavazos_2023b.pdf
 
 - id: doi:10.1101/2023.05.12.540594
-  image: ''
+  image: thumbnail/Tu_2023.jpg
   buttons:
   - type: pdf
     link: pdf/Tu_2023.pdf
@@ -312,19 +312,19 @@
     link: pdf/Hughes_2022.pdf
 
 - id: doi:10.21203/rs.3.rs-1723829/v1
-  image: ''
+  image: thumbnail/Hughes_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Hughes_2022b.pdf
 
 - id: doi:10.1101/2021.09.02.458726
-  image: ''
+  image: thumbnail/Cano_2021.jpg
   buttons:
   - type: pdf
     link: pdf/Cano_2021.pdf
 
 - id: doi:10.1093/nargab/lqac017
-  image: ''
+  image: thumbnail/Summers_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Summers_2022.pdf
@@ -336,7 +336,7 @@
     link: pdf/Castro_2020.pdf
 
 - id: doi:10.1093/database/baz041
-  image: ''
+  image: thumbnail/Putman_2019.jpg
   buttons:
   - type: pdf
     link: pdf/Putman_2019.pdf
@@ -348,19 +348,19 @@
     link: pdf/Putman_2019b.pdf
 
 - id: doi:10.1371/journal.pgen.1006997
-  image: ''
+  image: thumbnail/Clark_2017.jpg
   buttons:
   - type: pdf
     link: pdf/Clark_2017.pdf
 
 - id: doi:10.1101/121178
-  image: ''
+  image: thumbnail/Gopal_2017.gif
   buttons:
   - type: pdf
     link: pdf/Gopal_2017.pdf
 
 - id: doi:10.4049/jimmunol.2300769
-  image: ''
+  image: thumbnail/Costanzo_2024.jpg
   buttons:
   - type: pdf
     link: pdf/Costanzo_2024.pdf
@@ -372,97 +372,97 @@
     link: pdf/Hu_2023.pdf
 
 - id: doi:10.1038/s41597-023-01968-9
-  image: ''
+  image: thumbnail/Tsueng_2023.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2023b.pdf
 
 - id: doi:10.1038/s41592-023-01770-w
-  image: ''
+  image: thumbnail/Tsueng_2023b.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2023c.pdf
 
 - id: doi:10.1038/s41592-023-01769-3
-  image: ''
+  image: thumbnail/Gangavarapu_2023.jpg
   buttons:
   - type: pdf
     link: pdf/Gangavarapu_2023.pdf
 
 - id: doi:10.1111/cts.13302
-  image: ''
+  image: thumbnail/Unni_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Unni_2022.pdf
 
 - id: doi:10.1111/cts.13301
-  image: ''
+  image: thumbnail/Fecho_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Fecho_2022.pdf
 
 - id: doi:10.1093/bioinformatics/btac017
-  image: ''
+  image: thumbnail/Lelong_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Lelong_2022.pdf
 
 - id: doi:10.1016/j.mcpro.2022.100197
-  image: ''
+  image: thumbnail/Thuy-Boun_2022.jpg
   buttons:
   - type: pdf
     link: pdf/Thuy-Boun_2022.pdf
 
 - id: doi:10.1186/s12915-020-00940-y
-  image: ''
+  image: thumbnail/Waagmeester_2021.jpg
   buttons:
   - type: pdf
     link: pdf/Waagmeester_2021.pdf
 
 - id: doi:10.3390/genes11111384
-  image: ''
+  image: thumbnail/Wang_2020.jpg
   buttons:
   - type: pdf
     link: pdf/Wang_2020.pdf
 
 - id: doi:10.1126/scitranslmed.aan7967
-  image: ''
+  image: thumbnail/Lee_2020.jpg
   buttons:
   - type: pdf
     link: pdf/Lee_2020.pdf
 
 - id: doi:10.1038/s41586-020-2577-1
-  image: ''
+  image: thumbnail/Riva_2020.jpg
   buttons:
   - type: pdf
     link: pdf/Riva_2020.pdf
 
 - id: doi:10.3389/fgene.2019.01355
-  image: ''
+  image: thumbnail/Summers_2020.jpg
   buttons:
   - type: pdf
     link: pdf/Summers_2020.pdf
 
 - id: doi:10.1093/database/baaa015
-  image: ''
+  image: thumbnail/Queralt-Rosinach_2020.jpg
   buttons:
   - type: pdf
     link: pdf/Queralt-Rosinach_2020.pdf
 
 - id: doi:10.1371/journal.pone.0222165
-  image: ''
+  image: thumbnail/Blasco_2019.jpg
   buttons:
   - type: pdf
     link: pdf/Blasco_2019.pdf
 
 - id: doi:10.1126/sciimmunol.aaw6329
-  image: ''
+  image: thumbnail/Gioia_2019.jpg
   buttons:
   - type: pdf
     link: pdf/Gioia_2019.pdf
 
 - id: doi:10.1016/j.cell.2019.02.018
-  image: ''
+  image: thumbnail/Murillo_2019.jpg
   buttons:
   - type: pdf
     link: pdf/Murillo_2019.pdf
@@ -474,31 +474,31 @@
     link: pdf/Sharma_2019.pdf
 
 - id: doi:10.1101/444497
-  image: ''
+  image: thumbnail/Gioia_2018.gif
   buttons:
   - type: pdf
     link: pdf/Gioia_2018.pdf
 
 - id: doi:10.1038/s41746-018-0052-2
-  image: ''
+  image: thumbnail/Radin_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Radin_2018.pdf
 
 - id: doi:10.1101/367599
-  image: ''
+  image: thumbnail/Wang_2018.gif
   buttons:
   - type: pdf
     link: pdf/Wang_2018.pdf
 
 - id: doi:10.1126/scitranslmed.aan0746
-  image: ''
+  image: thumbnail/Matsuzaki_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Matsuzaki_2018.pdf
 
 - id: doi:10.1186/s12864-018-4718-6
-  image: ''
+  image: thumbnail/Gioia_2018b.jpg
   buttons:
   - type: pdf
     link: pdf/Gioia_2018b.pdf
@@ -510,19 +510,19 @@
     link: pdf/biocuration_2018.pdf
 
 - id: doi:10.1016/j.cell.2018.02.047
-  image: ''
+  image: thumbnail/Ma_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Ma_2018.pdf
 
 - id: doi:10.1074/jbc.RA118.003192
-  image: ''
+  image: thumbnail/Hutt_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Hutt_2018.pdf
 
 - id: doi:10.1016/j.jsb.2018.02.006
-  image: ''
+  image: thumbnail/Bruggemann_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Bruggemann_2018.pdf
@@ -534,37 +534,37 @@
     link: pdf/Holt_2017.pdf
 
 - id: doi:10.1016/j.joca.2018.07.012
-  image: ''
+  image: thumbnail/Fisch_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Fisch_2018.pdf
 
 - id: doi:10.1002/pmic.201700391
-  image: ''
+  image: thumbnail/Moon_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Moon_2018.pdf
 
 - id: doi:10.1073/pnas.1810137115
-  image: ''
+  image: thumbnail/Janes_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Janes_2018.pdf
 
 - id: doi:10.1016/j.molimm.2018.09.020
-  image: ''
+  image: thumbnail/Sharma_2018.jpg
   buttons:
   - type: pdf
     link: pdf/Sharma_2018.pdf
 
 - id: doi:10.1038/ng.3774
-  image: ''
+  image: thumbnail/Griffith_2017.jpg
   buttons:
   - type: pdf
     link: pdf/Griffith_2017.pdf
 
 - id: doi:10.1093/database/bax025
-  image: ''
+  image: thumbnail/Putman_2017.jpg
   buttons:
   - type: pdf
     link: pdf/Putman_2017.pdf
@@ -576,91 +576,91 @@
     link: pdf/Shafee_2017.pdf
 
 - id: doi:10.5334/cstp.56
-  image: ''
+  image: thumbnail/Tsueng_2016c.jpg
   buttons:
   - type: pdf
     link: pdf/Tsueng_2016c.pdf
 
 - id: doi:10.1021/acs.jproteome.6b00095
-  image: ''
+  image: thumbnail/Lam_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Lam_2016.pdf
 
 - id: doi:10.1016/j.joca.2016.11.007
-  image: ''
+  image: thumbnail/Akagi_2017.jpg
   buttons:
   - type: pdf
     link: pdf/Akagi_2017.pdf
 
 - id: doi:10.1016/j.joca.2016.04.015
-  image: ''
+  image: thumbnail/Alvarez-Garcia_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Alvarez-Garcia_2016.pdf
 
 - id: doi:10.1186/s12864-016-2855-3
-  image: ''
+  image: thumbnail/Chatterjee_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Chatterjee_2016.pdf
 
 - id: doi:10.1002/art.39643
-  image: ''
+  image: thumbnail/AlvarezGarcia_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Alvarez‐Garcia_2016.pdf
 
 - id: doi:10.1093/bioinformatics/btw117
-  image: ''
+  image: thumbnail/Gangavarapu_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Gangavarapu_2016.pdf
 
 - id: doi:10.1111/ajt.13728
-  image: ''
+  image: thumbnail/Modena_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Modena_2016.pdf
 
 - id: doi:10.1073/pnas.1606297113
-  image: ''
+  image: thumbnail/Kleiman_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Kleiman_2016.pdf
 
 - id: doi:10.1093/database/baw051
-  image: ''
+  image: thumbnail/Li_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Li_2016.pdf
 
 - id: doi:10.1093/database/baw028
-  image: ''
+  image: thumbnail/Putman_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Putman_2016.pdf
 
 - id: doi:10.1093/database/baw094
-  image: ''
+  image: thumbnail/Bravo_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Bravo_2016.pdf
 
 - id: doi:10.1186/s13326-016-0061-5
-  image: ''
+  image: thumbnail/Cheung_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Cheung_2016.pdf
 
 - id: doi:10.1371/journal.pone.0149621
-  image: ''
+  image: thumbnail/Hettne_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Hettne_2016.pdf
 
 - id: doi:10.1093/database/baw015
-  image: ''
+  image: thumbnail/Burgstaller-Muehlbacher_2016.jpg
   buttons:
   - type: pdf
     link: pdf/Burgstaller-Muehlbacher_2016.pdf
@@ -672,37 +672,37 @@
     link: pdf/Lam_2015.pdf
 
 - id: doi:10.1093/bioinformatics/btv061
-  image: ''
+  image: thumbnail/Fisch_2015.jpg
   buttons:
   - type: pdf
     link: pdf/Fisch_2015.pdf
 
 - id: doi:10.1126/scitranslmed.3009986
-  image: ''
+  image: thumbnail/Wieskopf_2015.jpg
   buttons:
   - type: pdf
     link: pdf/Wieskopf_2015.pdf
 
 - id: doi:10.1093/bib/bbv021
-  image: ''
+  image: thumbnail/Khare_2015.jpg
   buttons:
   - type: pdf
     link: pdf/Khare_2015.pdf
 
 - id: doi:10.1161/CIRCRESAHA.115.306013
-  image: ''
+  image: thumbnail/Scruggs_2015.jpg
   buttons:
   - type: pdf
     link: pdf/Scruggs_2015.pdf
 
 - id: doi:10.3402/jev.v4.27497
-  image: ''
+  image: thumbnail/Subramanian_2015.jpg
   buttons:
   - type: pdf
     link: pdf/Subramanian_2015.pdf
 
 - id: doi:10.1186/s12920-015-0095-z
-  image: ''
+  image: thumbnail/Meiner_2015.jpg
   buttons:
   - type: pdf
     link: pdf/Meißner_2015.pdf
@@ -720,19 +720,19 @@
     link: pdf/Good_2014.pdf
 
 - id: doi:10.1016/j.molcel.2014.09.006
-  image: ''
+  image: thumbnail/Wei_2014.jpg
   buttons:
   - type: pdf
     link: pdf/Wei_2014.pdf
 
 - id: doi:10.1101/009332
-  image: ''
+  image: thumbnail/Wu_2014.gif
   buttons:
   - type: pdf
     link: pdf/Wu_2014.pdf
 
 - id: doi:10.3389/fcimb.2014.00108
-  image: ''
+  image: thumbnail/Peterson_2014.jpg
   buttons:
   - type: pdf
     link: pdf/Peterson_2014.pdf
@@ -756,13 +756,13 @@
     link: pdf/Su_2013.pdf
 
 - id: doi:10.4049/jimmunol.1301279
-  image: ''
+  image: thumbnail/Choi_2013.jpg
   buttons:
   - type: pdf
     link: pdf/Choi_2013.pdf
 
 - id: doi:10.1073/pnas.1304048110
-  image: ''
+  image: thumbnail/Gopalakrishnan_2013.jpg
   buttons:
   - type: pdf
     link: pdf/Gopalakrishnan_2013.pdf
@@ -774,31 +774,31 @@
     link: pdf/Clarke_2013.pdf
 
 - id: doi:10.1093/nar/gks1114
-  image: ''
+  image: thumbnail/Wu_2012.jpg
   buttons:
   - type: pdf
     link: pdf/Wu_2012.pdf
 
 - id: doi:10.1093/bioinformatics/btt333
-  image: ''
+  image: thumbnail/Good_2013.jpg
   buttons:
   - type: pdf
     link: pdf/Good_2013.pdf
 
 - id: doi:10.1371/journal.pone.0071171
-  image: ''
+  image: thumbnail/Loguercio_2013.jpg
   buttons:
   - type: pdf
     link: pdf/Loguercio_2013.pdf
 
 - id: doi:10.1371/journal.pone.0072511
-  image: ''
+  image: thumbnail/Chou_2013.jpg
   buttons:
   - type: pdf
     link: pdf/Chou_2013.pdf
 
 - id: doi:10.1016/j.celrep.2013.03.024
-  image: ''
+  image: thumbnail/Shoulders_2013.jpg
   buttons:
   - type: pdf
     link: pdf/Shoulders_2013.pdf
@@ -810,25 +810,25 @@
     link: pdf/Masum_2013.pdf
 
 - id: doi:10.1002/art.37760
-  image: ''
+  image: thumbnail/Grogan_2013.jpg
   buttons:
   - type: pdf
     link: pdf/Grogan_2013.pdf
 
 - id: doi:10.1186/1741-7007-10-90
-  image: ''
+  image: thumbnail/Freeman_2012.jpg
   buttons:
   - type: pdf
     link: pdf/Freeman_2012.pdf
 
 - id: doi:10.1007/s00335-012-9408-0
-  image: ''
+  image: thumbnail/Ringwald_2012.jpg
   buttons:
   - type: pdf
     link: pdf/Ringwald_2012.pdf
 
 - id: doi:10.1093/database/bar060
-  image: ''
+  image: thumbnail/Good_2012.jpg
   buttons:
   - type: pdf
     link: pdf/Good_2012.pdf
@@ -840,19 +840,19 @@
     link: pdf/Miller_2012.pdf
 
 - id: doi:10.1186/2041-1480-3-S1-S6
-  image: ''
+  image: thumbnail/Good_2012b.jpg
   buttons:
   - type: pdf
     link: pdf/Good_2012b.pdf
 
 - id: doi:10.1093/nar/gkr925
-  image: ''
+  image: thumbnail/Good_2011.jpg
   buttons:
   - type: pdf
     link: pdf/Good_2011.pdf
 
 - id: doi:10.1002/bies.201200033
-  image: ''
+  image: thumbnail/Liu_2012.jpg
   buttons:
   - type: pdf
     link: pdf/Liu_2012.pdf
@@ -864,7 +864,7 @@
     link: pdf/Good_2012c.pdf
 
 - id: doi:10.1371/journal.pone.0025807
-  image: ''
+  image: thumbnail/Hu_2011.jpg
   buttons:
   - type: pdf
     link: pdf/Hu_2011.pdf
@@ -876,7 +876,7 @@
     link: pdf/Good_2011b.pdf
 
 - id: doi:10.1186/1471-2164-12-603
-  image: ''
+  image: thumbnail/Good_2011b.jpg
   buttons:
   - type: pdf
     link: pdf/Good_2011c.pdf
@@ -888,43 +888,43 @@
     link: pdf/Dost_2011.pdf
 
 - id: doi:10.1186/1752-0509-4-29
-  image: ''
+  image: thumbnail/Lee_2010.jpg
   buttons:
   - type: pdf
     link: pdf/Lee_2010.pdf
 
 - id: doi:10.1371/journal.pone.0013920
-  image: ''
+  image: thumbnail/Loguercio_2010.jpg
   buttons:
   - type: pdf
     link: pdf/Loguercio_2010.pdf
 
 - id: doi:10.1371/journal.pone.0014458
-  image: ''
+  image: thumbnail/Miller_2010.jpg
   buttons:
   - type: pdf
     link: pdf/Miller_2010.pdf
 
 - id: doi:10.1073/pnas.0914019107
-  image: ''
+  image: thumbnail/Gonzalez_2010.jpg
   buttons:
   - type: pdf
     link: pdf/Gonzalez_2010.pdf
 
 - id: doi:10.1016/j.cell.2009.08.031
-  image: ''
+  image: thumbnail/Zhang_2009.jpg
   buttons:
   - type: pdf
     link: pdf/Zhang_2009.pdf
 
 - id: doi:10.1371/journal.pone.0004649
-  image: ''
+  image: thumbnail/Williams_2009.jpg
   buttons:
   - type: pdf
     link: pdf/Williams_2009.pdf
 
 - id: doi:10.1186/gb-2009-10-11-r130
-  image: ''
+  image: thumbnail/Wu_2009.jpg
   buttons:
   - type: pdf
     link: pdf/Wu_2009.pdf
@@ -936,63 +936,63 @@
     link: pdf/Tang_2009.pdf
 
 - id: doi:10.1093/nar/gkp760
-  image: ''
+  image: thumbnail/Huss_2009.jpg
   buttons:
   - type: pdf
     link: pdf/Huss_2009.pdf
 
 - id: doi:10.1186/1472-6769-9-2
-  image: ''
+  image: thumbnail/Pezacki_2009.jpg
   buttons:
   - type: pdf
     link: pdf/Pezacki_2009.pdf
 
 - id: doi:10.1371/journal.pbio.0060175
-  image: ''
+  image: thumbnail/Huss_2008.jpg
   buttons:
   - type: pdf
     link: pdf/Huss_2008.pdf
 
 # The paper below has a weird doi (see doi.org/10.1186/1745-7580-4-5) so overriding link
 - id: doi:10.1186/1745-7580-4-5
-  image: ''
+  image: thumbnail/Lattin_2008.jpg
   link: https://immunome-research.biomedcentral.com/articles/10.1186/1745-7580-4-5
   buttons:
   - type: pdf
     link: pdf/Lattin_2008.pdf
 
 - id: doi:10.1371/journal.pgen.1000070
-  image: ''
+  image: thumbnail/Wu_2008.jpg
   buttons:
   - type: pdf
     link: pdf/Wu_2008.pdf
 
 - id: doi:10.1371/journal.pgen.1000232
-  image: ''
+  image: thumbnail/Breitling_2008.jpg
   buttons:
   - type: pdf
     link: pdf/Breitling_2008.pdf
 
 - id: doi:10.1534/genetics.106.066241
-  image: ''
+  image: thumbnail/McClurg_2007.jpg
   buttons:
   - type: pdf
     link: pdf/McClurg_2007.pdf
 
 - id: doi:10.1186/gb-2007-8-4-404
-  image: ''
+  image: thumbnail/Su_2007.jpg
   buttons:
   - type: pdf
     link: pdf/Su_2007.pdf
 
 - id: doi:10.1073/pnas.0511292103
-  image: ''
+  image: thumbnail/Melnick_2006.jpg
   buttons:
   - type: pdf
     link: pdf/Melnick_2006.pdf
 
 - id: doi:10.1186/1471-2105-7-61
-  image: ''
+  image: thumbnail/McClurg_2006.jpg
   buttons:
   - type: pdf
     link: pdf/McClurg_2006.pdf
@@ -1022,7 +1022,7 @@
     link: pdf/Yang_2005.pdf
 
 - id: doi:10.1073/pnas.0409459102
-  image: ''
+  image: thumbnail/Zhong_2005.gif
   buttons:
   - type: pdf
     link: pdf/Zhong_2005.pdf
@@ -1034,7 +1034,7 @@
     link: pdf/Wilkens_2005.pdf
 
 - id: doi:10.1091/mbc.E05-01-0062
-  image: ''
+  image: thumbnail/Gurkan_2005.jpg
   buttons:
   - type: pdf
     link: pdf/Gurkan_2005.pdf
@@ -1046,19 +1046,19 @@
     link: pdf/Bystrykh_2005.pdf
 
 - id: doi:10.1073/pnas.0400782101
-  image: ''
+  image: thumbnail/Su_2004.jpg
   buttons:
   - type: pdf
     link: pdf/Su_2004.pdf
 
 - id: doi:10.1101/gr.2161804
-  image: ''
+  image: thumbnail/Walker_2004.jpg
   buttons:
   - type: pdf
     link: pdf/Walker_2004.pdf
 
 - id: doi:10.1371/journal.pbio.0020393
-  image: ''
+  image: thumbnail/Pletcher_2004.jpg
   buttons:
   - type: pdf
     link: pdf/Pletcher_2004.pdf
@@ -1076,7 +1076,7 @@
     link: pdf/Conkright_2003b.pdf
 
 - id: doi:10.1016/S0002-9440(10)64408-2
-  image: ''
+  image: thumbnail/Frierson_2002.jpg
   buttons:
   - type: pdf
     link: pdf/Frierson_2002.pdf
@@ -1088,13 +1088,13 @@
     link: pdf/Panda_2002.pdf
 
 - id: doi:10.1073/pnas.122359899
-  image: ''
+  image: thumbnail/Su_2002.jpg
   buttons:
   - type: pdf
     link: pdf/Su_2002.pdf
 
 - id: doi:10.1073/pnas.202608199
-  image: ''
+  image: thumbnail/Su_2002b.jpg
   buttons:
   - type: pdf
     link: pdf/Su_2002b.pdf
@@ -1106,7 +1106,7 @@
     link: pdf/Supekova_2002.pdf
 
 - id: doi:10.1073/pnas.012025199
-  image: ''
+  image: thumbnail/Su_2002c.jpg
   buttons:
   - type: pdf
     link: pdf/Su_2002c.pdf
@@ -1130,7 +1130,7 @@
     link: pdf/Hogenesch_2001.pdf
 
 - id: doi:10.1073/pnas.041452598
-  image: ''
+  image: thumbnail/Ratnaswamy_2001.jpg
   buttons:
   - type: pdf
     link: pdf/Ratnaswamy_2001.pdf
@@ -1146,6 +1146,40 @@
   buttons:
   - type: pdf
     link: pdf/Chang_2001.pdf
+
+# Thumbnail additions for entries from orcid/pubmed plugins
+- id: doi:10.1038/s41586-024-08151-z
+  image: thumbnail/Beaver_2024.jpg
+
+- id: doi:10.1111/cts.70284
+  image: thumbnail/Fecho_2025.jpg
+
+- id: doi:10.1101/2023.05.01.538993
+  image: thumbnail/Gonzalez-Cavazos_2023.jpg
+
+- id: doi:10.1093/bioinformatics/btag008
+  image: thumbnail/Gonzalez-Cavazos_2026.jpg
+
+- id: doi:10.1093/jac/dkz567
+  image: thumbnail/Michaels_2020.jpg
+
+- id: doi:10.1101/2024.11.14.623648
+  image: thumbnail/Qin_2024.jpg
+
+- id: doi:10.1101/2024.03.22.582209
+  image: thumbnail/Smith_2024.jpg
+
+- id: doi:10.1128/msystems.01270-25
+  image: thumbnail/Tsueng_2025.jpg
+
+- id: doi:10.1371/journal.pcbi.1013453
+  image: thumbnail/Zak_2025.jpg
+
+- id: doi:10.1093/gigascience/giag007
+  image: thumbnail/Joy_2026.jpg
+
+- id: doi:10.1093/bioadv/vbae057
+  image: thumbnail/Ross_2024.jpg
 
 
 # Article removals
