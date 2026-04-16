@@ -6,64 +6,65 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
   :root {
-    --bg: #0f1923; --surface: #162433; --border: #1e3448;
+    --bg: #f5f7fa; --surface: #ffffff; --border: #e2e8f0;
     --info: #2a9d8f; --domain: #e76f51;
-    --andrew: #57c4ad; --goodb: #1a6b96;
-    --lisa: #e76f51; --hannah: #f4a261;
-    --claude: rgba(233,196,106,0.18);
+    --andrew: #2a9d8f; --goodb: #1a6b96;
+    --lisa: #e76f51; --hannah: #e06020;
+    --claude: rgba(196,124,0,0.12);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: #ccd6e0;
+  body { background: var(--bg); color: #1a202c;
          font-family: 'Segoe UI', system-ui, sans-serif;
          display: flex; flex-direction: column; align-items: center;
          min-height: 100vh; padding: 2rem; }
   .card { background: var(--surface); border-radius: 14px; padding: 2rem 2.5rem;
           border: 1px solid var(--border); width: 100%; max-width: 1040px; margin-bottom: 1.5rem; }
-  h1 { color: white; font-size: 1.5rem; margin-bottom: 0.25rem; }
-  .sub { color: #7a99b0; font-size: 0.88rem; margin-bottom: 0; }
-  h2 { color: white; font-size: 1.1rem; margin-bottom: 0.3rem; }
-  .desc { color: #7a99b0; font-size: 0.83rem; margin-bottom: 1.2rem; line-height: 1.5; max-width: 90ch; }
+  h1 { color: #1a202c; font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .sub { color: #64748b; font-size: 0.88rem; margin-bottom: 0; }
+  h2 { color: #1a202c; font-size: 1.1rem; margin-bottom: 0.3rem; }
+  .desc { color: #64748b; font-size: 0.83rem; margin-bottom: 1.2rem; line-height: 1.5; max-width: 90ch; }
 
   /* ── Swimlane ── */
   .swimlane { position: relative; width: 100%; margin-bottom: 0.5rem; }
   .lane { display: flex; align-items: center; margin-bottom: 6px; }
-  .lane-label { width: 110px; font-size: 11px; color: #7a99b0; flex-shrink: 0; text-align: right; padding-right: 10px; }
-  .lane-track { flex: 1; position: relative; height: 52px; background: #111e2a; border-radius: 6px; }
+  .lane-label { width: 110px; font-size: 11px; color: #64748b; flex-shrink: 0; text-align: right; padding-right: 10px; }
+  .lane-track { flex: 1; position: relative; height: 52px; background: #f0f4f8; border-radius: 6px; }
   .commit-bubble {
     position: absolute; top: 50%; transform: translate(-50%, -50%);
     border-radius: 50%; cursor: pointer; transition: opacity 0.15s;
     display: flex; align-items: center; justify-content: center;
     font-size: 9px; color: white; font-weight: 700;
-    border: 2px solid rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.6);
   }
   .commit-bubble:hover { opacity: 0.8; }
-  .commit-bubble.claude-ring { box-shadow: 0 0 0 3px rgba(233,196,106,0.5); }
-  .timeline-axis { display: flex; margin-left: 110px; font-size: 10px; color: #445566; margin-top: 4px; position: relative; }
+  .commit-bubble.claude-ring { box-shadow: 0 0 0 3px rgba(196,124,0,0.45); }
+  .timeline-axis { display: flex; margin-left: 110px; font-size: 10px; color: #94a3b8; margin-top: 4px; position: relative; }
   .axis-tick { position: absolute; transform: translateX(-50%); }
 
   /* ── Role totals ── */
   .role-row { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
-  .role-card { background: #1a2e40; border-radius: 10px; padding: 1rem 1.4rem; flex: 1; min-width: 160px;
+  .role-card { background: #f0f4f8; border-radius: 10px; padding: 1rem 1.4rem; flex: 1; min-width: 160px;
                border-left: 4px solid; }
   .role-card .num  { font-size: 1.8rem; font-weight: 700; line-height: 1; }
-  .role-card .name { font-size: 0.78rem; color: #7a99b0; margin-top: 0.2rem; }
-  .role-card .sub2 { font-size: 0.72rem; color: #445566; margin-top: 0.15rem; }
+  .role-card .name { font-size: 0.78rem; color: #64748b; margin-top: 0.2rem; }
+  .role-card .sub2 { font-size: 0.72rem; color: #94a3b8; margin-top: 0.15rem; }
 
   /* ── Tooltip ── */
   #tooltip {
-    position: fixed; background: #1a2e40; border: 1px solid #334455;
+    position: fixed; background: #ffffff; border: 1px solid #e2e8f0;
     border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 12px;
     pointer-events: none; display: none; z-index: 100; max-width: 260px; line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
-  #tooltip strong { color: white; }
+  #tooltip strong { color: #1a202c; }
   #tooltip .tt-role { font-size: 10px; border-radius: 3px; padding: 1px 5px; margin-left: 4px; }
 
-  .nav { margin-top: 1rem; font-size: 0.8rem; color: #445566; text-align: center; }
-  .nav a { color: #57c4ad; text-decoration: none; margin: 0 0.5rem; }
+  .nav { margin-top: 1rem; font-size: 0.8rem; color: #94a3b8; text-align: center; }
+  .nav a { color: #2a9d8f; text-decoration: none; margin: 0 0.5rem; }
   .legend-row { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1.2rem; font-size: 12px; align-items: center; }
   .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
   .claude-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle;
-                background: rgba(233,196,106,0.4); border: 2px solid #e9c46a; }
+                background: rgba(196,124,0,0.2); border: 2px solid #c47c00; }
 </style>
 </head>
 <body>
@@ -152,8 +153,8 @@
 </div>
 
 <script>
-Chart.defaults.color = '#7a99b0';
-Chart.defaults.borderColor = '#1e3448';
+Chart.defaults.color = '#64748b';
+Chart.defaults.borderColor = '#e2e8f0';
 
 // ── All 15 commits ──────────────────────────────────────────────────────────
 const COMMITS = [
@@ -242,8 +243,8 @@ AUTHORS.forEach(author => {
       tooltip.innerHTML = `
         <strong>${c.author}</strong>${roleLabel}<br>
         ${c.date} · <span style="color:${c.delta>=0?'#57c4ad':'#e76f51'}">${c.delta>=0?'+':''}${c.delta} lines</span><br>
-        ${c.claude ? '<span style="color:#e9c46a;font-size:10px">✦ Claude co-authored</span><br>' : ''}
-        <span style="color:#7a99b0;font-size:11px">${c.msg}</span>
+        ${c.claude ? '<span style="color:#c47c00;font-size:10px">✦ Claude co-authored</span><br>' : ''}
+        <span style="color:#64748b;font-size:11px">${c.msg}</span>
       `;
       tooltip.style.display = 'block';
     });
@@ -312,7 +313,7 @@ new Chart(document.getElementById('chart'), {
       {
         label: 'Total spec lines',
         data: totalLine,
-        borderColor: '#ccd6e0',
+        borderColor: '#334155',
         backgroundColor: 'transparent',
         pointBackgroundColor: COMMITS.map(c => c.color),
         pointRadius: 7,
@@ -338,7 +339,7 @@ new Chart(document.getElementById('chart'), {
   options: {
     responsive: true,
     plugins: {
-      legend: { labels: { color: '#ccd6e0', boxWidth: 14 } },
+      legend: { labels: { color: '#1a202c', boxWidth: 14 } },
       tooltip: {
         callbacks: {
           label: (ctx) => {
@@ -355,9 +356,9 @@ new Chart(document.getElementById('chart'), {
       }
     },
     scales: {
-      x: { ticks: { color: '#ccd6e0', font: { size: 10 }, maxRotation: 40 }, grid: { color: '#1e3448' } },
-      y: { ticks: { color: '#ccd6e0' }, grid: { color: '#1e3448' },
-           title: { display: true, text: 'Total lines', color: '#7a99b0' } }
+      x: { ticks: { color: '#1a202c', font: { size: 10 }, maxRotation: 40 }, grid: { color: '#e2e8f0' } },
+      y: { ticks: { color: '#1a202c' }, grid: { color: '#e2e8f0' },
+           title: { display: true, text: 'Total lines', color: '#64748b' } }
     }
   },
   plugins: [phasePlugin]
@@ -394,9 +395,9 @@ new Chart(document.getElementById('chart2'), {
       }
     },
     scales: {
-      x: { ticks: { color: '#ccd6e0', font: { size: 10 }, maxRotation: 40 }, grid: { display: false } },
-      y: { ticks: { color: '#ccd6e0' }, grid: { color: '#1e3448' },
-           title: { display: true, text: '|Lines changed|', color: '#7a99b0' } }
+      x: { ticks: { color: '#1a202c', font: { size: 10 }, maxRotation: 40 }, grid: { display: false } },
+      y: { ticks: { color: '#1a202c' }, grid: { color: '#e2e8f0' },
+           title: { display: true, text: '|Lines changed|', color: '#64748b' } }
     }
   },
   plugins: [phasePlugin]

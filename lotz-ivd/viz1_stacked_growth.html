@@ -5,15 +5,15 @@
 <title>Viz 1 · Spec Corpus Growth</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-  body { background: #0f1923; color: #ccd6e0; font-family: 'Segoe UI', system-ui, sans-serif;
+  body { background: #f5f7fa; color: #1a202c; font-family: 'Segoe UI', system-ui, sans-serif;
          display: flex; flex-direction: column; align-items: center; justify-content: center;
          min-height: 100vh; margin: 0; padding: 2rem; }
-  .card { background: #162433; border-radius: 14px; padding: 2rem 2.5rem;
-          border: 1px solid #1e3448; width: 100%; max-width: 960px; }
-  h2 { color: white; font-size: 1.4rem; margin-bottom: 0.3rem; }
-  .desc { color: #7a99b0; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
-  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #445566; }
-  .nav a { color: #57c4ad; text-decoration: none; margin: 0 0.5rem; }
+  .card { background: #ffffff; border-radius: 14px; padding: 2rem 2.5rem;
+          border: 1px solid #e2e8f0; width: 100%; max-width: 960px; }
+  h2 { color: #1a202c; font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .desc { color: #64748b; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
+  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #94a3b8; }
+  .nav a { color: #2a9d8f; text-decoration: none; margin: 0 0.5rem; }
 </style>
 </head>
 <body>
@@ -34,8 +34,8 @@
 </div>
 
 <script>
-Chart.defaults.color = '#7a99b0';
-Chart.defaults.borderColor = '#1e3448';
+Chart.defaults.color = '#64748b';
+Chart.defaults.borderColor = '#e2e8f0';
 
 const DATES = ['Feb 26', 'Feb 27', 'Mar 9', 'Mar 10', 'Mar 20', 'Apr 9', 'Apr 13'];
 const SPECS = [
@@ -72,7 +72,7 @@ new Chart(document.getElementById('chart'), {
       label: sp,
       data: DATA[sp],
       backgroundColor: COLORS[i],
-      borderColor: '#0f1923',
+      borderColor: '#ffffff',
       borderWidth: 0.8,
       stack: 'stack',
     }))
@@ -82,7 +82,7 @@ new Chart(document.getElementById('chart'), {
     plugins: {
       legend: {
         position: 'right',
-        labels: { boxWidth: 14, font: { size: 12 }, color: '#ccd6e0', padding: 10 }
+        labels: { boxWidth: 14, font: { size: 12 }, color: '#1a202c', padding: 10 }
       },
       tooltip: {
         callbacks: {
@@ -93,14 +93,14 @@ new Chart(document.getElementById('chart'), {
     scales: {
       x: {
         stacked: true,
-        ticks: { color: '#ccd6e0', font: { size: 12 } },
-        grid: { color: '#1e3448' }
+        ticks: { color: '#1a202c', font: { size: 12 } },
+        grid: { color: '#e2e8f0' }
       },
       y: {
         stacked: true,
-        ticks: { color: '#ccd6e0' },
-        grid: { color: '#1e3448' },
-        title: { display: true, text: 'Total lines of spec', color: '#7a99b0', font: { size: 12 } }
+        ticks: { color: '#1a202c' },
+        grid: { color: '#e2e8f0' },
+        title: { display: true, text: 'Total lines of spec', color: '#64748b', font: { size: 12 } }
       }
     }
   }
