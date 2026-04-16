@@ -4,25 +4,25 @@
 <meta charset="UTF-8">
 <title>Viz 2 · Human Attention Heatmap</title>
 <style>
-  body { background: #0f1923; color: #ccd6e0; font-family: 'Segoe UI', system-ui, sans-serif;
+  body { background: #f5f7fa; color: #1a202c; font-family: 'Segoe UI', system-ui, sans-serif;
          display: flex; flex-direction: column; align-items: center; justify-content: center;
          min-height: 100vh; margin: 0; padding: 2rem; }
-  .card { background: #162433; border-radius: 14px; padding: 2rem 2.5rem;
-          border: 1px solid #1e3448; width: 100%; max-width: 960px; }
-  h2 { color: white; font-size: 1.4rem; margin-bottom: 0.3rem; }
-  .desc { color: #7a99b0; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
+  .card { background: #ffffff; border-radius: 14px; padding: 2rem 2.5rem;
+          border: 1px solid #e2e8f0; width: 100%; max-width: 960px; }
+  h2 { color: #1a202c; font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .desc { color: #64748b; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
   table { border-collapse: collapse; width: 100%; }
-  th { color: #7a99b0; font-weight: 600; font-size: 11px; padding: 6px 10px; text-align: center; white-space: nowrap; }
+  th { color: #64748b; font-weight: 600; font-size: 11px; padding: 6px 10px; text-align: center; white-space: nowrap; }
   th.spec-col { text-align: left; min-width: 130px; }
-  td { padding: 5px 8px; font-size: 12px; text-align: center; border: 1px solid #0f1923; border-radius: 3px; font-weight: 600; }
-  td.spec-label { text-align: left; color: #ccd6e0; font-weight: 400; white-space: nowrap; padding-right: 16px; }
-  .legend { display: flex; gap: 16px; align-items: center; margin-top: 14px; font-size: 11px; color: #7a99b0; }
+  td { padding: 5px 8px; font-size: 12px; text-align: center; border: 1px solid #f5f7fa; border-radius: 3px; font-weight: 600; }
+  td.spec-label { text-align: left; color: #1a202c; font-weight: 400; white-space: nowrap; padding-right: 16px; }
+  .legend { display: flex; gap: 16px; align-items: center; margin-top: 14px; font-size: 11px; color: #64748b; }
   .swatch { display: inline-block; width: 32px; height: 14px; border-radius: 3px; vertical-align: middle; margin-right: 4px; }
-  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #445566; }
-  .nav a { color: #57c4ad; text-decoration: none; margin: 0 0.5rem; }
+  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #94a3b8; }
+  .nav a { color: #2a9d8f; text-decoration: none; margin: 0 0.5rem; }
 
   /* Column header annotations */
-  .col-note { font-size: 9px; color: #557799; font-weight: 400; display: block; }
+  .col-note { font-size: 9px; color: #94a3b8; font-weight: 400; display: block; }
 </style>
 </head>
 <body>
@@ -41,7 +41,7 @@
     <span><span class="swatch" style="background:#1a6b96"></span>lines added</span>
     <span><span class="swatch" style="background:rgba(26,107,150,0.3)"></span>small addition</span>
     <span><span class="swatch" style="background:#e76f51"></span>lines removed</span>
-    <span><span class="swatch" style="background:#0f1923;border:1px solid #334455"></span>unchanged</span>
+    <span><span class="swatch" style="background:#f5f7fa;border:1px solid #e2e8f0"></span>unchanged</span>
   </div>
 
   <div class="nav">
@@ -77,25 +77,25 @@ const DATA = {
 };
 
 function cellColor(v) {
-  if (v === 0) return '#0f1923';
+  if (v === 0) return '#f5f7fa';
   const max = 230;
   const t = Math.min(Math.abs(v) / max, 1);
   if (v > 0) {
-    const r = Math.round(15  + t * (26 - 15));
-    const g = Math.round(36  + t * (107 - 36));
-    const b = Math.round(55  + t * (210 - 55));
+    const r = Math.round(235 - t * (235 - 26));
+    const g = Math.round(245 - t * (245 - 107));
+    const b = Math.round(255 - t * (255 - 210));
     return `rgb(${r},${g},${b})`;
   } else {
-    const r = Math.round(80  + t * (231 - 80));
-    const g = Math.round(30  + t * (20));
-    const b = Math.round(30  + t * (10));
+    const r = Math.round(255 - t * (255 - 231));
+    const g = Math.round(235 - t * (235 - 20));
+    const b = Math.round(235 - t * (235 - 10));
     return `rgb(${r},${g},${b})`;
   }
 }
 
 function textColor(v, bg) {
-  if (v === 0) return '#334455';
-  return Math.abs(v) > 50 ? 'white' : '#ccd6e0';
+  if (v === 0) return '#94a3b8';
+  return Math.abs(v) > 50 ? 'white' : '#1a202c';
 }
 
 const table = document.getElementById('heatmap');
@@ -119,10 +119,10 @@ SPECS.forEach(sp => {
 });
 
 // Totals row
-html += '<tr style="border-top:2px solid #334455"><td class="spec-label" style="color:#7a99b0">Total lines</td>';
+html += '<tr style="border-top:2px solid #e2e8f0"><td class="spec-label" style="color:#64748b">Total lines</td>';
 DATES.forEach((_, ci) => {
   const total = SPECS.reduce((s, sp) => s + DATA[sp][ci], 0);
-  html += `<td style="background:#1a2e40;color:#e9c46a;font-size:11px">${total.toLocaleString()}</td>`;
+  html += `<td style="background:#f0f4f8;color:#c47c00;font-size:11px">${total.toLocaleString()}</td>`;
 });
 html += '</tr></tbody>';
 
