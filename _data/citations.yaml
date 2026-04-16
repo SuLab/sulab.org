@@ -371,6 +371,25 @@
   buttons:
   - type: pdf
     link: pdf/Tsueng_2022b.pdf
+- id: doi:10.64898/2026.04.09.716978
+  title: "Topography structures of arthropod communities revealed by leaf-derived\
+    \ environmental DNA on O\u2019ahu, Hawai\u2019i"
+  authors:
+  - Sven Weber
+  - Leke Hutchins
+  - Pritam Banerjee
+  - Willow Callaghan
+  - Alex Augustus Farrow
+  - Jeremy Andersen
+  - Rosemary Gillespie
+  - George Roderick
+  publisher: openRxiv
+  date: '2026-04-10'
+  link: https://doi.org/hbwvk2
+  orcid: 0000-0001-7627-2086
+  willow-callaghan-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1111/mec.16873
   title: Ecological network structure in response to community assembly processes
     over evolutionary time
