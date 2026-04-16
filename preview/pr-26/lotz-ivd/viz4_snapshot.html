@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Viz 4 · Final Snapshot</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  body { background: #0f1923; color: #ccd6e0; font-family: 'Segoe UI', system-ui, sans-serif;
+         display: flex; flex-direction: column; align-items: center; justify-content: center;
+         min-height: 100vh; margin: 0; padding: 2rem; }
+  .card { background: #162433; border-radius: 14px; padding: 2rem 2.5rem;
+          border: 1px solid #1e3448; width: 100%; max-width: 960px; }
+  h2 { color: white; font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .desc { color: #7a99b0; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
+  .stats { display: flex; gap: 1.2rem; margin-bottom: 1.8rem; flex-wrap: wrap; }
+  .stat { background: #1a2e40; border-radius: 10px; padding: 0.9rem 1.3rem; flex: 1; min-width: 120px; text-align: center; border: 1px solid #1e3448; }
+  .stat .num { font-size: 1.9rem; font-weight: 700; line-height: 1; }
+  .stat .lbl { font-size: 0.72rem; color: #7a99b0; margin-top: 0.35rem; line-height: 1.35; }
+  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #445566; }
+  .nav a { color: #57c4ad; text-decoration: none; margin: 0 0.5rem; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>Current spec sizes — the blueprint as it stands today</h2>
+  <p class="desc">
+    As of the latest commit (Apr 13). <strong style="color:#e76f51">05 Integration</strong> at 488 lines
+    is 22% of all spec text — a deliberate signal about where scientific complexity and human judgment
+    are concentrated. Stable early-pipeline specs (Discovery, Metadata) haven't needed revision since the first week.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><div class="num" style="color:#e9c46a">2,155</div><div class="lbl">lines of spec<br>today</div></div>
+    <div class="stat"><div class="num" style="color:#57c4ad">17,078</div><div class="lbl">words of human<br>instruction</div></div>
+    <div class="stat"><div class="num" style="color:#e76f51">+778</div><div class="lbl">net lines added<br>since day 1</div></div>
+    <div class="stat"><div class="num" style="color:#a8dadc">7</div><div class="lbl">rounds of<br>human revision</div></div>
+    <div class="stat"><div class="num" style="color:#f4a261">13</div><div class="lbl">spec modules<br>(was 11)</div></div>
+  </div>
+
+  <canvas id="chart" height="80"></canvas>
+
+  <div class="nav">
+    <a href="viz1_stacked_growth.html">← Growth</a> ·
+    <a href="viz2_heatmap.html">← Heatmap</a> ·
+    <a href="viz3_timeline.html">← Timeline</a> ·
+    <a href="viz5_integration.html">Integration →</a>
+  </div>
+</div>
+
+<script>
+Chart.defaults.color = '#7a99b0';
+Chart.defaults.borderColor = '#1e3448';
+
+const SPECS = [
+  '00 Project','01 Discovery','02 Metadata','03 Preprocessing','04 Annotation',
+  '05 Integration','06 Clustering','07 Post-annot.','08 Differential',
+  '09 Interpretation','10 Trajectory','11 Comm.','12 Reporting'
+];
+const FINAL = [176, 165, 119, 182, 146, 488, 87, 169, 168, 171, 153, 83, 48];
+const COLORS = [
+  '#1a6b96','#2a9d8f','#57c4ad','#a8dadc','#457b9d',
+  '#e76f51','#f4a261','#e9c46a','#8ecae6','#264653',
+  '#2a9d8f','#1a6b96','#a0c4ff'
+];
+
+// Sort by size ascending (horizontal bar looks cleaner)
+const sorted = SPECS.map((s, i) => ({ s, v: FINAL[i], c: COLORS[i] }))
+                    .sort((a, b) => a.v - b.v);
+
+const total = FINAL.reduce((s, v) => s + v, 0);
+
+new Chart(document.getElementById('chart'), {
+  type: 'bar',
+  data: {
+    labels: sorted.map(x => x.s),
+    datasets: [{
+      data: sorted.map(x => x.v),
+      backgroundColor: sorted.map(x => x.c),
+      borderRadius: 4,
+      borderWidth: 0,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => ` ${ctx.raw} lines (${(ctx.raw/total*100).toFixed(1)}% of total)`
+        }
+      }
+    },
+    scales: {
+      x: {
+        ticks: { color: '#ccd6e0' }, grid: { color: '#1e3448' },
+        title: { display: true, text: 'Lines of spec', color: '#7a99b0', font: { size: 12 } }
+      },
+      y: {
+        ticks: { color: '#ccd6e0', font: { size: 12 } },
+        grid: { display: false }
+      }
+    }
+  },
+  plugins: [{
+    id: 'valueLabels',
+    afterDraw(chart) {
+      const ctx = chart.ctx;
+      const meta = chart.getDatasetMeta(0);
+      meta.data.forEach((bar, i) => {
+        const val = sorted[i].v;
+        const pct = (val / total * 100).toFixed(0);
+        ctx.save();
+        ctx.fillStyle = '#ccd6e0';
+        ctx.font = '11px Segoe UI';
+        ctx.textAlign = 'left';
+        ctx.fillText(`${val}  (${pct}%)`, bar.x + 6, bar.y + 4);
+        ctx.restore();
+      });
+    }
+  }]
+});
+</script>
+</body>
+</html>

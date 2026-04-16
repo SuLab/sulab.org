@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Viz 5 · Integration Spec Deep Dive</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  body { background: #0f1923; color: #ccd6e0; font-family: 'Segoe UI', system-ui, sans-serif;
+         display: flex; flex-direction: column; align-items: center; justify-content: center;
+         min-height: 100vh; margin: 0; padding: 2rem; }
+  .card { background: #162433; border-radius: 14px; padding: 2rem 2.5rem;
+          border: 1px solid #1e3448; width: 100%; max-width: 960px; }
+  h2 { color: white; font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .desc { color: #7a99b0; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
+  .annotation-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+                     gap: 0.8rem; margin-top: 1.5rem; }
+  .ann { background: #1a2e40; border-radius: 8px; padding: 0.8rem 1rem;
+         border-left: 3px solid #e76f51; font-size: 0.8rem; line-height: 1.4; }
+  .ann .date { color: #e76f51; font-weight: 600; font-size: 0.75rem; margin-bottom: 0.2rem; }
+  .ann .msg  { color: #ccd6e0; }
+  .ann.teal  { border-left-color: #57c4ad; }
+  .ann.teal .date { color: #57c4ad; }
+  .ann.gold  { border-left-color: #e9c46a; }
+  .ann.gold .date { color: #e9c46a; }
+  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #445566; }
+  .nav a { color: #57c4ad; text-decoration: none; margin: 0 0.5rem; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>05 Integration — the spec the human revised most</h2>
+  <p class="desc">
+    The integration spec started at 158 lines and grew to <strong style="color:#e76f51">488 lines</strong> — a 3× expansion.
+    It was restructured twice (once shrinking after a split, then growing again as new methodology was incorporated).
+    This volatility reflects the hardest scientific decision in the pipeline: how to integrate 12 datasets from
+    different platforms without erasing biologically meaningful variation.
+    Every revision here was a human judgment call.
+  </p>
+
+  <canvas id="chart" height="75"></canvas>
+
+  <div class="annotation-list">
+    <div class="ann gold">
+      <div class="date">Feb 26 — Initial</div>
+      <div class="msg">158 lines. Placeholder integration strategy, single workflow assumed.</div>
+    </div>
+    <div class="ann teal">
+      <div class="date">Mar 9 — +185 lines</div>
+      <div class="msg">Restructured to include coarse annotation anchors for scANVI. Two-stage approach introduced.</div>
+    </div>
+    <div class="ann">
+      <div class="date">Mar 10 — −127 lines</div>
+      <div class="msg">Split into 3 specs. Integration content extracted; clustering and annotation moved to dedicated modules.</div>
+    </div>
+    <div class="ann teal">
+      <div class="date">Mar 20 — Multiple commits</div>
+      <div class="msg">Three integration workflows (CCA, scANVI, STACAS) specified. API updated to Seurat v5 IntegrateLayers.</div>
+    </div>
+    <div class="ann teal">
+      <div class="date">Apr 9 — +197 lines</div>
+      <div class="msg">Configurable CCA parameters and parameter sweep plan added after first integration results reviewed.</div>
+    </div>
+    <div class="ann">
+      <div class="date">Apr 13 — +63 lines</div>
+      <div class="msg">NP integration quality experiment spec added. Pipeline now supports per-compartment integration strategies.</div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="viz1_stacked_growth.html">← Growth</a> ·
+    <a href="viz2_heatmap.html">← Heatmap</a> ·
+    <a href="viz3_timeline.html">← Timeline</a> ·
+    <a href="viz4_snapshot.html">← Snapshot</a>
+  </div>
+</div>
+
+<script>
+Chart.defaults.color = '#7a99b0';
+Chart.defaults.borderColor = '#1e3448';
+
+const DATES = ['Feb 26', 'Feb 27', 'Mar 9', 'Mar 10', 'Mar 20', 'Apr 9', 'Apr 13'];
+const INTEGRATION = [158, 170, 355, 228, 228, 425, 488];
+
+// Average of all other specs
+const OTHER_DATA = {
+  '00 Project':        [131, 166, 166, 172, 172, 176, 176],
+  '01 Discovery':      [155, 165, 165, 165, 165, 165, 165],
+  '02 Metadata':       [109, 119, 119, 119, 119, 119, 119],
+  '03 Preprocessing':  [166, 177, 177, 177, 182, 182, 182],
+  '04 Annotation':     [135, 147, 107, 146, 146, 146, 146],
+  '06 Clustering':     [  0,   0,   0,  85,  85,  87,  87],
+  '07 Post-annot.':    [  0,   0,   0, 165, 169, 169, 169],
+  '08 Differential':   [132, 151,   0, 163, 168, 168, 168],
+  '09 Interpretation': [  0, 170, 170, 171, 171, 171, 171],
+  '10 Trajectory':     [  0, 151, 153, 153, 153, 153, 153],
+  '11 Comm.':          [  0,   0,   0,  83,  83,  83,  83],
+  '12 Reporting':      [ 48,  48,  48,  48,  48,  48,  48],
+};
+const OTHER_KEYS = Object.keys(OTHER_DATA);
+const AVG_OTHER = DATES.map((_, ci) => {
+  const nonzero = OTHER_KEYS.filter(k => OTHER_DATA[k][ci] > 0);
+  return Math.round(nonzero.reduce((s, k) => s + OTHER_DATA[k][ci], 0) / nonzero.length);
+});
+
+// Normalized to Feb 26 baseline = 100
+const INT_NORM  = INTEGRATION.map(v => Math.round(v / INTEGRATION[0] * 100));
+const AVG_NORM  = AVG_OTHER.map(v => Math.round(v / AVG_OTHER[0] * 100));
+
+new Chart(document.getElementById('chart'), {
+  type: 'line',
+  data: {
+    labels: DATES,
+    datasets: [
+      {
+        label: '05 Integration (indexed, Feb 26 = 100)',
+        data: INT_NORM,
+        borderColor: '#e76f51',
+        backgroundColor: 'rgba(231,111,81,0.12)',
+        pointBackgroundColor: '#e76f51',
+        pointRadius: 7,
+        pointHoverRadius: 9,
+        fill: true,
+        tension: 0.35,
+        borderWidth: 2.5,
+      },
+      {
+        label: 'Avg. all other specs (indexed, Feb 26 = 100)',
+        data: AVG_NORM,
+        borderColor: '#2a9d8f',
+        backgroundColor: 'rgba(42,157,143,0.07)',
+        pointBackgroundColor: '#2a9d8f',
+        pointRadius: 5,
+        fill: true,
+        tension: 0.35,
+        borderDash: [6, 3],
+        borderWidth: 1.8,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        labels: { color: '#ccd6e0', boxWidth: 16, font: { size: 12 } }
+      },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => {
+            const raw = ctx.datasetIndex === 0 ? INTEGRATION[ctx.dataIndex] : AVG_OTHER[ctx.dataIndex];
+            return ` ${ctx.raw} (index) — actual: ${raw} lines`;
+          }
+        }
+      }
+    },
+    scales: {
+      x: { ticks: { color: '#ccd6e0', font: { size: 12 } }, grid: { color: '#1e3448' } },
+      y: {
+        ticks: { color: '#ccd6e0', callback: v => v + '%' },
+        grid: { color: '#1e3448' },
+        title: { display: true, text: 'Growth index (Feb 26 = 100)', color: '#7a99b0', font: { size: 12 } }
+      }
+    }
+  },
+  plugins: [{
+    id: 'pointValues',
+    afterDraw(chart) {
+      const ctx = chart.ctx;
+      chart.data.datasets.forEach((ds, di) => {
+        const meta = chart.getDatasetMeta(di);
+        meta.data.forEach((pt, i) => {
+          const actual = di === 0 ? INTEGRATION[i] : AVG_OTHER[i];
+          ctx.save();
+          ctx.fillStyle = di === 0 ? '#e76f51' : '#2a9d8f';
+          ctx.font = 'bold 11px Segoe UI';
+          ctx.textAlign = 'center';
+          ctx.fillText(actual + 'L', pt.x, pt.y - 12);
+          ctx.restore();
+        });
+      });
+    }
+  }]
+});
+</script>
+</body>
+</html>
