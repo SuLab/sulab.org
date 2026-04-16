@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Viz 3 · Commit Timeline</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  body { background: #0f1923; color: #ccd6e0; font-family: 'Segoe UI', system-ui, sans-serif;
+         display: flex; flex-direction: column; align-items: center; justify-content: center;
+         min-height: 100vh; margin: 0; padding: 2rem; }
+  .card { background: #162433; border-radius: 14px; padding: 2rem 2.5rem;
+          border: 1px solid #1e3448; width: 100%; max-width: 960px; }
+  h2 { color: white; font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .desc { color: #7a99b0; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
+  .legend { display: flex; gap: 20px; margin-bottom: 1rem; font-size: 12px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 5px; vertical-align: middle; }
+  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #445566; }
+  .nav a { color: #57c4ad; text-decoration: none; margin: 0 0.5rem; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>Commit timeline — magnitude &amp; type of each human intervention</h2>
+  <p class="desc">
+    Bar height = total lines changed (added + removed) in that commit.
+    Color encodes the <em>type</em> of human decision.
+    The burst on <strong style="color:#e76f51">Mar 10</strong> (module split) and
+    <strong style="color:#57c4ad">Mar 20</strong> (6 commits in one day aligning the spec with workflow reality)
+    show intensive steering episodes. Most of the total edit volume came from two short periods of concentrated human effort.
+  </p>
+
+  <div class="legend">
+    <span><span class="dot" style="background:#e9c46a"></span>Initial creation</span>
+    <span><span class="dot" style="background:#e76f51"></span>Structural restructure</span>
+    <span><span class="dot" style="background:#57c4ad"></span>Expansion / refinement</span>
+  </div>
+
+  <canvas id="chart" height="75"></canvas>
+
+  <div class="nav">
+    <a href="viz1_stacked_growth.html">← Growth</a> ·
+    <a href="viz2_heatmap.html">← Heatmap</a> ·
+    <a href="viz4_snapshot.html">Snapshot →</a> ·
+    <a href="viz5_integration.html">Integration →</a>
+  </div>
+</div>
+
+<script>
+Chart.defaults.color = '#7a99b0';
+Chart.defaults.borderColor = '#1e3448';
+
+const DATES = ['Feb 26', 'Feb 27', 'Mar 9', 'Mar 10', 'Mar 20', 'Apr 9', 'Apr 13'];
+const SPECS = [
+  '00 Project','01 Discovery','02 Metadata','03 Preprocessing','04 Annotation',
+  '05 Integration','06 Clustering','07 Post-annot.','08 Differential',
+  '09 Interpretation','10 Trajectory','11 Comm.','12 Reporting'
+];
+const DATA = {
+  '00 Project':        [131, 166, 166, 172, 172, 176, 176],
+  '01 Discovery':      [155, 165, 165, 165, 165, 165, 165],
+  '02 Metadata':       [109, 119, 119, 119, 119, 119, 119],
+  '03 Preprocessing':  [166, 177, 177, 177, 182, 182, 182],
+  '04 Annotation':     [135, 147, 107, 146, 146, 146, 146],
+  '05 Integration':    [158, 170, 355, 228, 228, 425, 488],
+  '06 Clustering':     [  0,   0,   0,  85,  85,  87,  87],
+  '07 Post-annot.':    [  0,   0,   0, 165, 169, 169, 169],
+  '08 Differential':   [132, 151,   0, 163, 168, 168, 168],
+  '09 Interpretation': [  0, 170, 170, 171, 171, 171, 171],
+  '10 Trajectory':     [  0, 151, 153, 153, 153, 153, 153],
+  '11 Comm.':          [  0,   0,   0,  83,  83,  83,  83],
+  '12 Reporting':      [ 48,  48,  48,  48,  48,  48,  48],
+};
+
+const absChange = DATES.map((_, ci) => {
+  if (ci === 0) return SPECS.reduce((s, sp) => s + DATA[sp][ci], 0);
+  return SPECS.reduce((s, sp) => s + Math.abs(DATA[sp][ci] - DATA[sp][ci-1]), 0);
+});
+
+const COLORS = ['#e9c46a','#57c4ad','#57c4ad','#e76f51','#57c4ad','#57c4ad','#57c4ad'];
+
+const NOTES = [
+  '11 specs written\nfrom scratch',
+  'Notebook reporting\npath added',
+  'Annotation restructured,\nIntegration +185 lines',
+  'Module 05 split into\n3 new specs (+3 files)',
+  '6 commits in 1 day:\nworkflow alignment',
+  'CCA parameter\nconfig & sweep plan',
+  'NP integration\nexperiment spec',
+];
+
+new Chart(document.getElementById('chart'), {
+  type: 'bar',
+  data: {
+    labels: DATES,
+    datasets: [{
+      label: 'Lines changed',
+      data: absChange,
+      backgroundColor: COLORS,
+      borderColor: '#0f1923',
+      borderWidth: 1,
+      borderRadius: 5,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => ` ${ctx.raw.toLocaleString()} lines changed`,
+          afterLabel: (ctx) => NOTES[ctx.dataIndex].replace(/\n/g, ' · '),
+        }
+      }
+    },
+    scales: {
+      x: { ticks: { color: '#ccd6e0', font: { size: 12 } }, grid: { display: false } },
+      y: {
+        ticks: { color: '#ccd6e0' }, grid: { color: '#1e3448' },
+        title: { display: true, text: 'Absolute lines changed', color: '#7a99b0', font: { size: 12 } }
+      }
+    }
+  },
+  plugins: [{
+    id: 'topLabels',
+    afterDraw(chart) {
+      const ctx = chart.ctx;
+      const meta = chart.getDatasetMeta(0);
+      meta.data.forEach((bar, i) => {
+        const lines = NOTES[i].split('\n');
+        ctx.save();
+        ctx.font = '11px Segoe UI';
+        ctx.fillStyle = '#7a99b0';
+        ctx.textAlign = 'center';
+        lines.forEach((line, li) => {
+          ctx.fillText(line, bar.x, bar.y - 10 - (lines.length - 1 - li) * 14);
+        });
+        ctx.restore();
+      });
+    }
+  }]
+});
+</script>
+</body>
+</html>
