@@ -5,25 +5,25 @@
 <title>Viz 5 · Integration Spec Deep Dive</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-  body { background: #0f1923; color: #ccd6e0; font-family: 'Segoe UI', system-ui, sans-serif;
+  body { background: #f5f7fa; color: #1a202c; font-family: 'Segoe UI', system-ui, sans-serif;
          display: flex; flex-direction: column; align-items: center; justify-content: center;
          min-height: 100vh; margin: 0; padding: 2rem; }
-  .card { background: #162433; border-radius: 14px; padding: 2rem 2.5rem;
-          border: 1px solid #1e3448; width: 100%; max-width: 960px; }
-  h2 { color: white; font-size: 1.4rem; margin-bottom: 0.3rem; }
-  .desc { color: #7a99b0; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
+  .card { background: #ffffff; border-radius: 14px; padding: 2rem 2.5rem;
+          border: 1px solid #e2e8f0; width: 100%; max-width: 960px; }
+  h2 { color: #1a202c; font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .desc { color: #64748b; font-size: 0.88rem; margin-bottom: 1.5rem; line-height: 1.5; max-width: 80ch; }
   .annotation-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
                      gap: 0.8rem; margin-top: 1.5rem; }
-  .ann { background: #1a2e40; border-radius: 8px; padding: 0.8rem 1rem;
+  .ann { background: #f0f4f8; border-radius: 8px; padding: 0.8rem 1rem;
          border-left: 3px solid #e76f51; font-size: 0.8rem; line-height: 1.4; }
   .ann .date { color: #e76f51; font-weight: 600; font-size: 0.75rem; margin-bottom: 0.2rem; }
-  .ann .msg  { color: #ccd6e0; }
-  .ann.teal  { border-left-color: #57c4ad; }
-  .ann.teal .date { color: #57c4ad; }
-  .ann.gold  { border-left-color: #e9c46a; }
-  .ann.gold .date { color: #e9c46a; }
-  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #445566; }
-  .nav a { color: #57c4ad; text-decoration: none; margin: 0 0.5rem; }
+  .ann .msg  { color: #1a202c; }
+  .ann.teal  { border-left-color: #2a9d8f; }
+  .ann.teal .date { color: #2a9d8f; }
+  .ann.gold  { border-left-color: #c47c00; }
+  .ann.gold .date { color: #c47c00; }
+  .nav { margin-top: 1.5rem; font-size: 0.8rem; color: #94a3b8; }
+  .nav a { color: #2a9d8f; text-decoration: none; margin: 0 0.5rem; }
 </style>
 </head>
 <body>
@@ -75,8 +75,8 @@
 </div>
 
 <script>
-Chart.defaults.color = '#7a99b0';
-Chart.defaults.borderColor = '#1e3448';
+Chart.defaults.color = '#64748b';
+Chart.defaults.borderColor = '#e2e8f0';
 
 const DATES = ['Feb 26', 'Feb 27', 'Mar 9', 'Mar 10', 'Mar 20', 'Apr 9', 'Apr 13'];
 const INTEGRATION = [158, 170, 355, 228, 228, 425, 488];
@@ -141,7 +141,7 @@ new Chart(document.getElementById('chart'), {
     responsive: true,
     plugins: {
       legend: {
-        labels: { color: '#ccd6e0', boxWidth: 16, font: { size: 12 } }
+        labels: { color: '#1a202c', boxWidth: 16, font: { size: 12 } }
       },
       tooltip: {
         callbacks: {
@@ -153,11 +153,11 @@ new Chart(document.getElementById('chart'), {
       }
     },
     scales: {
-      x: { ticks: { color: '#ccd6e0', font: { size: 12 } }, grid: { color: '#1e3448' } },
+      x: { ticks: { color: '#1a202c', font: { size: 12 } }, grid: { color: '#e2e8f0' } },
       y: {
-        ticks: { color: '#ccd6e0', callback: v => v + '%' },
-        grid: { color: '#1e3448' },
-        title: { display: true, text: 'Growth index (Feb 26 = 100)', color: '#7a99b0', font: { size: 12 } }
+        ticks: { color: '#1a202c', callback: v => v + '%' },
+        grid: { color: '#e2e8f0' },
+        title: { display: true, text: 'Growth index (Feb 26 = 100)', color: '#64748b', font: { size: 12 } }
       }
     }
   },
