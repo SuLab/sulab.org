@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Viz 6 · Contributor Roles Over Time</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #f5f7fa; --surface: #ffffff; --border: #e2e8f0;
+    --info: #2a9d8f; --domain: #e76f51;
+    --andrew: #2a9d8f; --goodb: #1a6b96;
+    --lisa: #e76f51; --hannah: #e06020;
+    --claude: rgba(196,124,0,0.12);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: #1a202c;
+         font-family: 'Segoe UI', system-ui, sans-serif;
+         display: flex; flex-direction: column; align-items: center;
+         min-height: 100vh; padding: 2rem; }
+  .card { background: var(--surface); border-radius: 14px; padding: 2rem 2.5rem;
+          border: 1px solid var(--border); width: 100%; max-width: 1040px; margin-bottom: 1.5rem; }
+  h1 { color: #1a202c; font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .sub { color: #64748b; font-size: 0.88rem; margin-bottom: 0; }
+  h2 { color: #1a202c; font-size: 1.1rem; margin-bottom: 0.3rem; }
+  .desc { color: #64748b; font-size: 0.83rem; margin-bottom: 1.2rem; line-height: 1.5; max-width: 90ch; }
+
+  /* ── Swimlane ── */
+  .swimlane { position: relative; width: 100%; margin-bottom: 0.5rem; }
+  .lane { display: flex; align-items: center; margin-bottom: 6px; }
+  .lane-label { width: 110px; font-size: 11px; color: #64748b; flex-shrink: 0; text-align: right; padding-right: 10px; }
+  .lane-track { flex: 1; position: relative; height: 52px; background: #f0f4f8; border-radius: 6px; }
+  .commit-bubble {
+    position: absolute; top: 50%; transform: translate(-50%, -50%);
+    border-radius: 50%; cursor: pointer; transition: opacity 0.15s;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 9px; color: white; font-weight: 700;
+    border: 2px solid rgba(255,255,255,0.6);
+  }
+  .commit-bubble:hover { opacity: 0.8; }
+  .commit-bubble.claude-ring { box-shadow: 0 0 0 3px rgba(196,124,0,0.45); }
+  .timeline-axis { display: flex; margin-left: 110px; font-size: 10px; color: #94a3b8; margin-top: 4px; position: relative; }
+  .axis-tick { position: absolute; transform: translateX(-50%); }
+
+  /* ── Role totals ── */
+  .role-row { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .role-card { background: #f0f4f8; border-radius: 10px; padding: 1rem 1.4rem; flex: 1; min-width: 160px;
+               border-left: 4px solid; }
+  .role-card .num  { font-size: 1.8rem; font-weight: 700; line-height: 1; }
+  .role-card .name { font-size: 0.78rem; color: #64748b; margin-top: 0.2rem; }
+  .role-card .sub2 { font-size: 0.72rem; color: #94a3b8; margin-top: 0.15rem; }
+
+  /* ── Tooltip ── */
+  #tooltip {
+    position: fixed; background: #ffffff; border: 1px solid #e2e8f0;
+    border-radius: 8px; padding: 0.6rem 0.9rem; font-size: 12px;
+    pointer-events: none; display: none; z-index: 100; max-width: 260px; line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  #tooltip strong { color: #1a202c; }
+  #tooltip .tt-role { font-size: 10px; border-radius: 3px; padding: 1px 5px; margin-left: 4px; }
+
+  .nav { margin-top: 1rem; font-size: 0.8rem; color: #94a3b8; text-align: center; }
+  .nav a { color: #2a9d8f; text-decoration: none; margin: 0 0.5rem; }
+  .legend-row { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 1.2rem; font-size: 12px; align-items: center; }
+  .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
+  .claude-dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle;
+                background: rgba(196,124,0,0.2); border: 2px solid #c47c00; }
+</style>
+</head>
+<body>
+
+<div class="card" style="padding-bottom:1.2rem">
+  <h1>Who shaped the specs — and when</h1>
+  <p class="sub">Informatics scientists set the skeleton. Domain experts did the heavy reshaping. Claude assisted every step.</p>
+</div>
+
+<!-- stat cards -->
+<div class="card">
+  <div class="role-row">
+    <div class="role-card" style="border-color:#57c4ad">
+      <div class="num" style="color:#57c4ad">Andrew Su</div>
+      <div class="name">Informatics · 2 commits · Feb 26–27</div>
+      <div class="sub2">Initial framework: 1,377 lines from scratch + 168</div>
+    </div>
+    <div class="role-card" style="border-color:#e76f51">
+      <div class="num" style="color:#e76f51">Lisa Janssen</div>
+      <div class="name">Domain Expert · 4 commits · Mar 9–10</div>
+      <div class="sub2">Major restructure: annotation anchors, module split</div>
+    </div>
+    <div class="role-card" style="border-color:#f4a261">
+      <div class="num" style="color:#f4a261">Hannah Swahn</div>
+      <div class="name">Domain Expert · 6 commits · Mar 20 + Apr 9</div>
+      <div class="sub2">Workflow alignment: CCA/scANVI/STACAS specs + params</div>
+    </div>
+    <div class="role-card" style="border-color:#1a6b96">
+      <div class="num" style="color:#1a6b96">goodb</div>
+      <div class="name">Informatics · 3 commits · Mar 22–Apr 13</div>
+      <div class="sub2">Implementation refinement: API updates, experiment specs</div>
+    </div>
+    <div class="role-card" style="border-color:#e9c46a">
+      <div class="num" style="color:#e9c46a">Claude</div>
+      <div class="name">AI co-author · 14 / 15 commits</div>
+      <div class="sub2">Present throughout — always human-directed</div>
+    </div>
+  </div>
+</div>
+
+<!-- swimlane -->
+<div class="card">
+  <h2>Commit swimlane — all 15 spec commits</h2>
+  <p class="desc">Each bubble is one commit. Size = absolute lines changed. Gold ring = Claude co-authored.
+    Hover for commit message. The handoff from informatics → domain experts is visible across the timeline.</p>
+
+  <div class="legend-row">
+    <span><span class="dot" style="background:#57c4ad"></span>Andrew Su (informatics)</span>
+    <span><span class="dot" style="background:#e76f51"></span>Lisa Janssen (domain expert)</span>
+    <span><span class="dot" style="background:#f4a261"></span>Hannah Swahn (domain expert)</span>
+    <span><span class="dot" style="background:#1a6b96"></span>goodb (informatics)</span>
+    <span><span class="claude-dot"></span>Claude co-authored</span>
+  </div>
+
+  <div id="swimlane"></div>
+  <div id="axis" class="timeline-axis" style="height:18px; width:calc(100% - 110px)"></div>
+</div>
+
+<!-- chart: cumulative lines by role over time -->
+<div class="card">
+  <h2>Cumulative spec evolution by role</h2>
+  <p class="desc">Running total of lines in the spec corpus, split by the role that last drove a net change.
+    Covers all 15 commits in chronological order. Domain expert commits account for
+    <strong style="color:#e76f51">10 of 15 commits</strong> and drove the largest structural changes.</p>
+  <canvas id="chart" height="65"></canvas>
+</div>
+
+<!-- chart: absolute lines changed per author -->
+<div class="card">
+  <h2>Absolute lines changed per author — by commit</h2>
+  <p class="desc">Each bar = one commit, height = |lines added + removed|.
+    Lisa's Mar 10 burst (split + cleanup) and Hannah's Mar 20 sprint dominate.
+    Informatics commits tend to be surgical; domain expert commits reshape.</p>
+  <canvas id="chart2" height="65"></canvas>
+</div>
+
+<div id="tooltip"></div>
+
+<div class="nav">
+  <a href="index.html">← Index</a> ·
+  <a href="viz1_stacked_growth.html">Growth</a> ·
+  <a href="viz2_heatmap.html">Heatmap</a> ·
+  <a href="viz3_timeline.html">Timeline</a> ·
+  <a href="viz4_snapshot.html">Snapshot</a> ·
+  <a href="viz5_integration.html">Integration</a>
+</div>
+
+<script>
+Chart.defaults.color = '#64748b';
+Chart.defaults.borderColor = '#e2e8f0';
+
+// ── All 15 commits ──────────────────────────────────────────────────────────
+const COMMITS = [
+  { hash:'4079273', date:'2026-02-26', author:'Andrew Su',   role:'informatics', color:'#57c4ad', total:1377, delta:1377, claude:true,
+    msg:'Initial commit: project specs and plan for IVD single-cell atlas' },
+  { hash:'5ac6899', date:'2026-02-27', author:'Andrew Su',   role:'informatics', color:'#57c4ad', total:1545, delta:168,  claude:false,
+    msg:'add info on reporting through notebooks' },
+  { hash:'7938443', date:'2026-03-09', author:'Lisa Janssen',role:'domain',       color:'#e76f51', total:1694, delta:149,  claude:true,
+    msg:'Restructure specs: post-integration annotation, four integrated objects, study assignments' },
+  { hash:'ee80d6d', date:'2026-03-10', author:'Lisa Janssen',role:'domain',       color:'#e76f51', total:1777, delta:83,   claude:true,
+    msg:'Update specs: scANVI with coarse anchors, two-stage annotation' },
+  { hash:'b601c2b', date:'2026-03-10', author:'Lisa Janssen',role:'domain',       color:'#e76f51', total:2480, delta:703,  claude:true,
+    msg:'Split Module 05 into Integration/Clustering/Annotation, renumber specs 06–12' },
+  { hash:'5d5c50c', date:'2026-03-10', author:'Lisa Janssen',role:'domain',       color:'#e76f51', total:1875, delta:-605, claude:true,
+    msg:'Remove old spec files superseded by renumbering' },
+  { hash:'cf4d523', date:'2026-03-20', author:'Hannah Swahn',role:'domain',       color:'#f4a261', total:1889, delta:14,   claude:true,
+    msg:'Update specs to match Shared Parameters from IVD_Workflows_Clean' },
+  { hash:'7be3d66', date:'2026-03-20', author:'Hannah Swahn',role:'domain',       color:'#f4a261', total:2058, delta:169,  claude:true,
+    msg:'Restructure spec 05 for three integration workflows (CCA, scANVI, STACAS)' },
+  { hash:'0a0dba9', date:'2026-03-20', author:'Hannah Swahn',role:'domain',       color:'#f4a261', total:2047, delta:-11,  claude:true,
+    msg:'Remove clustering and DE content from spec 05 (integration only)' },
+  { hash:'586d718', date:'2026-03-20', author:'Hannah Swahn',role:'domain',       color:'#f4a261', total:2075, delta:28,   claude:true,
+    msg:'Split integration notebook into per-workflow + comparison notebooks' },
+  { hash:'b7cf77e', date:'2026-03-20', author:'Hannah Swahn',role:'domain',       color:'#f4a261', total:2083, delta:8,    claude:true,
+    msg:'Update CCA workflow to follow reference R integration pattern' },
+  { hash:'71ef683', date:'2026-03-22', author:'goodb',       role:'informatics', color:'#1a6b96', total:2077, delta:-6,   claude:true,
+    msg:'Update CCA workflow to Seurat v5 IntegrateLayers API' },
+  { hash:'9c038bf', date:'2026-03-23', author:'goodb',       role:'informatics', color:'#1a6b96', total:2071, delta:-6,   claude:true,
+    msg:'Remove sketch-based CCA path, use standard CCA for all objects' },
+  { hash:'2361887', date:'2026-04-09', author:'Hannah Swahn',role:'domain',       color:'#f4a261', total:2092, delta:21,   claude:true,
+    msg:'Update integration spec with configurable CCA parameters and sweep plan' },
+  { hash:'fcf4ae3', date:'2026-04-13', author:'goodb',       role:'informatics', color:'#1a6b96', total:2155, delta:63,   claude:true,
+    msg:'Add NP integration quality experiment scripts and update spec' },
+];
+
+const AUTHORS = ['Andrew Su','Lisa Janssen','Hannah Swahn','goodb'];
+const AUTHOR_COLORS = { 'Andrew Su':'#57c4ad', 'Lisa Janssen':'#e76f51', 'Hannah Swahn':'#f4a261', 'goodb':'#1a6b96' };
+
+// ── Timeline positioning ─────────────────────────────────────────────────
+const t0 = new Date('2026-02-26').getTime();
+const t1 = new Date('2026-04-15').getTime();
+function xpct(dateStr) {
+  const t = new Date(dateStr).getTime();
+  return ((t - t0) / (t1 - t0) * 100).toFixed(2) + '%';
+}
+
+// bubble size: sqrt scaling
+function bubbleSize(absDelta) {
+  return Math.max(18, Math.min(56, Math.sqrt(Math.abs(absDelta)) * 2.8));
+}
+
+// ── Build swimlane ────────────────────────────────────────────────────────
+const swimlane = document.getElementById('swimlane');
+const tooltip  = document.getElementById('tooltip');
+
+AUTHORS.forEach(author => {
+  const authorCommits = COMMITS.filter(c => c.author === author);
+  const lane = document.createElement('div');
+  lane.className = 'lane';
+
+  const label = document.createElement('div');
+  label.className = 'lane-label';
+  label.style.color = AUTHOR_COLORS[author];
+  label.innerHTML = author.replace(' ', '<br>');
+  lane.appendChild(label);
+
+  const track = document.createElement('div');
+  track.className = 'lane-track';
+
+  authorCommits.forEach(c => {
+    const size = bubbleSize(c.delta);
+    const bubble = document.createElement('div');
+    bubble.className = 'commit-bubble' + (c.claude ? ' claude-ring' : '');
+    bubble.style.left = xpct(c.date);
+    bubble.style.width  = size + 'px';
+    bubble.style.height = size + 'px';
+    bubble.style.background = c.color;
+    const sign = c.delta >= 0 ? '+' : '';
+    bubble.textContent = size > 26 ? sign + c.delta : '';
+    bubble.title = c.msg;
+
+    bubble.addEventListener('mouseenter', (e) => {
+      const roleLabel = c.role === 'domain'
+        ? `<span class="tt-role" style="background:#e76f511a;color:#e76f51">domain expert</span>`
+        : `<span class="tt-role" style="background:#2a9d8f1a;color:#2a9d8f">informatics</span>`;
+      tooltip.innerHTML = `
+        <strong>${c.author}</strong>${roleLabel}<br>
+        ${c.date} · <span style="color:${c.delta>=0?'#57c4ad':'#e76f51'}">${c.delta>=0?'+':''}${c.delta} lines</span><br>
+        ${c.claude ? '<span style="color:#c47c00;font-size:10px">✦ Claude co-authored</span><br>' : ''}
+        <span style="color:#64748b;font-size:11px">${c.msg}</span>
+      `;
+      tooltip.style.display = 'block';
+    });
+    bubble.addEventListener('mousemove', (e) => {
+      tooltip.style.left = (e.clientX + 12) + 'px';
+      tooltip.style.top  = (e.clientY - 10) + 'px';
+    });
+    bubble.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+
+    track.appendChild(bubble);
+  });
+  lane.appendChild(track);
+  swimlane.appendChild(lane);
+});
+
+// Axis ticks
+const axis = document.getElementById('axis');
+const TICK_DATES = ['2026-02-26','2026-03-01','2026-03-10','2026-03-20','2026-04-01','2026-04-13'];
+const TICK_LABELS = ['Feb 26','Mar 1','Mar 10','Mar 20','Apr 1','Apr 13'];
+TICK_DATES.forEach((d, i) => {
+  const tick = document.createElement('span');
+  tick.className = 'axis-tick';
+  tick.style.left = xpct(d);
+  tick.textContent = TICK_LABELS[i];
+  axis.appendChild(tick);
+});
+
+// ── Chart 1: cumulative total colored by role ──────────────────────────
+// Build a line for each role showing TOTAL LINES at each commit point
+const labels = COMMITS.map(c => `${c.date.slice(5)} ${c.author.split(' ')[0]}`);
+const totalLine = COMMITS.map(c => c.total);
+
+// Running attribution: track what fraction is attributable to each role
+// Simplified: shade the area between 0 and total, with color = current committer role
+// Better: show total as a line, with background annotation bands per phase
+
+const phases = [
+  { start: 0, end: 1,  role: 'informatics', color: 'rgba(42,157,143,0.15)',  label: 'Andrew Su' },
+  { start: 2, end: 5,  role: 'domain',       color: 'rgba(231,111,81,0.15)',  label: 'Lisa Janssen' },
+  { start: 6, end: 10, role: 'domain',       color: 'rgba(244,162,97,0.15)',  label: 'Hannah Swahn' },
+  { start: 11, end: 12,role: 'informatics',  color: 'rgba(26,107,150,0.15)',  label: 'goodb' },
+  { start: 13, end: 13,role: 'domain',       color: 'rgba(244,162,97,0.15)',  label: 'Hannah Swahn' },
+  { start: 14, end: 14,role: 'informatics',  color: 'rgba(26,107,150,0.15)',  label: 'goodb' },
+];
+
+const phasePlugin = {
+  id: 'phaseShading',
+  beforeDraw(chart) {
+    const { ctx, chartArea: { left, right, top, bottom }, scales: { x } } = chart;
+    phases.forEach(p => {
+      const x0 = x.getPixelForValue(p.start) - (x.getPixelForValue(1) - x.getPixelForValue(0)) / 2;
+      const x1 = x.getPixelForValue(p.end)   + (x.getPixelForValue(1) - x.getPixelForValue(0)) / 2;
+      ctx.save();
+      ctx.fillStyle = p.color;
+      ctx.fillRect(Math.max(left, x0), top, Math.min(right, x1) - Math.max(left, x0), bottom - top);
+      ctx.restore();
+    });
+  }
+};
+
+new Chart(document.getElementById('chart'), {
+  type: 'line',
+  data: {
+    labels,
+    datasets: [
+      {
+        label: 'Total spec lines',
+        data: totalLine,
+        borderColor: '#334155',
+        backgroundColor: 'transparent',
+        pointBackgroundColor: COMMITS.map(c => c.color),
+        pointRadius: 7,
+        pointHoverRadius: 9,
+        fill: false,
+        tension: 0.2,
+        borderWidth: 2,
+      },
+      {
+        label: 'Claude co-authored',
+        data: COMMITS.map(c => c.claude ? c.total : null),
+        borderColor: 'transparent',
+        backgroundColor: 'transparent',
+        pointBackgroundColor: 'transparent',
+        pointBorderColor: 'rgba(233,196,106,0.8)',
+        pointBorderWidth: 3,
+        pointRadius: 10,
+        pointStyle: 'circle',
+        spanGaps: false,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { labels: { color: '#1a202c', boxWidth: 14 } },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => {
+            if (ctx.datasetIndex === 1) return null;
+            const c = COMMITS[ctx.dataIndex];
+            return [
+              ` ${c.total.toLocaleString()} lines total`,
+              ` Author: ${c.author} (${c.role})`,
+              ` Change: ${c.delta >= 0 ? '+' : ''}${c.delta} lines`,
+              c.claude ? ` ✦ Claude co-authored` : ''
+            ].filter(Boolean);
+          }
+        }
+      }
+    },
+    scales: {
+      x: { ticks: { color: '#1a202c', font: { size: 10 }, maxRotation: 40 }, grid: { color: '#e2e8f0' } },
+      y: { ticks: { color: '#1a202c' }, grid: { color: '#e2e8f0' },
+           title: { display: true, text: 'Total lines', color: '#64748b' } }
+    }
+  },
+  plugins: [phasePlugin]
+});
+
+// ── Chart 2: absolute lines changed per commit, colored by author ──────
+new Chart(document.getElementById('chart2'), {
+  type: 'bar',
+  data: {
+    labels,
+    datasets: [{
+      label: 'Absolute lines changed',
+      data: COMMITS.map(c => Math.abs(c.delta)),
+      backgroundColor: COMMITS.map(c => c.color),
+      borderRadius: 4,
+      borderWidth: 0,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => {
+            const c = COMMITS[ctx.dataIndex];
+            return [
+              ` |${c.delta}| = ${Math.abs(c.delta)} lines changed`,
+              ` ${c.author} · ${c.role}`,
+              ` "${c.msg.slice(0, 60)}${c.msg.length > 60 ? '…' : ''}"`,
+            ];
+          }
+        }
+      }
+    },
+    scales: {
+      x: { ticks: { color: '#1a202c', font: { size: 10 }, maxRotation: 40 }, grid: { display: false } },
+      y: { ticks: { color: '#1a202c' }, grid: { color: '#e2e8f0' },
+           title: { display: true, text: '|Lines changed|', color: '#64748b' } }
+    }
+  },
+  plugins: [phasePlugin]
+});
+</script>
+</body>
+</html>
