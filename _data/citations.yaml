@@ -649,7 +649,8 @@
   - Chunlei Wu
   publisher: mSystems
   pmid: '41475378'
-  date: '2025-12-31'
+  pmcid: PMC12911352
+  date: '2026-02-17'
   link: https://doi.org/hbhrp8
   orcid: 0000-0002-9859-4104
   ginger-tsueng-list: true
@@ -1526,8 +1527,8 @@
   - type: pdf
     link: pdf/Tsueng_2007b.pdf
 - id: doi:10.1093/bioinformatics/btag008
-  title: A Case-Based Explainable Graph Neural Network Framework for Mechanistic Drug
-    Repositioning
+  title: A case-based explainable graph neural network framework for mechanistic drug
+    repositioning
   authors:
   - Adriana Carolina Gonzalez-Cavazos
   - Roger Tu
@@ -1535,6 +1536,7 @@
   - Andrew I Su
   publisher: Bioinformatics
   pmid: '41533699'
+  pmcid: PMC12891909
   date: '2026-01-14'
   link: https://doi.org/hbkdc2
   orcid: 0000-0002-9859-4104
@@ -2128,14 +2130,15 @@
   - type: pdf
     link: pdf/Gopal_2017.pdf
 - id: doi:10.1093/gigascience/giag007
-  title: Federated Knowledge Retrieval Elevates Large Language Model Performance on
-    Biomedical Benchmarks
+  title: Federated knowledge retrieval elevates large language model performance on
+    biomedical benchmarks
   authors:
   - Janet Joy
   - Andrew I Su
   publisher: GigaScience
   pmid: '41553353'
-  date: '2026-01-19'
+  pmcid: PMC12888809
+  date: '2026-01-01'
   link: https://doi.org/hbkdc3
   orcid: 0000-0002-9859-4104
   andrew-su-list: true
@@ -2438,6 +2441,7 @@
   - Laura D. Hughes
   publisher: Nature Methods
   pmid: '36823332'
+  pmcid: PMC10399614
   date: '2023-02-23'
   link: https://doi.org/gr9gvs
   orcid: 0000-0002-9859-4104
