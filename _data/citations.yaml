@@ -171,6 +171,7 @@
   - Andrew I Su
   publisher: eLife
   pmid: '32180547'
+  pmcid: PMC7077981
   date: '2020-03-17'
   link: https://doi.org/ggqqc6
   orcid: 0000-0002-9859-4104
@@ -649,7 +650,8 @@
   - Chunlei Wu
   publisher: mSystems
   pmid: '41475378'
-  date: '2025-12-31'
+  pmcid: PMC12911352
+  date: '2026-02-17'
   link: https://doi.org/hbhrp8
   orcid: 0000-0002-9859-4104
   ginger-tsueng-list: true
@@ -1276,6 +1278,7 @@
   - Ralph Feuer
   publisher: Journal of Virology
   pmid: '21471247'
+  pmcid: PMC3126326
   date: '2011-06-15'
   link: https://doi.org/bvfvrq
   orcid: 0000-0001-9536-9115
@@ -1526,8 +1529,8 @@
   - type: pdf
     link: pdf/Tsueng_2007b.pdf
 - id: doi:10.1093/bioinformatics/btag008
-  title: A Case-Based Explainable Graph Neural Network Framework for Mechanistic Drug
-    Repositioning
+  title: A case-based explainable graph neural network framework for mechanistic drug
+    repositioning
   authors:
   - Adriana Carolina Gonzalez-Cavazos
   - Roger Tu
@@ -1535,6 +1538,7 @@
   - Andrew I Su
   publisher: Bioinformatics
   pmid: '41533699'
+  pmcid: PMC12891909
   date: '2026-01-14'
   link: https://doi.org/hbkdc2
   orcid: 0000-0002-9859-4104
@@ -1972,10 +1976,21 @@
   file: sources.yaml
   image: thumbnail/Michaels_2020.jpg
 - id: doi:10.1093/bioadv/vbag036
-  title: pendingpublications
-  authors: []
-  publisher: ''
-  date: ''
+  title: 'Desiderata for a biomedical knowledge network: opportunities, challenges
+    and future directions'
+  authors:
+  - Chunlei Wu
+  - Hongfang Liu
+  - Jason Flannick
+  - Mark A Musen
+  - Andrew I Su
+  - Lawrence E Hunter
+  - Thomas M Powers
+  - Cathy H Wu
+  publisher: Bioinformatics Advances
+  pmid: '41867661'
+  pmcid: PMC13004217
+  date: '2026-01-01'
   link: https://doi.org/hbnck2
   orcid: 0000-0002-9859-4104
   chunlei-wu-list: true
@@ -2127,15 +2142,37 @@
   buttons:
   - type: pdf
     link: pdf/Gopal_2017.pdf
+- id: doi:10.48550/ARXIV.2605.30283
+  title: 'mcp-proto-okn: Natural-language access to open scientific knowledge graphs
+    through the Model Context Protocol'
+  authors:
+  - Peter W. Rose
+  - Benjamin M. Good
+  - Amanda M. Saravia-Butler
+  - Charlotte A. Nelson
+  - James P. Balhoff
+  - Yaphet Kebede
+  - Patricia L. Whetzel
+  - Christopher Bizon
+  - Andrew I. Su
+  - Sergio E. Baranzini
+  publisher: arXiv
+  date: '2026-01-01'
+  link: https://doi.org/hb563f
+  orcid: 0000-0002-9859-4104
+  andrew-su-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1093/gigascience/giag007
-  title: Federated Knowledge Retrieval Elevates Large Language Model Performance on
-    Biomedical Benchmarks
+  title: Federated knowledge retrieval elevates large language model performance on
+    biomedical benchmarks
   authors:
   - Janet Joy
   - Andrew I Su
   publisher: GigaScience
   pmid: '41553353'
-  date: '2026-01-19'
+  pmcid: PMC12888809
+  date: '2026-01-01'
   link: https://doi.org/hbkdc3
   orcid: 0000-0002-9859-4104
   andrew-su-list: true
@@ -2438,6 +2475,7 @@
   - Laura D. Hughes
   publisher: Nature Methods
   pmid: '36823332'
+  pmcid: PMC10399614
   date: '2023-02-23'
   link: https://doi.org/gr9gvs
   orcid: 0000-0002-9859-4104
@@ -3099,6 +3137,7 @@
   - William E. Balch
   publisher: Journal of Biological Chemistry
   pmid: '30006345'
+  pmcid: PMC6120211
   date: '2018-08-01'
   link: https://doi.org/gd7nt5
   orcid: 0000-0002-9859-4104
@@ -3909,6 +3948,7 @@
   - Peipei Ping
   publisher: Circulation Research
   pmid: '25814682'
+  pmcid: PMC4721634
   date: '2015-03-27'
   link: https://doi.org/gtrg2x
   orcid: 0000-0002-9859-4104
@@ -4199,6 +4239,7 @@
   - Andrew I Su
   publisher: Journal of Biomedical Semantics
   pmid: '23734599'
+  pmcid: PMC3633003
   date: '2013-04-01'
   link: https://doi.org/gtrg24
   orcid: 0000-0002-9859-4104
@@ -4473,6 +4514,7 @@
   - Andrew I Su
   publisher: Journal of Biomedical Semantics
   pmid: '22541597'
+  pmcid: PMC3337266
   date: '2012-04-24'
   link: https://doi.org/gtrg29
   orcid: 0000-0002-9859-4104
@@ -5274,6 +5316,7 @@
   - William E. Balch
   publisher: Molecular Biology of the Cell
   pmid: '15944222'
+  pmcid: PMC1182321
   date: '2005-08-01'
   link: https://doi.org/ct86r5
   orcid: 0000-0002-9859-4104
@@ -5458,6 +5501,7 @@
   - Garret M. Hampton
   publisher: The American Journal of Pathology
   pmid: '12368205'
+  pmcid: PMC1867312
   date: '2002-10-01'
   link: https://doi.org/b8w9fs
   orcid: 0000-0002-9859-4104
