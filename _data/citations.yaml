@@ -1890,6 +1890,27 @@
   chrissy-aceves-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1101/2025.09.25.678491
+  title: "Targets of the human antibody response to the variant surface glycoprotein\
+    \ of\n                  <i>Trypanosoma brucei</i>"
+  authors:
+  - Jaime So
+  - Bailin Zhang
+  - Lulu Singer
+  - Alexander K. Beaver
+  - Johan P. Zeelen
+  - "Philippe B\xFCscher"
+  - Veerle Lejon
+  - Monica R. Mugnier
+  publisher: openRxiv
+  pmid: '41040341'
+  pmcid: PMC12485828
+  date: '2025-09-25'
+  link: https://doi.org/hb9j8j
+  orcid: 0000-0002-7606-4014
+  lucy-zhang-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s41586-024-08151-z
   title: Tissue spaces are reservoirs of antigenic diversity for Trypanosoma brucei
   authors:
