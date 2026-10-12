@@ -2201,8 +2201,8 @@
   file: sources.yaml
   image: thumbnail/Joy_2026.jpg
 - id: doi:10.1021/acs.jproteome.5c00436
-  title: 'Lessons Learned from a Bioinformatics Class: What Is <i>Really</i> Required
-    to Reproduce Omics Data?'
+  title: "Lessons Learned\nfrom a Bioinformatics Class: What\nIs\n               \
+    \     <i>Really</i>\n                    Required to Reproduce Omics Data?"
   authors:
   - Natalie P. Turner
   - Ben C. Calverley
@@ -4261,7 +4261,7 @@
   publisher: Journal of Biomedical Semantics
   pmid: '23734599'
   pmcid: PMC3633003
-  date: '2013-04-01'
+  date: '2013-04-15'
   link: https://doi.org/gtrg24
   orcid: 0000-0002-9859-4104
   andrew-su-list: true
@@ -5736,8 +5736,9 @@
   - type: pdf
     link: pdf/Hogenesch_2001.pdf
 - id: doi:10.1073/pnas.041452598
-  title: Destabilization of Ca<sup>2+</sup>-free gelsolin may not be responsible for
-    proteolysis in Familial Amyloidosis of Finnish Type
+  title: "Destabilization of Ca\n                    <sup>2+</sup>\n             \
+    \       -free gelsolin may not be responsible for proteolysis in Familial Amyloidosis\
+    \ of Finnish Type"
   authors:
   - Gayathri Ratnaswamy
   - Mary E. Huff
