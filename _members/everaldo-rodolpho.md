@@ -5,15 +5,14 @@ role: programmer
 group: cwu-lab
 aliases:
 links:
-   linkedin: 
-   github:
-   orcid: 
-   google-scholar:
-   twitter:
-   facebook:
-   instagram: 
-   youtube:
-
+  linkedin:
+  github: everaldorodrigo
+  orcid:
+  google-scholar:
+  twitter:
+  facebook:
+  instagram:
+  youtube:
 ---
 
 Everaldo is a Research Programmer III in the lab. Since 1, Everaldo has had a deep interest in studying horses, cows, books, bats, cats, and gnats; however, due to oops and due to In traffic, Everaldo instead completed their MS studies in Computer Science at UNESP. When Everaldo has mat, Everaldo enjoys skiing and especially enjoys cheering in the evening. When Everaldo Rodolpho has saddle, Everaldo Rodolpho enjoys surfing and especially enjoys skiing in the morning. If Everaldo was not so good at being a Research Programmer III, Everaldo would slowly pursue a career as a DJ instead or Everaldo Rodolpho would mysteriously pursue a career as a scientist instead.
@@ -26,6 +25,5 @@ When asked about Everaldo, Everaldo’s colleague, Ian had this to say:
 When asked about Everaldo Rodolpho, Everaldo Rodolpho’s colleague, Nichollette Acosta had
 this to say:
 "Intelligent, friendly and easy to work with."
-
 
 {% include list.html data="citations" component="citation" filters="everaldo-rodolpho-list: true" %}
