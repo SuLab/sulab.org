@@ -7,15 +7,14 @@ aliases:
   - Colleen H Xu
   - Colleen H. Xu
 links:
-   linkedin: colleenxu
-   github: colleenXu
-   orcid: 
-   google-scholar:
-   twitter: BioBabblingHere
-   facebook:
-   instagram: 
-   youtube:
-
+  linkedin: colleenxu
+  github: colleenXu
+  orcid: 0000-0003-2975-882X
+  google-scholar:
+  twitter: BioBabblingHere
+  facebook:
+  instagram:
+  youtube:
 ---
 
 I joined as a Research Programmer in Summer 2020. My interests include data science, biochemistry, immunology, and bioinformatics infrastructure (KGs / data integration, interoperability, and storage / ontologies / reasoning). On off-hours, I tutor, knit, and do yoga.
@@ -24,7 +23,6 @@ I joined as a Research Programmer in Summer 2020. My interests include data scie
 MS, Bioinformatics and Computational Biomedicine, OHSU
 
 BA, Biology and Chemistry, Northwestern University
-
 
 {% include section.html %}
 ## Publications

@@ -17,7 +17,6 @@ links:
   google-scholar: xPGhKkoAAAAJ
   github: andrewsu
   linkedin: andrewsu
-
 ---
 
 Andrew Su, Ph.D., is the Elden and Verna Strahm Professor at the Scripps Research Institute in the Department of Integrative Structural and Computational Biology (ISCB). Dr. Su earned his PhD in chemistry at Scripps Research in 2002, and was the Associate Director of Bioinformatics at The Genomics Institute of the Novartis Research Foundation (GNF) before returning to Scripps Research as a faculty member in 2011.
@@ -30,4 +29,3 @@ Andrew received his BA degrees in Chemistry, Computing and Information Systems, 
 ## Publications
 
 {% include list.html data="citations" component="citation" filters="andrew-su-list: true" style="rich" %}
-

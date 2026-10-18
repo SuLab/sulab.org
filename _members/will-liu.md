@@ -5,15 +5,14 @@ role: programmer
 group: cwu-lab
 aliases:
 links:
-   linkedin: shuchenliu
-   github: 
-   orcid: 
-   google-scholar:
-   twitter:
-   facebook:
-   instagram: 
-   youtube:
-
+  linkedin: shuchenliu
+  github: shuchenliu
+  orcid:
+  google-scholar:
+  twitter:
+  facebook:
+  instagram:
+  youtube:
 ---
 
 Will joined the Wu lab in May 2025.
