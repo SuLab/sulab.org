@@ -6,7 +6,7 @@ title: Onsite Work Policy
 
 # {% include icon.html icon="fa-solid fa-building" %}Onsite Work Policy
 
-Starting the week of November 9, 2026, trainees in the Su and Wu labs (graduate students and postdocs) should be onsite at least **three days per week**.
+Trainees in the Su and Wu labs (graduate students and postdocs) should be onsite at least **three days per week**.
 
 Most of our day-to-day work can be done remotely, and that isn't changing. But Chunlei and I believe there is an important training component that comes from more frequent interactions -- with us and with each other -- and that is hard to get any other way.
 
