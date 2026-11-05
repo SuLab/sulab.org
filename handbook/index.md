@@ -13,6 +13,7 @@ This section is openly readable, but it is geared toward current and future lab 
    * [Group meeting rationale and expectations](/handbook/why-group-meeting)
 * [Progress meetings](/handbook/progress-meetings)
 * [Slack](/handbook/slack)
+* [Onsite work policy](/handbook/onsite)
 * [Holiday and vacation policy](/handbook/holiday-and-vacation)
 * [Travel and reimbursements policy](/handbook/travel-and-reimbursements)
 * [Conferences and Training](/handbook/conferences)
