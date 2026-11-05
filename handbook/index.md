@@ -35,6 +35,7 @@ For more on general Scripps information and policies (including campus maps, sec
 {% include section.html %}
 
 ## Graduate students
+* [Rotation projects](/handbook/rotations)
 * [Individual Development Plans](/handbook/idp)
 * [Example Meeting Reports](/handbook/gradreports)
 * [lllustrated Guide to a Ph.D.](http://matt.might.net/articles/phd-school-in-pictures/) by [Matt Might](https://matt.might.net/)
